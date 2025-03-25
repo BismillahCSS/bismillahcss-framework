@@ -1,0 +1,21 @@
+{
+  "name": "bismillahcss",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+     "build": "postcss src/bismillah.css -o dist/bismillah.min.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.1"
+  }
+}

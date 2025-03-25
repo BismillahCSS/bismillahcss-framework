@@ -1,0 +1,3461 @@
+/* ================================
+   BismillahCSS - Utility Classes
+   ================================ */
+
+/* Spacing Utilities */
+.m-0 { margin: 0; }
+.m-1 { margin: 4px; }
+.m-2 { margin: 8px; }
+.m-3 { margin: 12px; }
+.m-4 { margin: 16px; }
+.m-5 { margin: 20px; }
+.m-auto { margin: auto; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 12px; }
+.p-4 { padding: 16px; }
+.p-5 { padding: 20px; }
+.p-auto { padding: auto; }
+
+/* Typography */
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+.text-2xl { font-size: 24px; }
+.text-3xl { font-size: 30px; }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+
+/* Colors */
+.text-primary { color: #1E40AF; }
+.text-secondary { color: #64748B; }
+.text-success { color: #16A34A; }
+.text-warning { color: #EAB308; }
+.text-danger { color: #DC2626; }
+.text-info { color: #0EA5E9; }
+
+.bg-primary { background-color: #1E40AF; }
+.bg-secondary { background-color: #64748B; }
+.bg-success { background-color: #16A34A; }
+.bg-warning { background-color: #EAB308; }
+.bg-danger { background-color: #DC2626; }
+.bg-info { background-color: #0EA5E9; }
+
+/* ================================
+   BismillahCSS - Utility Classes
+   ================================ */
+
+/* Spacing Utilities */
+.m-0 { margin: 0; }
+.m-1 { margin: 4px; }
+.m-2 { margin: 8px; }
+.m-3 { margin: 12px; }
+.m-4 { margin: 16px; }
+.m-5 { margin: 20px; }
+.m-auto { margin: auto; }
+
+.p-0 { padding: 0; }
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 12px; }
+.p-4 { padding: 16px; }
+.p-5 { padding: 20px; }
+.p-auto { padding: auto; }
+
+/* Typography */
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+.text-2xl { font-size: 24px; }
+.text-3xl { font-size: 30px; }
+
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+
+/* Colors */
+.text-primary { color: #1E40AF; }
+.text-secondary { color: #64748B; }
+.text-success { color: #16A34A; }
+.text-warning { color: #EAB308; }
+.text-danger { color: #DC2626; }
+.text-info { color: #0EA5E9; }
+
+.bg-primary { background-color: #1E40AF; }
+.bg-secondary { background-color: #64748B; }
+.bg-success { background-color: #16A34A; }
+.bg-warning { background-color: #EAB308; }
+.bg-danger { background-color: #DC2626; }
+.bg-info { background-color: #0EA5E9; }
+
+/* Borders */
+.border { border: 1px solid #e5e7eb; }
+.border-0 { border: none; }
+.border-2 { border-width: 2px; }
+.border-4 { border-width: 4px; }
+.border-8 { border-width: 8px; }
+
+.border-primary { border-color: #1E40AF; }
+.border-secondary { border-color: #64748B; }
+.border-success { border-color: #16A34A; }
+.border-warning { border-color: #EAB308; }
+.border-danger { border-color: #DC2626; }
+
+.rounded-none { border-radius: 0; }
+.rounded-sm { border-radius: 4px; }
+.rounded { border-radius: 8px; }
+.rounded-lg { border-radius: 12px; }
+.rounded-full { border-radius: 9999px; }
+
+/* Shadows */
+.shadow-sm { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+.shadow { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+.shadow-md { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+.shadow-lg { box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); }
+.shadow-xl { box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25); }
+.shadow-none { box-shadow: none; }
+
+/* BismillahCSS - Core Styles */
+
+/* Reset & Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color, #f8f9fa);
+    color: var(--text-color, #212529);
+  }
+  
+  /* Utility Classes */
+  .bismillah-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bismillah-grid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .bismillah-text-center {
+    text-align: center;
+  }
+  
+  .bismillah-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Buttons */
+  .bismillah-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bismillah-btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .bismillah-btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .bismillah-btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .bismillah-btn-secondary:hover {
+    background-color: #545b62;
+  }
+  
+  /* Card Component */
+  .bismillah-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bismillah-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Sidebar */
+  .bismillah-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bismillah-sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Footer */
+  .bismillah-footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+  }
+
+  
+
+/* BismillahCSS - Core Styles */
+
+/* Reset & Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color, #f8f9fa);
+    color: var(--text-color, #212529);
+  }
+  
+  /* Utility Classes */
+  .bismillah-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bismillah-grid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .bismillah-text-center {
+    text-align: center;
+  }
+  
+  .bismillah-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Buttons */
+  .bismillah-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bismillah-btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .bismillah-btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .bismillah-btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .bismillah-btn-secondary:hover {
+    background-color: #545b62;
+  }
+  
+  /* Card Component */
+  .bismillah-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bismillah-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  /* Sidebar */
+  .bismillah-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bismillah-sidebar.open {
+    transform: translateX(0);
+  }
+  
+  /* Footer */
+  .bismillah-footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+  }
+  
+  /* Badges & Labels */
+  .bismillah-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .bismillah-badge-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .bismillah-badge-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .bismillah-badge-success {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .bismillah-badge-warning {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .bismillah-badge-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+/* BismillahCSS - Utilities.css (Part 6) */
+
+/* ========================= */
+/* 📌 Display Utilities */
+/* ========================= */
+
+.bismillah-block {
+    display: block;
+  }
+  
+  .bismillah-inline {
+    display: inline;
+  }
+  
+  .bismillah-inline-block {
+    display: inline-block;
+  }
+  
+  .bismillah-flex {
+    display: flex;
+  }
+  
+  .bismillah-inline-flex {
+    display: inline-flex;
+  }
+  
+  .bismillah-grid {
+    display: grid;
+  }
+  
+  .bismillah-hidden {
+    display: none;
+  }
+  
+  /* ========================= */
+  /* 📌 Position Utilities */
+  /* ========================= */
+  
+  .bismillah-relative {
+    position: relative;
+  }
+  
+  .bismillah-absolute {
+    position: absolute;
+  }
+  
+  .bismillah-fixed {
+    position: fixed;
+  }
+  
+  .bismillah-sticky {
+    position: sticky;
+  }
+  
+  /* ========================= */
+  /* 📌 Opacity Utilities */
+  /* ========================= */
+  
+  .bismillah-opacity-0 {
+    opacity: 0;
+  }
+  
+  .bismillah-opacity-25 {
+    opacity: 0.25;
+  }
+  
+  .bismillah-opacity-50 {
+    opacity: 0.5;
+  }
+  
+  .bismillah-opacity-75 {
+    opacity: 0.75;
+  }
+  
+  .bismillah-opacity-100 {
+    opacity: 1;
+  }
+  
+  /* ========================= */
+  /* 📌 Overflow Utilities */
+  /* ========================= */
+  
+  .bismillah-overflow-auto {
+    overflow: auto;
+  }
+  
+  .bismillah-overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .bismillah-overflow-visible {
+    overflow: visible;
+  }
+  
+  .bismillah-overflow-scroll {
+    overflow: scroll;
+  }
+
+  
+
+  /* BismillahCSS - Utilities.css (Part 7) */
+
+/* ========================= */
+/* 📌 Spacing Utilities (Margin & Padding) */
+/* ========================= */
+
+.bismillah-m-0 { margin: 0; }
+.bismillah-m-1 { margin: 4px; }
+.bismillah-m-2 { margin: 8px; }
+.bismillah-m-3 { margin: 12px; }
+.bismillah-m-4 { margin: 16px; }
+.bismillah-m-5 { margin: 20px; }
+
+.bismillah-p-0 { padding: 0; }
+.bismillah-p-1 { padding: 4px; }
+.bismillah-p-2 { padding: 8px; }
+.bismillah-p-3 { padding: 12px; }
+.bismillah-p-4 { padding: 16px; }
+.bismillah-p-5 { padding: 20px; }
+
+/* ========================= */
+/* 📌 Typography Utilities */
+/* ========================= */
+
+.bismillah-text-xs { font-size: 12px; }
+.bismillah-text-sm { font-size: 14px; }
+.bismillah-text-base { font-size: 16px; }
+.bismillah-text-lg { font-size: 18px; }
+.bismillah-text-xl { font-size: 20px; }
+.bismillah-text-2xl { font-size: 24px; }
+
+.bismillah-font-light { font-weight: 300; }
+.bismillah-font-normal { font-weight: 400; }
+.bismillah-font-medium { font-weight: 500; }
+.bismillah-font-bold { font-weight: 700; }
+
+/* ========================= */
+/* 📌 Text Alignment */
+/* ========================= */
+
+.bismillah-text-left { text-align: left; }
+.bismillah-text-center { text-align: center; }
+.bismillah-text-right { text-align: right; }
+.bismillah-text-justify { text-align: justify; }
+
+/* ========================= */
+/* 📌 Text Transform */
+/* ========================= */
+
+.bismillah-uppercase { text-transform: uppercase; }
+.bismillah-lowercase { text-transform: lowercase; }
+.bismillah-capitalize { text-transform: capitalize; }
+
+/* ========================= */
+/* 📌 Letter Spacing & Line Height */
+/* ========================= */
+
+.bismillah-tracking-tight { letter-spacing: -0.05em; }
+.bismillah-tracking-normal { letter-spacing: 0; }
+.bismillah-tracking-wide { letter-spacing: 0.05em; }
+
+.bismillah-leading-none { line-height: 1; }
+.bismillah-leading-tight { line-height: 1.25; }
+.bismillah-leading-normal { line-height: 1.5; }
+.bismillah-leading-loose { line-height: 2; }
+
+/* BismillahCSS - Utilities.css (Part 8) */
+
+/* ========================= */
+/* 🎨 Background Utilities */
+/* ========================= */
+
+.bismillah-bg-transparent { background-color: transparent; }
+.bismillah-bg-white { background-color: #ffffff; }
+.bismillah-bg-black { background-color: #000000; }
+.bismillah-bg-gray { background-color: #e5e7eb; }
+.bismillah-bg-red { background-color: #ef4444; }
+.bismillah-bg-blue { background-color: #3b82f6; }
+.bismillah-bg-green { background-color: #10b981; }
+.bismillah-bg-yellow { background-color: #facc15; }
+.bismillah-bg-purple { background-color: #8b5cf6; }
+
+/* Background Gradient */
+.bismillah-bg-gradient-to-r { background-image: linear-gradient(to right, var(--bismillah-color-start), var(--bismillah-color-end)); }
+.bismillah-bg-gradient-to-l { background-image: linear-gradient(to left, var(--bismillah-color-start), var(--bismillah-color-end)); }
+.bismillah-bg-gradient-to-t { background-image: linear-gradient(to top, var(--bismillah-color-start), var(--bismillah-color-end)); }
+.bismillah-bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--bismillah-color-start), var(--bismillah-color-end)); }
+
+/* ========================= */
+/* 🎨 Border Utilities */
+/* ========================= */
+
+.bismillah-border { border: 1px solid #e5e7eb; }
+.bismillah-border-2 { border-width: 2px; }
+.bismillah-border-4 { border-width: 4px; }
+.bismillah-border-none { border: none; }
+
+.bismillah-border-gray { border-color: #e5e7eb; }
+.bismillah-border-red { border-color: #ef4444; }
+.bismillah-border-blue { border-color: #3b82f6; }
+.bismillah-border-green { border-color: #10b981; }
+
+/* Border Radius */
+.bismillah-rounded-none { border-radius: 0; }
+.bismillah-rounded-sm { border-radius: 4px; }
+.bismillah-rounded { border-radius: 8px; }
+.bismillah-rounded-lg { border-radius: 12px; }
+.bismillah-rounded-full { border-radius: 9999px; }
+
+/* ========================= */
+/* 🎨 Box Shadow Utilities */
+/* ========================= */
+
+.bismillah-shadow-sm { box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05); }
+.bismillah-shadow { box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); }
+.bismillah-shadow-lg { box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); }
+.bismillah-shadow-xl { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); }
+.bismillah-shadow-none { box-shadow: none; }
+
+/* ========================= */
+/* 🎨 Opacity Utilities */
+/* ========================= */
+
+.bismillah-opacity-0 { opacity: 0; }
+.bismillah-opacity-25 { opacity: 0.25; }
+.bismillah-opacity-50 { opacity: 0.5; }
+.bismillah-opacity-75 { opacity: 0.75; }
+.bismillah-opacity-100 { opacity: 1; }
+
+/* ========================= */
+/* 🎨 Mix Blend Mode */
+/* ========================= */
+
+.bismillah-mix-normal { mix-blend-mode: normal; }
+.bismillah-mix-multiply { mix-blend-mode: multiply; }
+.bismillah-mix-screen { mix-blend-mode: screen; }
+.bismillah-mix-overlay { mix-blend-mode: overlay; }
+.bismillah-mix-darken { mix-blend-mode: darken; }
+.bismillah-mix-lighten { mix-blend-mode: lighten; }
+
+/* ========================= */
+/* 🎨 Filter Utilities */
+/* ========================= */
+
+.bismillah-blur-sm { filter: blur(2px); }
+.bismillah-blur { filter: blur(4px); }
+.bismillah-blur-lg { filter: blur(8px); }
+
+.bismillah-grayscale { filter: grayscale(100%); }
+.bismillah-invert { filter: invert(100%); }
+.bismillah-sepia { filter: sepia(100%); }
+
+/* ========================= */
+/* 🎨 Transition & Animation */
+/* ========================= */
+
+.bismillah-transition { transition: all 0.3s ease-in-out; }
+.bismillah-transition-fast { transition: all 0.1s ease-in-out; }
+.bismillah-transition-slow { transition: all 0.5s ease-in-out; }
+
+.bismillah-animate-spin { animation: spin 1s linear infinite; }
+.bismillah-animate-pulse { animation: pulse 2s infinite; }
+.bismillah-animate-bounce { animation: bounce 1.5s infinite; }
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+/* BismillahCSS - Utilities (Part 9) */
+
+/* Advanced Display Utilities */
+.bismillah-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bismillah-grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.bismillah-hidden {
+    display: none;
+}
+
+/* Advanced Sizing */
+.bismillah-w-90 {
+    width: 90%;
+}
+
+.bismillah-h-90 {
+    height: 90%;
+}
+
+.bismillah-min-w-50 {
+    min-width: 50px;
+}
+
+.bismillah-min-h-50 {
+    min-height: 50px;
+}
+
+/* Scrollbar Styling */
+.bismillah-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bismillah-primary) var(--bismillah-light);
+}
+
+.bismillah-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.bismillah-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--bismillah-primary);
+    border-radius: 10px;
+}
+
+.bismillah-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--bismillah-light);
+}
+
+/* Interactive Text Effects */
+.bismillah-text-gradient {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-clip: text;  /* Standard property */
+    -webkit-background-clip: text; /* Vendor prefix for Safari */
+    -webkit-text-fill-color: transparent;
+}
+
+.bismillah-text-blur:hover {
+    filter: blur(2px);
+}
+
+/* New Advanced Hover Effects */
+.bismillah-hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hover-rotate:hover {
+    transform: rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hover-shadow:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Spacing & Padding Improvements */
+.bismillah-px-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bismillah-py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bismillah-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bismillah-my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/* BismillahCSS - Utilities (Part 10) */
+
+/* Advanced Display Utilities */
+.bismillah-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bismillah-grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.bismillah-hidden {
+    display: none;
+}
+
+/* Advanced Sizing */
+.bismillah-w-90 {
+    width: 90%;
+}
+
+.bismillah-h-90 {
+    height: 90%;
+}
+
+.bismillah-min-w-50 {
+    min-width: 50px;
+}
+
+.bismillah-min-h-50 {
+    min-height: 50px;
+}
+
+/* Scrollbar Styling */
+.bismillah-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bismillah-primary) var(--bismillah-light);
+}
+
+.bismillah-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.bismillah-scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--bismillah-primary);
+    border-radius: 10px;
+}
+
+.bismillah-scrollbar::-webkit-scrollbar-track {
+    background-color: var(--bismillah-light);
+}
+
+/* Interactive Text Effects */
+.bismillah-text-gradient {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bismillah-text-blur:hover {
+    filter: blur(2px);
+}
+
+/* New Advanced Hover Effects */
+.bismillah-hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hover-rotate:hover {
+    transform: rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hover-shadow:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glassmorphism Effects */
+.bismillah-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Spacing & Padding Improvements */
+.bismillah-px-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bismillah-py-10 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bismillah-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bismillah-my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* New Layout Utilities */
+.bismillah-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.bismillah-responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.bismillah-box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bismillah-border-rounded {
+    border-radius: 10px;
+}
+
+
+/* BismillahCSS - Utilities (Part 11) */
+
+/* Advanced Animation Utilities */
+.bismillah-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bismillah-bounce {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bismillah-shake:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Advanced Button Effects */
+.bismillah-btn-glow {
+    position: relative;
+    overflow: hidden;
+}
+
+.bismillah-btn-glow::after {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, rgba(0,0,0,0) 70%);
+    transition: top 0.3s ease-out, left 0.3s ease-out;
+}
+
+.bismillah-btn-glow:hover::after {
+    top: 0;
+    left: 0;
+}
+
+/* Background Effects */
+.bismillah-bg-animated {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-size: 200% 200%;
+    animation: gradientMove 3s infinite linear;
+}
+
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hover Effects */
+.bismillah-hover-pulse:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.bismillah-hover-glow:hover {
+    box-shadow: 0 0 15px var(--bismillah-primary);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* BismillahCSS - Utilities (Part 13) */
+
+/* Advanced Display Utilities */
+.bismillah-inline-block {
+    display: inline-block;
+}
+
+.bismillah-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Aspect Ratio Utilities */
+.bismillah-aspect-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.bismillah-aspect-4-3 {
+    aspect-ratio: 4 / 3;
+}
+
+.bismillah-aspect-1-1 {
+    aspect-ratio: 1 / 1;
+}
+
+/* Enhanced Hover Effects */
+.bismillah-hover-bright:hover {
+    filter: brightness(1.2);
+    transition: filter 0.3s ease-in-out;
+}
+
+.bismillah-hover-grayscale:hover {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.bismillah-hover-opacity:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* New Animation Utilities */
+.bismillah-animate-bounce {
+    animation: bismillah-bounce 1s infinite;
+}
+
+@keyframes bismillah-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.bismillah-animate-spin {
+    animation: bismillah-spin 1s linear infinite;
+}
+
+@keyframes bismillah-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bismillah-animate-fade-in {
+    animation: bismillah-fade-in 1s ease-in-out;
+}
+
+@keyframes bismillah-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Border Utilities */
+.bismillah-border-1 {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--bismillah-primary);
+}
+
+.bismillah-border-2 {
+    border-width: 2px;
+}
+
+.bismillah-border-rounded {
+    border-radius: 10px;
+}
+
+/* Box Shadow Enhancements */
+.bismillah-shadow-lg {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-shadow-sm {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bismillah-shadow-none {
+    box-shadow: none;
+}
+
+/* BismillahCSS - Utilities (Part 14) */
+
+/* Advanced Border Utilities */
+.bismillah-border-dashed {
+    border: 2px dashed var(--bismillah-primary);
+}
+
+.bismillah-border-dotted {
+    border: 2px dotted var(--bismillah-secondary);
+}
+
+.bismillah-border-double {
+    border: 4px double var(--bismillah-dark);
+}
+
+.bismillah-border-glow {
+    border: 2px solid var(--bismillah-primary);
+    box-shadow: 0 0 10px var(--bismillah-primary);
+}
+
+/* Advanced List Styles */
+.bismillah-list-none {
+    list-style: none;
+}
+
+.bismillah-list-disc {
+    list-style-type: disc;
+}
+
+.bismillah-list-square {
+    list-style-type: square;
+}
+
+.bismillah-list-circle {
+    list-style-type: circle;
+}
+
+.bismillah-list-checkmarks li::before {
+    content: '\2713';
+    color: var(--bismillah-primary);
+    margin-right: 8px;
+}
+
+/* Gradient Borders */
+.bismillah-border-gradient {
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    border-image-slice: 1;
+}
+
+/* Box Shadows */
+.bismillah-shadow-sm {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bismillah-shadow-md {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.bismillah-shadow-lg {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-shadow-glow {
+    box-shadow: 0px 0px 15px var(--bismillah-primary);
+}
+
+/* Extended Hover Effects */
+.bismillah-hover-underline:hover {
+    text-decoration: underline;
+}
+
+.bismillah-hover-opacity:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.bismillah-hover-bg-scale:hover {
+    transform: scale(1.1);
+    background-color: var(--bismillah-light);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.bismillah-hover-border-flash:hover {
+    border-color: var(--bismillah-secondary);
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Positioning Helpers */
+.bismillah-absolute {
+    position: absolute;
+}
+
+.bismillah-relative {
+    position: relative;
+}
+
+.bismillah-fixed {
+    position: fixed;
+}
+
+.bismillah-sticky {
+    position: sticky;
+    top: 0;
+}
+
+/* Responsive Visibility */
+@media (max-width: 768px) {
+    .bismillah-hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .bismillah-hide-desktop {
+        display: none;
+    }
+}
+
+/* BismillahCSS - Utilities (Part 15) */
+
+/* Advanced Grid Layouts */
+.bismillah-grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.bismillah-grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* Unique Border Effects */
+.bismillah-border-gradient {
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    border-image: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary)) 1;
+}
+
+.bismillah-border-glow {
+    box-shadow: 0 0 10px var(--bismillah-primary);
+    border-radius: 5px;
+}
+
+/* Neon Glow Text Effect */
+.bismillah-text-neon {
+    color: var(--bismillah-light);
+    text-shadow: 0 0 5px var(--bismillah-primary), 0 0 10px var(--bismillah-secondary);
+}
+
+/* Animated Backgrounds */
+.bismillah-bg-animated {
+    background: linear-gradient(270deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-size: 400% 400%;
+    animation: bismillah-bg-animation 5s ease infinite;
+}
+
+@keyframes bismillah-bg-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hover Effects */
+.bismillah-hover-skew:hover {
+    transform: skewX(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hover-translate:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hover-glow:hover {
+    box-shadow: 0 0 10px var(--bismillah-primary);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Advanced Positioning */
+.bismillah-absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bismillah-fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bismillah-fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* BismillahCSS - Utilities (Part 16) */
+
+/* Advanced Typography Utilities */
+.bismillah-text-uppercase {
+    text-transform: uppercase;
+}
+
+.bismillah-text-lowercase {
+    text-transform: lowercase;
+}
+
+.bismillah-text-capitalize {
+    text-transform: capitalize;
+}
+
+.bismillah-letter-spacing-wide {
+    letter-spacing: 2px;
+}
+
+.bismillah-line-height-loose {
+    line-height: 1.8;
+}
+
+/* Advanced List Styles */
+.bismillah-list-none {
+    list-style: none;
+}
+
+.bismillah-list-disc {
+    list-style-type: disc;
+}
+
+.bismillah-list-decimal {
+    list-style-type: decimal;
+}
+
+/* Advanced Background Effects */
+.bismillah-bg-animated {
+    background: linear-gradient(270deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-size: 400% 400%;
+    animation: gradientBG 5s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Box Shadows & Border Enhancements */
+.bismillah-box-shadow-lg {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bismillah-border-gradient {
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    border-image-slice: 1;
+}
+
+/* Advanced Animation Effects */
+.bismillah-hover-pulse:hover {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bismillah-hover-translate:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Flexbox & Grid Enhancements */
+@media (max-width: 768px) {
+    .bismillah-flex-responsive {
+        display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bismillah-grid-responsive {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* BismillahCSS - Utilities (Part 17) */
+
+/* Smart Adaptive Themes */
+@media (prefers-color-scheme: dark) {
+    .bismillah-auto-theme {
+        background-color: var(--bismillah-dark-bg);
+        color: var(--bismillah-light-text);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .bismillah-auto-theme {
+        background-color: var(--bismillah-light-bg);
+        color: var(--bismillah-dark-text);
+    }
+}
+
+/* 3D Depth Hover Effect */
+.bismillah-hover-depth:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Auto-responsive Font Sizing */
+.bismillah-text-auto {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+/* AI-Powered Dynamic Color Adjustment (Experimental) */
+.bismillah-dynamic-color {
+    filter: brightness(0.9) contrast(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.bismillah-dynamic-color:hover {
+    filter: brightness(1) contrast(1.2);
+}
+
+
+/* BismillahCSS - Utilities (Part 18) */
+
+/* Glassmorphism Utility */
+.bismillah-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+/* Animated Border Effects */
+@keyframes borderAnimation {
+    0% { border-color: var(--bismillah-primary); }
+    50% { border-color: var(--bismillah-secondary); }
+    100% { border-color: var(--bismillah-primary); }
+}
+.bismillah-border-animate {
+    border: 2px solid;
+    animation: borderAnimation 3s infinite alternate;
+}
+
+/* Auto Dark Mode Detection */
+@media (prefers-color-scheme: dark) {
+    .bismillah-dark-auto {
+        background-color: var(--bismillah-dark);
+        color: var(--bismillah-light);
+    }
+}
+
+/* Perspective Tilt Effects */
+.bismillah-tilt {
+    transition: transform 0.3s ease-in-out;
+}
+.bismillah-tilt:hover {
+    transform: perspective(500px) rotateY(10deg);
+}
+
+/* Additional Adaptive Utilities */
+.bismillah-auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+/* BismillahCSS - Utilities (Part 19) */
+
+/* 3D Depth Effects */
+.bismillah-3d-depth {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.bismillah-3d-depth:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Neon Glow Effects */
+.bismillah-neon-glow {
+    text-shadow: 0 0 5px var(--bismillah-primary), 0 0 10px var(--bismillah-secondary);
+}
+
+.bismillah-neon-box {
+    box-shadow: 0 0 5px var(--bismillah-primary), 0 0 15px var(--bismillah-secondary);
+}
+
+/* Animated Underlines */
+.bismillah-underline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.bismillah-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: var(--bismillah-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.bismillah-underline:hover::after {
+    transform: scaleX(1);
+}
+
+/* BismillahCSS - Utilities (Part 19) */
+
+/* AI-Powered Adaptive Styling */
+.bismillah-adaptive-bg {
+    background-color: var(--bismillah-light);
+    transition: background-color 0.3s ease-in-out;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bismillah-adaptive-bg {
+        background-color: var(--bismillah-dark);
+    }
+}
+
+.bismillah-smart-text {
+    color: var(--bismillah-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+    .bismillah-smart-text {
+        color: var(--bismillah-light);
+    }
+}
+
+/* 3D Effects & Parallax Scrolling */
+.bismillah-3d-card {
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-3d-card:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+.bismillah-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Glassmorphism & Frosted UI */
+.bismillah-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bismillah-frosted-hover:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+}
+
+/* Dynamic Utility Generator */
+.bismillah-auto-spacing {
+    margin: 5%;
+    padding: 5%;
+}
+
+@media (max-width: 768px) {
+    .bismillah-auto-spacing {
+        margin: 3%;
+        padding: 3%;
+    }
+}
+
+.bismillah-adaptive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+
+
+/* BismillahCSS - Utilities (Part 20) */
+
+/* Smart Adaptive Styling */
+.bismillah-adaptive-bg {
+    background-color: var(--bismillah-light);
+    transition: background-color 0.5s ease-in-out;
+}
+.bismillah-dark-mode .bismillah-adaptive-bg {
+    background-color: var(--bismillah-dark);
+}
+
+/* Dynamic 3D Effects */
+.bismillah-3d-hover {
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+.bismillah-3d-hover:hover {
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg);
+}
+
+/* Advanced Parallax Effects */
+.bismillah-parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Glassmorphism Enhancements */
+.bismillah-glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Dynamic Utility Generator */
+.bismillah-dynamic-utility {
+    display: inline-block;
+    padding: 10px;
+    background-color: var(--bismillah-primary);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+.bismillah-dynamic-utility:hover {
+    background-color: var(--bismillah-secondary);
+    transform: scale(1.1);
+}
+
+/* Floating UI Components */
+.bismillah-floating {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--bismillah-primary);
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.bismillah-floating:hover {
+    transform: translateY(-5px);
+}
+
+/* BismillahCSS - Utilities (Part 21) */
+
+/* Neon Glow Effects */
+.bismillah-neon-text {
+    text-shadow: 0 0 5px var(--bismillah-primary), 0 0 10px var(--bismillah-secondary);
+}
+
+.bismillah-neon-border {
+    border: 2px solid var(--bismillah-primary);
+    box-shadow: 0 0 10px var(--bismillah-primary);
+}
+
+/* Advanced Grid Layouts */
+.bismillah-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.bismillah-grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* Typewriter Animation */
+@keyframes bismillah-typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.bismillah-typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid var(--bismillah-primary);
+    width: 100%;
+    animation: bismillah-typewriter 3s steps(30, end) infinite;
+}
+
+/* Perspective & Depth Effects */
+.bismillah-3d-hover:hover {
+    transform: perspective(1000px) rotateY(10deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Animated Borders */
+@keyframes bismillah-border-animate {
+    0% { border-color: var(--bismillah-primary); }
+    50% { border-color: var(--bismillah-secondary); }
+    100% { border-color: var(--bismillah-primary); }
+}
+
+.bismillah-animated-border {
+    border: 2px solid var(--bismillah-primary);
+    animation: bismillah-border-animate 3s infinite alternate;
+}
+
+/* Gradient Borders & Outlines */
+.bismillah-gradient-border {
+    border: 3px solid;
+    border-image: linear-gradient(to right, var(--bismillah-primary), var(--bismillah-secondary));
+    border-image-slice: 1;
+}
+
+/* Floating Action Buttons (FABs) */
+.bismillah-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: var(--bismillah-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-fab:hover {
+    transform: scale(1.1);
+}
+
+/* Interactive Glassmorphism Enhancements */
+.bismillah-glass-hover:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+}
+
+/* BismillahCSS - Utilities (Part 22) */
+
+/* Advanced Gradient Borders */
+.bismillah-border-gradient {
+    border: 3px solid;
+    border-image-source: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    border-image-slice: 1;
+}
+
+/* Fancy Underline Effects */
+.bismillah-underline-fancy {
+    position: relative;
+    text-decoration: none;
+}
+
+.bismillah-underline-fancy::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-underline-fancy:hover::after {
+    transform: scaleX(1);
+}
+
+/* Neon Glow Effect */
+.bismillah-neon-text {
+    color: var(--bismillah-primary);
+    text-shadow: 0 0 5px var(--bismillah-primary), 0 0 10px var(--bismillah-secondary);
+}
+
+/* Expanding Button Animation */
+.bismillah-btn-expand {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--bismillah-primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-btn-expand:hover {
+    transform: scale(1.1);
+}
+
+/* Advanced 3D Box Effect */
+.bismillah-3d-box {
+    display: inline-block;
+    padding: 15px;
+    background: var(--bismillah-light);
+    border: 1px solid var(--bismillah-primary);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transform: perspective(500px) rotateX(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-3d-box:hover {
+    transform: perspective(500px) rotateX(0deg);
+}
+
+/* Spinning Loader */
+.bismillah-loader {
+    width: 40px;
+    height: 40px;
+    border: 4px solid var(--bismillah-primary);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* BismillahCSS - Utilities (Part 23) */
+
+/* Advanced Visibility Utilities */
+.bismillah-visible {
+    visibility: visible;
+}
+
+.bismillah-invisible {
+    visibility: hidden;
+}
+
+.bismillah-collapse {
+    visibility: collapse;
+}
+
+/* Smooth Scroll Behavior */
+.bismillah-smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Custom Opacity Levels */
+.bismillah-opacity-10 {
+    opacity: 0.1;
+}
+
+.bismillah-opacity-25 {
+    opacity: 0.25;
+}
+
+.bismillah-opacity-50 {
+    opacity: 0.5;
+}
+
+.bismillah-opacity-75 {
+    opacity: 0.75;
+}
+
+.bismillah-opacity-100 {
+    opacity: 1;
+}
+
+/* Advanced Skew and Rotate Effects */
+.bismillah-skew-x-10 {
+    transform: skewX(10deg);
+}
+
+.bismillah-skew-y-10 {
+    transform: skewY(10deg);
+}
+
+.bismillah-rotate-x-15 {
+    transform: rotateX(15deg);
+}
+
+.bismillah-rotate-y-15 {
+    transform: rotateY(15deg);
+}
+
+/* Animated Border Effects */
+.bismillah-border-animated {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    border-image-slice: 1;
+    animation: borderGlow 2s infinite alternate;
+}
+
+@keyframes borderGlow {
+    0% {
+        border-image-source: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, var(--bismillah-secondary), var(--bismillah-primary));
+    }
+}
+
+/* Interactive Floating Cards */
+.bismillah-floating-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-floating-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+/* BismillahCSS - Utilities (Part 24) */
+
+/* Advanced Positioning Utilities */
+.bismillah-absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bismillah-sticky-top {
+    position: sticky;
+    top: 0;
+    background: var(--bismillah-light);
+    z-index: 1000;
+}
+
+/* Advanced Text Enhancements */
+.bismillah-text-outline {
+    text-shadow: -1px -1px 0 var(--bismillah-dark),
+                 1px -1px 0 var(--bismillah-dark),
+                 -1px 1px 0 var(--bismillah-dark),
+                 1px 1px 0 var(--bismillah-dark);
+}
+
+.bismillah-text-wave {
+    animation: wave-text 2s infinite;
+}
+
+@keyframes wave-text {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+}
+
+/* Glassmorphism Effect */
+.bismillah-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Interactive Tilt Effect */
+.bismillah-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animated Gradient Background */
+.bismillah-animated-gradient {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-size: 200% 200%;
+    animation: gradient-shift 5s infinite linear;
+}
+
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Enhanced Border Radius Variants */
+.bismillah-rounded-sm { border-radius: 5px; }
+.bismillah-rounded-md { border-radius: 10px; }
+.bismillah-rounded-lg { border-radius: 20px; }
+.bismillah-rounded-full { border-radius: 9999px; }
+
+
+/* BismillahCSS - Utilities (Part 25) */
+
+/* Advanced Grid Layouts */
+.bismillah-grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.bismillah-grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.bismillah-grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+/* Enhanced Card Styles */
+.bismillah-card-glow {
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.bismillah-card-glow:hover {
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+/* Interactive Buttons */
+.bismillah-btn-pulse {
+    position: relative;
+    overflow: hidden;
+}
+
+.bismillah-btn-pulse::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.bismillah-btn-pulse:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Enhanced Transitions */
+.bismillah-transition-slow {
+    transition: all 0.8s ease-in-out;
+}
+
+.bismillah-transition-fast {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Neon Text Effect */
+.bismillah-text-neon {
+    color: #fff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* 3D Tilt Effect */
+.bismillah-tilt-effect {
+    transform: perspective(1000px) rotateX(10deg) rotateY(10deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-tilt-effect:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+}
+
+
+/* BismillahCSS - Utilities (Part 27) */
+
+/* Advanced Grid Layouts */
+.bismillah-grid-cols-auto {
+    grid-template-columns: auto;
+}
+
+.bismillah-grid-cols-minmax {
+    grid-template-columns: minmax(100px, 1fr);
+}
+
+.bismillah-grid-rows-auto {
+    grid-template-rows: auto;
+}
+
+/* 3D Button Effects */
+.bismillah-btn-3d {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.bismillah-btn-3d:hover {
+    box-shadow: 0 8px #444;
+    transform: translateY(2px);
+}
+
+/* Neon Text Effects */
+.bismillah-text-neon {
+    text-shadow: 0 0 5px #fff, 0 0 10px var(--bismillah-primary), 0 0 15px var(--bismillah-secondary);
+}
+
+/* Interactive Modal Animation */
+.bismillah-modal-enter {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in-out;
+}
+
+.bismillah-modal-enter-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Enhanced Blur Hover Effect */
+.bismillah-hover-deep-blur:hover {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+/* BismillahCSS - Utilities (Part 28) */
+
+/* Responsive Utilities */
+.bismillah-hidden-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .bismillah-hidden-mobile {
+        display: block;
+    }
+}
+
+.bismillah-hidden-desktop {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .bismillah-hidden-desktop {
+        display: none;
+    }
+}
+
+/* Dynamic Shadow Effects */
+.bismillah-shadow-lg {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bismillah-shadow-hover:hover {
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Animated List Items */
+.bismillah-list-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ultra-Smooth Transitions */
+.bismillah-smooth-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.bismillah-smooth-hover:hover {
+    transform: scale(1.02);
+}
+
+/* BismillahCSS - Utilities (Part 29) */
+
+/* Enhanced Borders and Shadows */
+.bismillah-border-glow {
+    border: 2px solid var(--bismillah-primary);
+    box-shadow: 0 0 10px var(--bismillah-primary);
+}
+
+.bismillah-border-dashed {
+    border: 2px dashed var(--bismillah-secondary);
+}
+
+.bismillah-border-gradient {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary)) 1;
+}
+
+/* New Text Effects */
+.bismillah-text-embossed {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-text-shadow-heavy {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bismillah-text-outline {
+    -webkit-text-stroke: 1px var(--bismillah-dark);
+}
+
+/* Animated Backgrounds */
+@keyframes bismillah-bg-pulse {
+    0% { background-color: var(--bismillah-light); }
+    50% { background-color: var(--bismillah-primary); }
+    100% { background-color: var(--bismillah-light); }
+}
+
+.bismillah-bg-pulse {
+    animation: bismillah-bg-pulse 3s infinite;
+}
+
+@keyframes bismillah-bg-gradient-move {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.bismillah-bg-animated {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-size: 200% 200%;
+    animation: bismillah-bg-gradient-move 4s infinite;
+}
+
+/* Utility Mix (Advanced) */
+.bismillah-utility-pack {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    background: var(--bismillah-light);
+    transition: all 0.3s ease-in-out;
+}
+
+.bismillah-utility-pack:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* BismillahCSS - Utilities (Part 30) */
+
+/* Advanced Layout Utilities */
+.bismillah-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.bismillah-grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.bismillah-grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+/* Advanced Flexbox Utilities */
+.bismillah-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bismillah-flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Interactive Animations */
+@keyframes bismillah-pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.bismillah-animate-pulse {
+    animation: bismillah-pulse 1.5s infinite;
+}
+
+@keyframes bismillah-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bismillah-animate-fade-in {
+    animation: bismillah-fade-in 1s ease-in-out;
+}
+
+/* Advanced Borders & Shadows */
+.bismillah-border-gradient {
+    border: 3px solid transparent;
+    border-image: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary)) 1;
+}
+
+.bismillah-shadow-xl {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.bismillah-shadow-glow {
+    box-shadow: 0px 0px 15px var(--bismillah-primary);
+}
+
+/* New Text Effects */
+.bismillah-text-stroke {
+    -webkit-text-stroke: 1px var(--bismillah-primary);
+}
+
+.bismillah-text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Experimental Features */
+.bismillah-glassmorphism-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* BismillahCSS - Utilities (Part 31) */
+
+/* New Advanced Borders & Outlines */
+.bismillah-border-gradient {
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+}
+
+.bismillah-outline-focus:focus {
+    outline: 3px solid var(--bismillah-accent);
+    outline-offset: 4px;
+}
+
+/* Advanced Grid Utilities */
+.bismillah-grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.bismillah-grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+}
+
+/* Animated List Items */
+.bismillah-list-animated li {
+    transition: transform 0.3s ease-in-out, opacity 0.3s;
+}
+
+.bismillah-list-animated li:hover {
+    transform: translateX(5px);
+    opacity: 0.8;
+}
+
+/* Scroll Effects */
+.bismillah-scroll-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.bismillah-scroll-fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Interactive Image Effects */
+.bismillah-image-zoom {
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-image-zoom:hover {
+    transform: scale(1.1);
+}
+
+.bismillah-image-grayscale {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.bismillah-image-grayscale:hover {
+    filter: grayscale(0%);
+}
+
+/* Responsive Hidden Elements */
+@media (max-width: 768px) {
+    .bismillah-hide-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bismillah-hide-desktop {
+        display: none;
+    }
+}
+
+
+/* BismillahCSS - Utilities (Part 31) */
+
+/* Advanced Border Styles */
+.bismillah-border-dashed {
+    border-style: dashed;
+}
+
+.bismillah-border-dotted {
+    border-style: dotted;
+}
+
+.bismillah-border-double {
+    border-style: double;
+}
+
+/* Advanced Grid Utilities */
+.bismillah-grid-2-cols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.bismillah-grid-3-cols {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.bismillah-grid-4-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Smooth Scroll Effects */
+.bismillah-smooth-scroll {
+    scroll-behavior: smooth;
+}
+
+/* Interactive Image Effects */
+.bismillah-img-hover-zoom:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-img-hover-grayscale:hover {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.bismillah-img-hover-blur:hover {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Responsive Hidden Elements */
+@media (max-width: 768px) {
+    .bismillah-hidden-md {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .bismillah-hidden-sm {
+        display: none;
+    }
+}
+
+/* BismillahCSS - Utilities (Part 32) */
+
+/* Responsive Display Utilities */
+.bismillah-hidden-sm { display: none; }
+@media (min-width: 640px) { .bismillah-hidden-sm { display: block; } }
+.bismillah-hidden-md { display: none; }
+@media (min-width: 768px) { .bismillah-hidden-md { display: block; } }
+.bismillah-hidden-lg { display: none; }
+@media (min-width: 1024px) { .bismillah-hidden-lg { display: block; } }
+
+/* Advanced Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+.bismillah-fade-in { animation: fadeIn 0.5s ease-in-out; }
+.bismillah-bounce:hover { animation: bounce 0.5s ease-in-out; }
+
+/* Typography Enhancements */
+.bismillah-text-underline { text-decoration: underline; }
+.bismillah-text-double-underline { text-decoration: underline double; }
+.bismillah-letter-spacing-wide { letter-spacing: 2px; }
+.bismillah-letter-spacing-wider { letter-spacing: 4px; }
+
+/* Interactive Effects */
+.bismillah-btn-press:active { transform: scale(0.95); transition: transform 0.1s ease-in-out; }
+.bismillah-neon-glow { text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.8); }
+.bismillah-hover-card:hover { transform: translateY(-5px); box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); transition: all 0.3s ease-in-out; }
+
+/* New Custom Grid Layouts */
+.bismillah-grid-cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.bismillah-grid-cols-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+
+/* Enhanced Form Styles */
+.bismillah-input { border: 1px solid var(--bismillah-gray); padding: 8px 12px; border-radius: 5px; }
+.bismillah-input:focus { outline: none; border-color: var(--bismillah-primary); box-shadow: 0px 0px 5px var(--bismillah-primary); }
+.bismillah-checkbox { appearance: none; width: 16px; height: 16px; border: 1px solid var(--bismillah-dark); border-radius: 3px; }
+.bismillah-checkbox:checked { background-color: var(--bismillah-primary); }
+.bismillah-radio { appearance: none; width: 16px; height: 16px; border: 2px solid var(--bismillah-dark); border-radius: 50%; }
+.bismillah-radio:checked { background-color: var(--bismillah-primary); }
+
+/* Accessibility Features */
+.bismillah-high-contrast { background-color: black; color: white; border: 2px solid white; }
+.bismillah-focus-outline:focus { outline: 2px solid var(--bismillah-secondary); }
+
+/* More Advanced Effects */
+.bismillah-hover-shadow-lg:hover { box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); transition: all 0.3s ease-in-out; }
+.bismillah-hover-scale-lg:hover { transform: scale(1.1); transition: transform 0.3s ease-in-out; }
+
+
+/* BismillahCSS - Utilities (Part 33) */
+
+/* Advanced Display Utilities */
+.bismillah-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bismillah-grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.bismillah-hidden-md {
+    display: none;
+}
+@media (min-width: 768px) {
+    .bismillah-hidden-md {
+        display: block;
+    }
+}
+
+/* Advanced Animations */
+@keyframes bismillah-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bismillah-fade-in {
+    animation: bismillah-fade-in 0.5s ease-in;
+}
+
+@keyframes bismillah-slide-up {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bismillah-slide-up {
+    animation: bismillah-slide-up 0.5s ease-out;
+}
+
+/* Typography Enhancements */
+.bismillah-text-uppercase {
+    text-transform: uppercase;
+}
+
+.bismillah-text-italic {
+    font-style: italic;
+}
+
+.bismillah-text-outline {
+    -webkit-text-stroke: 1px var(--bismillah-primary);
+}
+
+/* Interactive Effects */
+.bismillah-hover-glow:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.bismillah-hover-scale:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Grid Layout Enhancements */
+.bismillah-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .bismillah-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .bismillah-grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Enhanced Form Styles */
+.bismillah-input-rounded {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--bismillah-primary);
+}
+
+.bismillah-btn-gradient {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.bismillah-btn-gradient:hover {
+    background: linear-gradient(45deg, var(--bismillah-secondary), var(--bismillah-primary));
+}
+
+/* Accessibility Features */
+.bismillah-high-contrast {
+    background-color: black;
+    color: yellow;
+    font-weight: bold;
+}
+
+.bismillah-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* BismillahCSS - Utilities (Part 34) */
+
+/* AI-Inspired Adaptive Components */
+.bismillah-ai-detect-light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.bismillah-ai-detect-dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    .bismillah-ai-auto-theme {
+        background-color: #121212;
+        color: #ffffff;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .bismillah-ai-auto-theme {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+/* Neuromorphic Design Elements */
+.bismillah-neumorphic {
+    background: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+    padding: 20px;
+}
+
+.bismillah-neumorphic-dark {
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 8px 8px 15px #141414, -8px -8px 15px #292929;
+    padding: 20px;
+}
+
+/* Quantum Button Effects */
+.bismillah-quantum-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.bismillah-quantum-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.4);
+}
+
+/* Holographic Glass Effect */
+.bismillah-holo-glass {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px;
+}
+
+/* Dynamic Depth Hover Effect */
+.bismillah-depth-hover {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.bismillah-depth-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Future-Ready UI Grid System */
+.bismillah-futuristic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Cyberpunk Borders */
+.bismillah-cyber-border {
+    border: 2px solid #0ff;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+.bismillah-cyber-border:hover {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Unique Cursor Effects */
+.bismillah-cursor-blink {
+    cursor: pointer;
+    animation: blinkCursor 1s infinite;
+}
+
+@keyframes blinkCursor {
+    50% { opacity: 0; }
+}
+
+.bismillah-cursor-glow {
+    cursor: pointer;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+
+/* BismillahCSS - Utilities (Part 35) */
+
+/* Advanced 3D Effects */
+.bismillah-3d-card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+.bismillah-3d-card:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* Cyberpunk Glows */
+.bismillah-cyber-glow {
+    box-shadow: 0px 0px 20px var(--bismillah-primary);
+    animation: cyberGlow 1.5s infinite alternate;
+}
+@keyframes cyberGlow {
+    from {
+        box-shadow: 0px 0px 10px var(--bismillah-primary);
+    }
+    to {
+        box-shadow: 0px 0px 25px var(--bismillah-primary);
+    }
+}
+
+/* Liquid UI Effects */
+.bismillah-liquid-button {
+    position: relative;
+    overflow: hidden;
+    background: var(--bismillah-primary);
+    border-radius: 50px;
+}
+.bismillah-liquid-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 20%, transparent 60%);
+    transform: translateX(0%) translateY(0%) rotate(0deg);
+    transition: transform 1s ease-in-out;
+}
+.bismillah-liquid-button:hover::before {
+    transform: translateX(50%) translateY(50%) rotate(45deg);
+}
+
+/* Futuristic Typography */
+.bismillah-future-text {
+    font-family: "Orbitron", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--bismillah-primary);
+}
+
+/* AI-Powered Shadows */
+.bismillah-ai-shadow {
+    filter: drop-shadow(0px 0px 10px var(--bismillah-secondary));
+}
+
+/* Holographic Borders */
+.bismillah-holo-border {
+    border: 2px solid transparent;
+    border-image: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary)) 1;
+}
+
+
+/* BismillahCSS - Utilities (Part 36) */
+
+/* Mathematical CSS: Trigonometric Transforms */
+.bismillah-rotate-sin {
+    transform: rotate(calc(sin(45deg) * 1turn));
+}
+
+.bismillah-skew-tan {
+    transform: skew(calc(tan(20deg) * 1rad));
+}
+
+.bismillah-scale-cos {
+    transform: scale(calc(cos(30deg) * 1.5));
+}
+
+/* Dynamic CSS Calculations */
+.bismillah-dynamic-padding {
+    padding: calc(10px + 2vw);
+}
+
+.bismillah-flexible-width {
+    width: clamp(200px, 50%, 800px);
+}
+
+.bismillah-adaptive-margin {
+    margin: min(5vw, 20px);
+}
+
+/* CSS Houdini: Paint API (Experimental) */
+.bismillah-houdini-box {
+    background-image: paint(my-custom-paint);
+}
+
+.bismillah-houdini-border {
+    border-image-source: paint(border-effect);
+    border-image-slice: 1;
+}
+
+/* Gradient Animations */
+.bismillah-animated-gradient {
+    background: linear-gradient(45deg, var(--bismillah-primary), var(--bismillah-secondary));
+    background-size: 200% 200%;
+    animation: gradientShift 5s infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Experimental 3D Grid */
+.bismillah-3d-grid {
+    display: grid;
+    perspective: 1000px;
+}
+
+.bismillah-3d-grid-item {
+    transform-style: preserve-3d;
+    transform: rotateY(20deg) rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+.bismillah-3d-grid-item:hover {
+    transform: rotateY(0deg) rotateX(0deg);
+}
+
+
+/* BismillahCSS - Utilities (Part 37) */
+
+/* Gravity Drop Effect */
+@keyframes bismillah-gravity-drop {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100px); }
+}
+.bismillah-gravity-drop {
+    animation: bismillah-gravity-drop 0.5s ease-in-out forwards;
+}
+
+/* Inertia Scroll Effect */
+.bismillah-inertia-scroll {
+    scroll-behavior: smooth;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Spring Bounce Effect */
+@keyframes bismillah-spring-bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+.bismillah-spring-bounce:hover {
+    animation: bismillah-spring-bounce 0.4s ease-out;
+}
+
+/* Magnetic Hover Effect */
+.bismillah-magnetic {
+    position: relative;
+    transition: transform 0.2s ease-out;
+}
+.bismillah-magnetic:hover {
+    transform: translateX(10px) translateY(10px);
+}
+
+/* Wave Animation */
+@keyframes bismillah-wave {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+.bismillah-wave {
+    display: inline-block;
+    animation: bismillah-wave 1s infinite linear;
+}
+
+/* Rotational Force Effect */
+@keyframes bismillah-rotate-force {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.bismillah-rotate-force {
+    animation: bismillah-rotate-force 2s linear infinite;
+}
+
+/* Pulsating Scale Effect (Simulating Energy Pulses) */
+@keyframes bismillah-energy-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.bismillah-energy-pulse {
+    animation: bismillah-energy-pulse 1.5s infinite ease-in-out;
+}
+
+
+
+/* BismillahCSS - Utilities (Part 38) */
+
+/* Doraemon Face Shape */
+.bismillah-doraemon-face {
+    width: 200px;
+    height: 200px;
+    background: #1C9FE9;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid black;
+}
+
+/* Doraemon Eyes */
+.bismillah-doraemon-eye {
+    width: 50px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    border: 2px solid black;
+}
+
+.bismillah-doraemon-eye.right {
+    left: 100px;
+}
+
+/* Doraemon Pupils */
+.bismillah-doraemon-pupil {
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+/* Doraemon Nose */
+.bismillah-doraemon-nose {
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 85px;
+    border: 2px solid black;
+}
+
+/* Doraemon Whiskers */
+.bismillah-doraemon-whisker {
+    width: 50px;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 100px;
+}
+
+.bismillah-doraemon-whisker.left {
+    left: -55px;
+}
+
+.bismillah-doraemon-whisker.right {
+    left: 160px;
+}
+
+/* Doraemon Mouth */
+.bismillah-doraemon-mouth {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border-bottom: 3px solid black;
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    border-radius: 0 0 50px 50px;
+}
+
+/* Doraemon Tongue */
+.bismillah-doraemon-tongue {
+    width: 40px;
+    height: 20px;
+    background: pink;
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    left: 80px;
+    border: 2px solid black;
+}
+
+
+/* BismillahCSS - Utilities (Part 38) */
+
+/* Pikachu Shape using Pure CSS */
+.bismillah-pikachu {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #FFD700;
+    border-radius: 50%;
+}
+
+.bismillah-pikachu::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 100px 0 black;
+}
+
+.bismillah-pikachu::after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 0px 40px red;
+}
+
+/* Pikachu's Ears */
+.bismillah-pikachu-ears {
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    width: 20px;
+    height: 50px;
+    background: #FFD700;
+    border-radius: 50%;
+    transform: rotate(-20deg);
+    box-shadow: 120px 0 #FFD700;
+}
+
+.bismillah-pikachu-ears::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    box-shadow: 120px 0 black;
+}
+
+/* Pikachu's Mouth */
+.bismillah-pikachu-mouth {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+    width: 40px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+/* Pikachu's Tail */
+.bismillah-pikachu-tail {
+    position: absolute;
+    top: 160px;
+    left: 150px;
+    width: 20px;
+    height: 40px;
+    background: #FFD700;
+    transform: skewX(-20deg);
+    box-shadow: 0px -20px #FFD700;
+}
+
+/* BismillahCSS - Utilities (Part 39: SpongeBob) */
+
+/* SpongeBob Character Design */
+.bismillah-spongebob {
+    width: 200px;
+    height: 200px;
+    background-color: #fcea2b;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #000;
+}
+
+/* SpongeBob Eyes */
+.bismillah-spongebob-eye {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    border: 3px solid #000;
+}
+.bismillah-spongebob-eye.left {
+    left: 50px;
+}
+.bismillah-spongebob-eye.right {
+    right: 50px;
+}
+.bismillah-spongebob-eye::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* SpongeBob Mouth */
+.bismillah-spongebob-mouth {
+    width: 60px;
+    height: 20px;
+    background-color: red;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 30px;
+}
+
+/* SpongeBob Teeth */
+.bismillah-spongebob-tooth {
+    width: 15px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    border: 2px solid #000;
+}
+.bismillah-spongebob-tooth.left {
+    left: 10px;
+}
+.bismillah-spongebob-tooth.right {
+    right: 10px;
+}
+
+/* SpongeBob Dots */
+.bismillah-spongebob-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #d4a600;
+    border-radius: 50%;
+    position: absolute;
+}
+.bismillah-spongebob-dot.one { top: 20px; left: 20px; }
+.bismillah-spongebob-dot.two { top: 50px; right: 30px; }
+.bismillah-spongebob-dot.three { bottom: 40px; left: 60px; }
+
+
+/* BismillahCSS - Utilities (Part 40: Mickey Mouse) */
+
+/* Mickey Mouse Shape */
+.bismillah-mickey {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: black;
+    border-radius: 50%;
+}
+
+/* Mickey's Ears */
+.bismillah-mickey::before, 
+.bismillah-mickey::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: black;
+    border-radius: 50%;
+}
+
+.bismillah-mickey::before {
+    top: -40px;
+    left: -30px;
+}
+
+.bismillah-mickey::after {
+    top: -40px;
+    right: -30px;
+}
+
+/* BismillahCSS - Utilities (Part 41: Mario Character) */
+
+.bismillah-mario {
+    position: relative;
+    width: 100px;
+    height: 160px;
+    background: #ff0000; /* Shirt Color */
+    border-radius: 10px;
+}
+
+/* Head */
+.bismillah-mario-head {
+    position: absolute;
+    top: -50px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background: #ffcc99;
+    border-radius: 50%;
+}
+
+/* Hat */
+.bismillah-mario-hat {
+    position: absolute;
+    top: -65px;
+    left: 10px;
+    width: 80px;
+    height: 40px;
+    background: #ff0000;
+    border-radius: 40px 40px 0 0;
+}
+
+/* Eyes */
+.bismillah-mario-eye {
+    position: absolute;
+    top: -40px;
+    width: 10px;
+    height: 15px;
+    background: #000;
+    border-radius: 50%;
+}
+.bismillah-mario-eye-left {
+    left: 30px;
+}
+.bismillah-mario-eye-right {
+    left: 50px;
+}
+
+/* Mustache */
+.bismillah-mario-mustache {
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    width: 50px;
+    height: 10px;
+    background: #000;
+    border-radius: 10px;
+}
+
+/* Body */
+.bismillah-mario-body {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 100px;
+    background: #0000ff; /* Blue Overalls */
+    border-radius: 10px;
+}
+
+/* Legs */
+.bismillah-mario-leg {
+    position: absolute;
+    top: 110px;
+    width: 40px;
+    height: 50px;
+    background: #0000ff;
+    border-radius: 10px;
+}
+.bismillah-mario-leg-left {
+    left: 10px;
+}
+.bismillah-mario-leg-right {
+    left: 50px;
+}
+
+/* Shoes */
+.bismillah-mario-shoe {
+    position: absolute;
+    top: 155px;
+    width: 40px;
+    height: 20px;
+    background: #654321;
+    border-radius: 10px;
+}
+.bismillah-mario-shoe-left {
+    left: 10px;
+}
+.bismillah-mario-shoe-right {
+    left: 50px;
+}
+
+
+/* BismillahCSS - Utilities (Part 42) */
+
+/* Batman Logo using Pure CSS */
+.bismillah-batman-logo {
+    position: relative;
+    width: 120px;
+    height: 60px;
+    background: black;
+    border-radius: 50% / 100% 100% 0 0;
+    overflow: hidden;
+}
+
+.bismillah-batman-logo::before,
+.bismillah-batman-logo::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    top: -20px;
+}
+
+.bismillah-batman-logo::before {
+    left: -10px;
+}
+
+.bismillah-batman-logo::after {
+    right: -10px;
+}
+
+.bismillah-batman-logo span {
+    position: absolute;
+    background: black;
+    width: 10px;
+    height: 30px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.bismillah-batman-logo span::before,
+.bismillah-batman-logo span::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    top: -5px;
+}
+
+.bismillah-batman-logo span::before {
+    left: -10px;
+}
+
+.bismillah-batman-logo span::after {
+    right: -10px;
+}

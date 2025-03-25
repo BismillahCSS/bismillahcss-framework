@@ -1,0 +1,3075 @@
+/* ============================= */
+/* 🎨 BismillahCSS - Base Styles */
+/* ============================= */
+
+/* 1️⃣ Default Variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --accent-color: #e74c3c;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --border-radius: 8px;
+    --font-family: 'Inter', sans-serif;
+  }
+  
+  /* 2️⃣ Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 3️⃣ Body Styling */
+  body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* 4️⃣ Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.75rem; }
+  h4 { font-size: 1.5rem; }
+  h5 { font-size: 1.25rem; }
+  h6 { font-size: 1rem; }
+  
+  /* 5️⃣ Paragraphs & Links */
+  p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 6️⃣ Buttons (Basic) */
+  button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button.primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  button.secondary {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* 7️⃣ Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* 8️⃣ Section Styling */
+  .section {
+    padding: 60px 20px;
+  }
+  
+  /* 9️⃣ Images */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* 🔟 Borders & Shadows */
+  .border {
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 10px;
+  }
+  
+  .shadow {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  /* ============================= */
+/* 📝 BismillahCSS - Forms & Tables */
+/* ============================= */
+
+/* 1️⃣ Form Elements */
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* 2️⃣ Form Buttons */
+  button.success {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  button.danger {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* 3️⃣ Checkbox & Radio */
+  input[type="checkbox"], input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+  }
+  
+  /* 4️⃣ Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  
+  th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  /* ============================= */
+  /* ⚠️ BismillahCSS - Alerts */
+  /* ============================= */
+  
+  .alert {
+    padding: 15px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .alert.success {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .alert.warning {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .alert.danger {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  
+  /* ============================= */
+  /* 🎯 BismillahCSS - Flexbox Utilities */
+  /* ============================= */
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between {
+    justify-content: space-between;
+  }
+  
+  .flex-around {
+    justify-content: space-around;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  /* ============================= */
+  /* 📏 BismillahCSS - Spacing Utilities */
+  /* ============================= */
+  
+  .m-0 { margin: 0; }
+  .m-1 { margin: 5px; }
+  .m-2 { margin: 10px; }
+  .m-3 { margin: 15px; }
+  .m-4 { margin: 20px; }
+  .m-5 { margin: 25px; }
+  
+  .p-0 { padding: 0; }
+  .p-1 { padding: 5px; }
+  .p-2 { padding: 10px; }
+  .p-3 { padding: 15px; }
+  .p-4 { padding: 20px; }
+  .p-5 { padding: 25px; }
+  
+  /* ============================= */
+  /* ✅ BismillahCSS - Responsive Design */
+  /* ============================= */
+  
+  @media (max-width: 768px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.25rem; }
+    .container { padding: 10px; }
+  }
+  
+  @media (max-width: 480px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.25rem; }
+    h3 { font-size: 1rem; }
+  }
+
+  
+  /* ============================= */
+/* 🎭 BismillahCSS - Animations */
+/* ============================= */
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .slide-in {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .bounce {
+    animation: bounce 0.8s infinite;
+  }
+  
+  /* ============================= */
+  /* 📐 BismillahCSS - Grid System */
+  /* ============================= */
+  
+  .bismillah-grid {
+    display: grid;
+    gap: 10px;
+  }
+  
+  .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  .grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+  .grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+  
+  .grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
+  .grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
+  .grid-rows-4 { grid-template-rows: repeat(4, 1fr); }
+  
+  .justify-start { justify-content: start; }
+  .justify-center { justify-content: center; }
+  .justify-end { justify-content: end; }
+  .justify-between { justify-content: space-between; }
+  .justify-around { justify-content: space-around; }
+  
+  .align-start { align-items: start; }
+  .align-center { align-items: center; }
+  .align-end { align-items: end; }
+  
+  /* ============================= */
+  /* 🌈 BismillahCSS - Advanced Utilities */
+  /* ============================= */
+  
+  /* Opacity */
+  .opacity-0 { opacity: 0; }
+  .opacity-25 { opacity: 0.25; }
+  .opacity-50 { opacity: 0.5; }
+  .opacity-75 { opacity: 0.75; }
+  .opacity-100 { opacity: 1; }
+  
+  /* Shadows */
+  .shadow-sm { box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); }
+  .shadow-md { box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); }
+  .shadow-lg { box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
+  .shadow-xl { box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25); }
+  
+  /* Borders */
+  .border { border: 1px solid #ccc; }
+  .border-none { border: none; }
+  .border-primary { border: 2px solid var(--primary-color); }
+  .border-secondary { border: 2px solid var(--secondary-color); }
+  .border-accent { border: 2px solid var(--accent-color); }
+  
+  /* Cursor */
+  .cursor-pointer { cursor: pointer; }
+  .cursor-not-allowed { cursor: not-allowed; }
+  .cursor-default { cursor: default; }
+  
+  /* Transitions */
+  .transition { transition: all 0.3s ease-in-out; }
+  .transition-fast { transition: all 0.1s ease-in-out; }
+  .transition-slow { transition: all 0.5s ease-in-out; }
+  
+  /* ============================= */
+  /* 🖥️ BismillahCSS - Responsive Utilities */
+  /* ============================= */
+  
+  @media (max-width: 1024px) {
+    .hide-lg { display: none; }
+  }
+  
+  @media (max-width: 768px) {
+    .hide-md { display: none; }
+    .grid-cols-2 { grid-template-columns: 1fr; }
+    .grid-cols-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  @media (max-width: 480px) {
+    .hide-sm { display: none; }
+    .grid-cols-2, .grid-cols-3 { grid-template-columns: 1fr; }
+  }
+
+  
+  /* ============================= */
+/* ✍️ BismillahCSS - Typography */
+/* ============================= */
+
+.text-xs { font-size: 12px; }
+.text-sm { font-size: 14px; }
+.text-base { font-size: 16px; }
+.text-lg { font-size: 18px; }
+.text-xl { font-size: 20px; }
+.text-2xl { font-size: 24px; }
+.text-3xl { font-size: 30px; }
+.text-4xl { font-size: 36px; }
+.text-5xl { font-size: 48px; }
+
+.font-thin { font-weight: 100; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black { font-weight: 900; }
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+.tracking-tight { letter-spacing: -0.05em; }
+.tracking-normal { letter-spacing: 0; }
+.tracking-wide { letter-spacing: 0.05em; }
+
+/* ============================= */
+/* 🌑 BismillahCSS - Dark Mode */
+/* ============================= */
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #ff5722;
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --primary-color: #0d6efd;
+  --secondary-color: #adb5bd;
+  --accent-color: #ff6d00;
+  --background-color: #121212;
+  --text-color: #ffffff;
+}
+
+.bg-primary { background-color: var(--primary-color); }
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-accent { background-color: var(--accent-color); }
+.bg-light { background-color: #f8f9fa; }
+.bg-dark { background-color: #343a40; }
+
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-accent { color: var(--accent-color); }
+.text-light { color: #f8f9fa; }
+.text-dark { color: #343a40; }
+
+/* ============================= */
+/* 📦 BismillahCSS - Flexbox Utilities */
+/* ============================= */
+
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: flex-end; }
+.items-stretch { align-items: stretch; }
+
+.self-start { align-self: flex-start; }
+.self-center { align-self: center; }
+.self-end { align-self: flex-end; }
+.self-stretch { align-self: stretch; }
+
+.gap-1 { gap: 4px; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+.gap-5 { gap: 20px; }
+
+
+/* ============================= */
+/* 📏 BismillahCSS - Spacing (Margin & Padding) */
+/* ============================= */
+
+/* Padding */
+.p-0 { padding: 0; }
+.p-1 { padding: 4px; }
+.p-2 { padding: 8px; }
+.p-3 { padding: 12px; }
+.p-4 { padding: 16px; }
+.p-5 { padding: 20px; }
+.p-6 { padding: 24px; }
+.p-8 { padding: 32px; }
+.p-10 { padding: 40px; }
+
+.px-1 { padding-left: 4px; padding-right: 4px; }
+.px-2 { padding-left: 8px; padding-right: 8px; }
+.px-3 { padding-left: 12px; padding-right: 12px; }
+.px-4 { padding-left: 16px; padding-right: 16px; }
+.px-5 { padding-left: 20px; padding-right: 20px; }
+
+.py-1 { padding-top: 4px; padding-bottom: 4px; }
+.py-2 { padding-top: 8px; padding-bottom: 8px; }
+.py-3 { padding-top: 12px; padding-bottom: 12px; }
+.py-4 { padding-top: 16px; padding-bottom: 16px; }
+.py-5 { padding-top: 20px; padding-bottom: 20px; }
+
+/* Margin */
+.m-0 { margin: 0; }
+.m-1 { margin: 4px; }
+.m-2 { margin: 8px; }
+.m-3 { margin: 12px; }
+.m-4 { margin: 16px; }
+.m-5 { margin: 20px; }
+.m-6 { margin: 24px; }
+.m-8 { margin: 32px; }
+.m-10 { margin: 40px; }
+
+.mx-1 { margin-left: 4px; margin-right: 4px; }
+.mx-2 { margin-left: 8px; margin-right: 8px; }
+.mx-3 { margin-left: 12px; margin-right: 12px; }
+.mx-4 { margin-left: 16px; margin-right: 16px; }
+.mx-5 { margin-left: 20px; margin-right: 20px; }
+
+.my-1 { margin-top: 4px; margin-bottom: 4px; }
+.my-2 { margin-top: 8px; margin-bottom: 8px; }
+.my-3 { margin-top: 12px; margin-bottom: 12px; }
+.my-4 { margin-top: 16px; margin-bottom: 16px; }
+.my-5 { margin-top: 20px; margin-bottom: 20px; }
+
+/* ============================= */
+/* 🎨 BismillahCSS - Borders */
+/* ============================= */
+
+.border { border: 1px solid #ccc; }
+.border-0 { border: none; }
+.border-2 { border-width: 2px; }
+.border-4 { border-width: 4px; }
+.border-8 { border-width: 8px; }
+
+.border-primary { border-color: var(--primary-color); }
+.border-secondary { border-color: var(--secondary-color); }
+.border-accent { border-color: var(--accent-color); }
+.border-light { border-color: #f8f9fa; }
+.border-dark { border-color: #343a40; }
+
+.rounded-none { border-radius: 0; }
+.rounded-sm { border-radius: 4px; }
+.rounded { border-radius: 8px; }
+.rounded-md { border-radius: 12px; }
+.rounded-lg { border-radius: 16px; }
+.rounded-full { border-radius: 9999px; }
+
+/* ============================= */
+/* 🔥 BismillahCSS - Shadows */
+/* ============================= */
+
+.shadow-none { box-shadow: none; }
+.shadow-sm { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+.shadow { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+.shadow-md { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+.shadow-lg { box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); }
+.shadow-xl { box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); }
+
+
+/* ============================= */
+/* 📦 BismillahCSS - Flexbox Utilities */
+/* ============================= */
+
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+
+.flex-row { flex-direction: row; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-col { flex-direction: column; }
+.flex-col-reverse { flex-direction: column-reverse; }
+
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: flex-end; }
+.items-stretch { align-items: stretch; }
+
+.self-start { align-self: flex-start; }
+.self-center { align-self: center; }
+.self-end { align-self: flex-end; }
+.self-stretch { align-self: stretch; }
+
+/* ============================= */
+/* 🔳 BismillahCSS - Grid System */
+/* ============================= */
+
+.bismillah-grid { display: grid; gap: 10px; }
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-cols-5 { grid-template-columns: repeat(5, 1fr); }
+.grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+
+.grid-rows-1 { grid-template-rows: repeat(1, 1fr); }
+.grid-rows-2 { grid-template-rows: repeat(2, 1fr); }
+.grid-rows-3 { grid-template-rows: repeat(3, 1fr); }
+.grid-rows-4 { grid-template-rows: repeat(4, 1fr); }
+.grid-rows-5 { grid-template-rows: repeat(5, 1fr); }
+.grid-rows-6 { grid-template-rows: repeat(6, 1fr); }
+
+.gap-1 { gap: 4px; }
+.gap-2 { gap: 8px; }
+.gap-3 { gap: 12px; }
+.gap-4 { gap: 16px; }
+.gap-5 { gap: 20px; }
+.gap-6 { gap: 24px; }
+.gap-8 { gap: 32px; }
+.gap-10 { gap: 40px; }
+
+/* ============================= */
+/* 📍 BismillahCSS - Positioning */
+/* ============================= */
+
+.static { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.sticky { position: sticky; }
+
+.top-0 { top: 0; }
+.right-0 { right: 0; }
+.bottom-0 { bottom: 0; }
+.left-0 { left: 0; }
+
+.top-1 { top: 4px; }
+.right-1 { right: 4px; }
+.bottom-1 { bottom: 4px; }
+.left-1 { left: 4px; }
+
+.top-2 { top: 8px; }
+.right-2 { right: 8px; }
+.bottom-2 { bottom: 8px; }
+.left-2 { left: 8px; }
+
+.z-0 { z-index: 0; }
+.z-10 { z-index: 10; }
+.z-20 { z-index: 20; }
+.z-30 { z-index: 30; }
+.z-40 { z-index: 40; }
+.z-50 { z-index: 50; }
+
+
+
+
+
+/* ============================= */
+/* 🎨 BismillahCSS - Hover Effects */
+/* ============================= */
+
+.hover-bg-primary:hover { background-color: #007bff; color: #fff; }
+.hover-bg-secondary:hover { background-color: #6c757d; color: #fff; }
+.hover-bg-success:hover { background-color: #28a745; color: #fff; }
+.hover-bg-danger:hover { background-color: #dc3545; color: #fff; }
+.hover-bg-warning:hover { background-color: #ffc107; color: #000; }
+.hover-bg-info:hover { background-color: #17a2b8; color: #fff; }
+
+.hover-text-primary:hover { color: #007bff; }
+.hover-text-secondary:hover { color: #6c757d; }
+.hover-text-success:hover { color: #28a745; }
+.hover-text-danger:hover { color: #dc3545; }
+.hover-text-warning:hover { color: #ffc107; }
+.hover-text-info:hover { color: #17a2b8; }
+
+.hover-shadow:hover { box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
+.hover-opacity:hover { opacity: 0.7; }
+.hover-scale:hover { transform: scale(1.05); transition: transform 0.2s ease-in-out; }
+
+/* ============================= */
+/* 🔄 BismillahCSS - Transitions */
+/* ============================= */
+
+.transition { transition: all 0.3s ease-in-out; }
+.transition-fast { transition: all 0.15s ease-in-out; }
+.transition-slow { transition: all 0.5s ease-in-out; }
+
+.ease-in { transition-timing-function: ease-in; }
+.ease-out { transition-timing-function: ease-out; }
+.ease-in-out { transition-timing-function: ease-in-out; }
+
+/* ============================= */
+/* 🎬 BismillahCSS - Animations */
+/* ============================= */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.fade-in { animation: fadeIn 0.5s ease-in-out; }
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.slide-up { animation: slideUp 0.5s ease-in-out; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.bounce { animation: bounce 1s infinite; }
+
+/* ============================= */
+/* 🖱️ BismillahCSS - Custom Cursors */
+/* ============================= */
+
+.cursor-pointer { cursor: pointer; }
+.cursor-default { cursor: default; }
+.cursor-wait { cursor: wait; }
+.cursor-text { cursor: text; }
+.cursor-move { cursor: move; }
+.cursor-not-allowed { cursor: not-allowed; }
+.cursor-crosshair { cursor: crosshair; }
+
+/* ============================= */
+/* 📏 BismillahCSS - Object Fit & Position */
+/* ============================= */
+
+.object-contain { object-fit: contain; }
+.object-cover { object-fit: cover; }
+.object-fill { object-fit: fill; }
+.object-none { object-fit: none; }
+
+.object-center { object-position: center; }
+.object-top { object-position: top; }
+
+
+/* ============================= */
+/* 📏 BismillahCSS - Responsive Breakpoints */
+/* ============================= */
+
+@media (max-width: 640px) { .sm-hidden { display: none !important; } }
+@media (max-width: 768px) { .md-hidden { display: none !important; } }
+@media (max-width: 1024px) { .lg-hidden { display: none !important; } }
+@media (max-width: 1280px) { .xl-hidden { display: none !important; } }
+
+@media (min-width: 640px) { .sm-block { display: block !important; } }
+@media (min-width: 768px) { .md-block { display: block !important; } }
+@media (min-width: 1024px) { .lg-block { display: block !important; } }
+@media (min-width: 1280px) { .xl-block { display: block !important; } }
+
+/* ============================= */
+/* 📐 BismillahCSS - Flexbox Utilities */
+/* ============================= */
+
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.flex-row { flex-direction: row; }
+.flex-col { flex-direction: column; }
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+.items-end { align-items: flex-end; }
+.items-stretch { align-items: stretch; }
+
+.self-start { align-self: flex-start; }
+.self-center { align-self: center; }
+.self-end { align-self: flex-end; }
+.self-stretch { align-self: stretch; }
+
+/* ============================= */
+/* 📝 BismillahCSS - Text Utilities */
+/* ============================= */
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.font-thin { font-weight: 100; }
+.font-light { font-weight: 300; }
+.font-normal { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+.font-black { font-weight: 900; }
+
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.italic { font-style: italic; }
+.underline { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+.no-underline { text-decoration: none; }
+
+/* ============================= */
+/* 🎭 BismillahCSS - Visibility & Overflow */
+/* ============================= */
+
+.hidden { display: none; }
+.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll { overflow: scroll; }
+
+
+
+/* ============================= */
+/* 🎭 Advanced Layout System (New Concept) */
+/* ============================= */
+
+.grid-equal { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px; }
+.grid-stack { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 15px; }
+.grid-auto { display: grid; grid-template-rows: masonry; gap: 20px; } /* Dynamic Masonry Layout */
+
+/* ============================= */
+/* 🔲 Smart Borders - (New Concept) */
+/* ============================= */
+
+.border-dynamic { border: 2px solid var(--primary-color, black); border-radius: 10px; transition: all 0.3s ease-in-out; }
+.border-glow:hover { border: 2px solid cyan; box-shadow: 0 0 10px cyan; }
+.border-gradient { border: 3px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #ff416c, #ff4b2b) border-box; border-radius: 12px; }
+
+/* ============================= */
+/* 💡 Animated Shadows (New Feature) */
+/* ============================= */
+
+.shadow-float { box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); transform: translateY(0px); transition: transform 0.3s ease-in-out; }
+.shadow-float:hover { transform: translateY(-5px); box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); }
+
+.shadow-neon { box-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff; transition: box-shadow 0.3s ease-in-out; }
+.shadow-neon:hover { box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff; }
+
+/* ============================= */
+/* 🎨 Smart Gradient Backgrounds */
+/* ============================= */
+
+.bg-dynamic { background: linear-gradient(135deg, var(--start-color, #ff4b2b), var(--end-color, #ff416c)); transition: background 0.5s ease-in-out; }
+.bg-hover-gradient:hover { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+
+/* ============================= */
+/* 🔮 Magic Text Effects */
+/* ============================= */
+
+.text-glitch { position: relative; color: white; text-shadow: 2px 2px red, -2px -2px blue; animation: glitch 0.3s infinite alternate; }
+@keyframes glitch {
+  0% { transform: skew(0deg, 0deg); }
+  50% { transform: skew(-5deg, 5deg); text-shadow: -2px -2px red, 2px 2px blue; }
+  100% { transform: skew(5deg, -5deg); text-shadow: 2px -2px red, -2px 2px blue; }
+}
+
+.text-3d { text-shadow: 2px 2px 0px black, 4px 4px 0px gray, 6px 6px 0px silver; transform: perspective(500px) rotateX(10deg); }
+
+/* ============================= */
+/* ⚡ Hover-Powered Layout Switch */
+/* ============================= */
+
+.switch-grid:hover { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.switch-flex:hover { display: flex; justify-content: space-around; }
+
+
+
+
+/* ============================= */
+/* 🔥 AI-Powered Dark Mode (New) */
+/* ============================= */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --primary-color: #1e1e1e;
+      --secondary-color: #2a2a2a;
+      --text-color: #ffffff;
+      --accent-color: #ff4b2b;
+    }
+  }
+  
+  body.dark-mode {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  
+  .toggle-dark {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .toggle-dark:hover {
+    background: #ff416c;
+  }
+  
+  /* ============================= */
+  /* 🌀 Smart Button System (New) */
+  /* ============================= */
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    transform: scale(1.05);
+  }
+  
+  /* Glassmorphism Buttons */
+  .btn-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .btn-glass:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* ============================= */
+  /* 🛑 Alert System (New) */
+  /* ============================= */
+  
+  .alert {
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .alert-success {
+    background: #d4edda;
+    color: #155724;
+  }
+  
+  .alert-warning {
+    background: #fff3cd;
+    color: #856404;
+  }
+  
+  .alert-error {
+    background: #f8d7da;
+    color: #721c24;
+  }
+  
+  /* ============================= */
+  /* 🧊 Glassmorphism Card Effect (New) */
+  /* ============================= */
+  
+  .card-glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-glass:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* ============================= */
+  /* ⚡ Animated Loader (New) */
+  /* ============================= */
+  
+  .loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top-color: #ff4b2b;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* ============================= */
+  /* 🎭 Hover-Powered UI Transformation */
+  /* ============================= */
+  
+  .card-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button-hover:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* ============================= */
+  /* 🎨 Neon Glow Effects (New) */
+  /* ============================= */
+  
+  .neon-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4b2b;
+    text-shadow: 0 0 5px #ff4b2b, 0 0 10px #ff416c, 0 0 20px #ff416c;
+  }
+  
+  .neon-box {
+    border: 2px solid #ff4b2b;
+    box-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff416c;
+    padding: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .neon-box:hover {
+    box-shadow: 0 0 20px #ff416c, 0 0 40px #ff4b2b;
+  }
+  
+
+
+
+  /* ============================= */
+/* 🎭 3D Card Hover Effect (New) */
+/* ============================= */
+
+.card-3d {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .card-3d .inner {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-3d:hover .inner {
+    transform: rotateY(20deg) rotateX(10deg);
+  }
+  
+  /* ============================= */
+  /* 🔢 Number Input with Steppers (New) */
+  /* ============================= */
+  
+  .input-number {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .input-number button {
+    background: #ff4b2b;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .input-number button:hover {
+    background: #ff416c;
+  }
+  
+  .input-number input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+  
+  /* ============================= */
+  /* 🛠 Custom Checkbox & Radio (New) */
+  /* ============================= */
+  
+  .custom-checkbox input,
+  .custom-radio input {
+    display: none;
+  }
+  
+  .custom-checkbox label,
+  .custom-radio label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+  }
+  
+  .custom-checkbox label::before,
+  .custom-radio label::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ff4b2b;
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .custom-radio label::before {
+    border-radius: 50%;
+  }
+  
+  .custom-checkbox input:checked + label::before {
+    background: #ff4b2b;
+  }
+  
+  .custom-radio input:checked + label::before {
+    background: #ff4b2b;
+  }
+  
+  /* ============================= */
+  /* 🎨 Custom Select Dropdown (New) */
+  /* ============================= */
+  
+  .select-box {
+    position: relative;
+    width: 200px;
+  }
+  
+  .select-box select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff4b2b;
+    border-radius: 5px;
+    appearance: none;
+    background: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .select-box::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ff4b2b;
+  }
+  
+  /* ============================= */
+  /* 🎨 Floating Labels for Forms (New) */
+  /* ============================= */
+  
+  .input-group {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background: white;
+    padding: 0 5px;
+    font-size: 14px;
+    transition: 0.3s;
+    color: #777;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    top: 0;
+    left: 10px;
+    font-size: 12px;
+    color: #ff4b2b;
+  }
+  
+  /* ============================= */
+  /* 📏 Range Slider Customization (New) */
+  /* ============================= */
+  
+  .input-range {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    appearance: none;
+  }
+  
+  .input-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #ff4b2b;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .input-range::-webkit-slider-thumb:hover {
+    background: #ff416c;
+  }
+  
+  /* ============================= */
+  /* 🚀 Animated Toggle Switch (New) */
+  /* ============================= */
+  
+  .toggle-switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .toggle-switch label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .toggle-switch label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .toggle-switch input:checked + label {
+    background: #ff4b2b;
+  }
+  
+  .toggle-switch input:checked + label::before {
+    left: 25px;
+  }
+/* ============================= */
+/* 🎭 Bounce-in Animation (New) */
+/* ============================= */
+
+@keyframes bounce-in {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .bounce-in {
+    animation: bounce-in 0.6s ease-in-out;
+  }
+  
+  /* ============================= */
+  /* 🔄 Rotate on Hover (New) */
+  /* ============================= */
+  
+  .rotate-hover {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rotate-hover:hover {
+    transform: rotate(15deg);
+  }
+  
+  /* ============================= */
+  /* 🚀 Slide-in Scroll Animation (New) */
+  /* ============================= */
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-in {
+    animation: slide-in 0.8s ease-out;
+  }
+  
+  /* ============================= */
+  /* 🎨 Glassmorphism Effect (New) */
+  /* ============================= */
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* ============================= */
+  /* 🔥 Neon Glow Effect (New) */
+  /* ============================= */
+  
+  .neon {
+    color: #fff;
+    text-shadow: 0 0 5px #ff416c, 0 0 10px #ff4b2b, 0 0 20px #ff4b2b;
+  }
+  
+  .neon-border {
+    border: 2px solid #ff4b2b;
+    box-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff4b2b;
+  }
+  
+  /* ============================= */
+  /* 📜 Typing Animation (New) */
+  /* ============================= */
+  
+  .typing::after {
+    content: "|";
+    display: inline-block;
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* ============================= */
+  /* 🌊 Wavy Text Animation (New) */
+  /* ============================= */
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .wavy-text span {
+    display: inline-block;
+    animation: wave 1.5s infinite;
+  }
+  
+  .wavy-text span:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .wavy-text span:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .wavy-text span:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .wavy-text span:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+  /* ============================= */
+  /* 🌟 Hover Shine Effect (New) */
+  /* ============================= */
+  
+  .shiny-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shiny-hover::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    transform: skewX(-30deg);
+    transition: left 0.7s ease-in-out;
+  }
+  
+  .shiny-hover:hover::before {
+    left: 150%;
+  }
+
+  
+/* ==================================== */
+/* 🏗️  Responsive Grid System (New) */
+/* ==================================== */
+
+.bismillah-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  /* 📏 Default Grid Layout */
+  .bismillah-grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .bismillah-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bismillah-grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .bismillah-grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* 🔄 Auto-fit & Auto-fill Layouts */
+  .bismillah-grid-auto {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  /* 📱 Responsive Grid Adjustments */
+  @media (max-width: 1024px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bismillah-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* ==================================== */
+  /* 🎯 Advanced Flexbox Utilities (New) */
+  /* ==================================== */
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  /* ============================= */
+  /* 🔄 Column Span Utilities (New) */
+  /* ============================= */
+  
+  .col-span-1 {
+    grid-column: span 1;
+  }
+  .col-span-2 {
+    grid-column: span 2;
+  }
+  .col-span-3 {
+    grid-column: span 3;
+  }
+  .col-span-4 {
+    grid-column: span 4;
+  }
+  .col-span-6 {
+    grid-column: span 6;
+  }
+  .col-span-12 {
+    grid-column: span 12;
+  }
+  
+  /* ================================= */
+  /* 🏗️  Layout Modifiers (New) */
+  /* ================================= */
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .half-width {
+    width: 50%;
+  }
+  
+  .max-width {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* ================================= */
+  /* 📱 Responsive Display (New) */
+  /* ================================= */
+  
+  .hidden {
+    display: none;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  @media (max-width: 768px) {
+    .hidden-sm {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hidden-xs {
+      display: none;
+    }
+  }
+
+  
+  /* ==================================== */
+/* 🌙 Dark Mode Support (New) */
+/* ==================================== */
+
+:root {
+    --bismillah-bg-light: #ffffff;
+    --bismillah-bg-dark: #121212;
+    --bismillah-text-light: #000000;
+    --bismillah-text-dark: #ffffff;
+    --bismillah-primary: #007bff;
+    --bismillah-secondary: #6c757d;
+  }
+  
+  /* Light Mode (Default) */
+  body {
+    background-color: var(--bismillah-bg-light);
+    color: var(--bismillah-text-light);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: var(--bismillah-bg-dark);
+    color: var(--bismillah-text-dark);
+  }
+  
+  /* Button to Toggle Dark Mode */
+  .bismillah-dark-toggle {
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: var(--bismillah-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .bismillah-dark-toggle:hover {
+    background-color: darken(var(--bismillah-primary), 10%);
+  }
+  
+  /* ==================================== */
+  /* 🌟 Glassmorphism Effect (New) */
+  /* ==================================== */
+  
+  .bismillah-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Dark Mode Glassmorphism */
+  body.dark-mode .bismillah-glass {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* ==================================== */
+  /* 🎨 Advanced Background Styles (New) */
+  /* ==================================== */
+  
+  /* Gradient Backgrounds */
+  .bg-gradient-primary {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+  }
+  
+  .bg-gradient-secondary {
+    background: linear-gradient(45deg, #6c757d, #343a40);
+  }
+  
+  /* Image Background */
+  .bg-cover {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* ==================================== */
+  /* 🎭 Advanced Hover Effects (New) */
+  /* ==================================== */
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hover-fade:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  /* ==================================== */
+  /* 🔄 CSS Animations (New) */
+  /* ==================================== */
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Bounce Effect */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .bounce {
+    animation: bounce 1s infinite;
+  }
+
+  
+/* ==================================== */
+/* 🅰️ Responsive Typography (New) */
+/* ==================================== */
+
+/* Base Font Styles */
+:root {
+    --bismillah-font-primary: "Inter", sans-serif;
+    --bismillah-font-secondary: "Poppins", sans-serif;
+    --bismillah-text-sm: 14px;
+    --bismillah-text-md: 16px;
+    --bismillah-text-lg: 20px;
+    --bismillah-text-xl: 24px;
+    --bismillah-text-2xl: 32px;
+    --bismillah-text-3xl: 40px;
+  }
+  
+  /* Default Text Styles */
+  body {
+    font-family: var(--bismillah-font-primary);
+    font-size: var(--bismillah-text-md);
+    line-height: 1.6;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--bismillah-font-secondary);
+    font-weight: 700;
+  }
+  
+  h1 { font-size: var(--bismillah-text-3xl); }
+  h2 { font-size: var(--bismillah-text-2xl); }
+  h3 { font-size: var(--bismillah-text-xl); }
+  h4 { font-size: var(--bismillah-text-lg); }
+  h5 { font-size: var(--bismillah-text-md); }
+  h6 { font-size: var(--bismillah-text-sm); }
+  
+  /* ==================================== */
+  /* 📏 Adaptive Spacing System (New) */
+  /* ==================================== */
+  
+  :root {
+    --bismillah-spacing-xs: 4px;
+    --bismillah-spacing-sm: 8px;
+    --bismillah-spacing-md: 16px;
+    --bismillah-spacing-lg: 24px;
+    --bismillah-spacing-xl: 32px;
+    --bismillah-spacing-2xl: 48px;
+    --bismillah-spacing-3xl: 64px;
+  }
+  
+  /* Spacing Utility Classes */
+  .p-xs { padding: var(--bismillah-spacing-xs); }
+  .p-sm { padding: var(--bismillah-spacing-sm); }
+  .p-md { padding: var(--bismillah-spacing-md); }
+  .p-lg { padding: var(--bismillah-spacing-lg); }
+  .p-xl { padding: var(--bismillah-spacing-xl); }
+  
+  .m-xs { margin: var(--bismillah-spacing-xs); }
+  .m-sm { margin: var(--bismillah-spacing-sm); }
+  .m-md { margin: var(--bismillah-spacing-md); }
+  .m-lg { margin: var(--bismillah-spacing-lg); }
+  .m-xl { margin: var(--bismillah-spacing-xl); }
+  
+  /* ==================================== */
+  /* 🏆 Advanced Box Shadows (New) */
+  /* ==================================== */
+  
+  :root {
+    --bismillah-shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    --bismillah-shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    --bismillah-shadow-lg: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    --bismillah-shadow-xl: 0px 8px 16px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Shadow Utility Classes */
+  .shadow-sm { box-shadow: var(--bismillah-shadow-sm); }
+  .shadow-md { box-shadow: var(--bismillah-shadow-md); }
+  .shadow-lg { box-shadow: var(--bismillah-shadow-lg); }
+  .shadow-xl { box-shadow: var(--bismillah-shadow-xl); }
+  
+  /* Hover Effects */
+  .shadow-hover:hover { box-shadow: var(--bismillah-shadow-lg); transition: box-shadow 0.3s ease-in-out; }
+  
+  /* ==================================== */
+  /* 📐 Responsive Design (New) */
+  /* ==================================== */
+  
+  @media (max-width: 768px) {
+    body { font-size: var(--bismillah-text-sm); }
+    h1 { font-size: var(--bismillah-text-2xl); }
+    h2 { font-size: var(--bismillah-text-xl); }
+    h3 { font-size: var(--bismillah-text-lg); }
+  }
+  
+  @media (max-width: 480px) {
+    body { font-size: var(--bismillah-text-sm); }
+    h1 { font-size: var(--bismillah-text-xl); }
+    h2 { font-size: var(--bismillah-text-lg); }
+    h3 { font-size: var(--bismillah-text-md); }
+  }
+
+/* ==================================== */
+/* 🎨 Advanced Borders System (New) */
+/* ==================================== */
+
+:root {
+    --bismillah-border-sm: 1px solid rgba(0, 0, 0, 0.1);
+    --bismillah-border-md: 2px solid rgba(0, 0, 0, 0.2);
+    --bismillah-border-lg: 3px solid rgba(0, 0, 0, 0.3);
+    --bismillah-border-xl: 4px solid rgba(0, 0, 0, 0.4);
+    --bismillah-radius-sm: 4px;
+    --bismillah-radius-md: 8px;
+    --bismillah-radius-lg: 16px;
+    --bismillah-radius-xl: 24px;
+  }
+  
+  /* Border Utility Classes */
+  .border-sm { border: var(--bismillah-border-sm); }
+  .border-md { border: var(--bismillah-border-md); }
+  .border-lg { border: var(--bismillah-border-lg); }
+  .border-xl { border: var(--bismillah-border-xl); }
+  
+  /* Border Radius */
+  .rounded-sm { border-radius: var(--bismillah-radius-sm); }
+  .rounded-md { border-radius: var(--bismillah-radius-md); }
+  .rounded-lg { border-radius: var(--bismillah-radius-lg); }
+  .rounded-xl { border-radius: var(--bismillah-radius-xl); }
+  .rounded-full { border-radius: 9999px; }
+  
+  /* ==================================== */
+  /* 🎬 Custom Animations (New) */
+  /* ==================================== */
+  
+  /* Keyframes */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Animation Utility Classes */
+  .fade-in { animation: fadeIn 0.5s ease-in-out; }
+  .bounce { animation: bounce 1s infinite; }
+  .pulse { animation: pulse 1.2s infinite; }
+  
+  /* ==================================== */
+  /* 🖱️ Interactive Effects (New) */
+  /* ==================================== */
+  
+  /* Hover Effects */
+  .hover-scale:hover { transform: scale(1.05); transition: transform 0.3s ease-in-out; }
+  .hover-shadow:hover { box-shadow: var(--bismillah-shadow-md); transition: box-shadow 0.3s ease-in-out; }
+  .hover-opacity:hover { opacity: 0.7; transition: opacity 0.3s ease-in-out; }
+  
+  /* Focus Effects */
+  .focus-ring:focus { outline: 3px solid var(--bismillah-primary); outline-offset: 2px; }
+  
+  /* ==================================== */
+  /* 🎭 Custom Glassmorphism (New) */
+  /* ==================================== */
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: var(--bismillah-radius-md);
+    border: var(--bismillah-border-sm);
+    padding: var(--bismillah-spacing-md);
+  }
+  
+  /* ==================================== */
+  /* 📐 Responsive Design (Enhancements) */
+  /* ==================================== */
+  
+  @media (max-width: 768px) {
+    .rounded-lg { border-radius: var(--bismillah-radius-md); }
+    .rounded-xl { border-radius: var(--bismillah-radius-lg); }
+  }
+  
+  @media (max-width: 480px) {
+    .rounded-lg, .rounded-xl { border-radius: var(--bismillah-radius-sm); }
+  }
+
+
+/* ==================================== */
+/* 🎨 Global Variables & Reset */
+/* ==================================== */
+
+:root {
+    --bismillah-primary: #007bff;
+    --bismillah-secondary: #6c757d;
+    --bismillah-success: #28a745;
+    --bismillah-danger: #dc3545;
+    --bismillah-warning: #ffc107;
+    --bismillah-info: #17a2b8;
+    --bismillah-light: #f8f9fa;
+    --bismillah-dark: #343a40;
+  
+    --bismillah-border-sm: 1px solid rgba(0, 0, 0, 0.1);
+    --bismillah-border-md: 2px solid rgba(0, 0, 0, 0.2);
+    --bismillah-border-lg: 3px solid rgba(0, 0, 0, 0.3);
+  
+    --bismillah-radius-sm: 4px;
+    --bismillah-radius-md: 8px;
+    --bismillah-radius-lg: 16px;
+    --bismillah-radius-xl: 24px;
+    --bismillah-radius-full: 9999px;
+  
+    --bismillah-shadow-sm: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    --bismillah-shadow-md: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    --bismillah-shadow-lg: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  
+    --bismillah-spacing-xs: 4px;
+    --bismillah-spacing-sm: 8px;
+    --bismillah-spacing-md: 16px;
+    --bismillah-spacing-lg: 24px;
+    --bismillah-spacing-xl: 32px;
+  }
+  
+  /* ==================================== */
+  /* 🔄 CSS Reset */
+  /* ==================================== */
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bismillah-light);
+    color: var(--bismillah-dark);
+  }
+  
+  /* ==================================== */
+  /* 🖲️ Custom Button System */
+  /* ==================================== */
+  
+  .btn {
+    display: inline-block;
+    padding: var(--bismillah-spacing-sm) var(--bismillah-spacing-md);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: var(--bismillah-radius-md);
+    transition: all 0.3s ease-in-out;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: var(--bismillah-primary);
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: var(--bismillah-secondary);
+    color: white;
+  }
+  
+  .btn-success {
+    background-color: var(--bismillah-success);
+    color: white;
+  }
+  
+  .btn-danger {
+    background-color: var(--bismillah-danger);
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: var(--bismillah-warning);
+    color: black;
+  }
+  
+  .btn-info {
+    background-color: var(--bismillah-info);
+    color: white;
+  }
+  
+  .btn:hover {
+    filter: brightness(90%);
+    transform: translateY(-2px);
+  }
+  
+  /* ==================================== */
+  /* 🕶️ Advanced Shadow System */
+  /* ==================================== */
+  
+  .shadow-sm { box-shadow: var(--bismillah-shadow-sm); }
+  .shadow-md { box-shadow: var(--bismillah-shadow-md); }
+  .shadow-lg { box-shadow: var(--bismillah-shadow-lg); }
+  
+  /* ==================================== */
+  /* 🔲 Card UI System */
+  /* ==================================== */
+  
+  .card {
+    background: white;
+    border-radius: var(--bismillah-radius-md);
+    box-shadow: var(--bismillah-shadow-md);
+    padding: var(--bismillah-spacing-lg);
+    margin: var(--bismillah-spacing-md);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* ==================================== */
+  /* 🖥️ Responsive Layout Utilities */
+  /* ==================================== */
+  
+  .flex { display: flex; }
+  .flex-row { flex-direction: row; }
+  .flex-col { flex-direction: column; }
+  .justify-center { justify-content: center; }
+  .justify-between { justify-content: space-between; }
+  .items-center { align-items: center; }
+  
+  .grid { display: grid; gap: var(--bismillah-spacing-md); }
+  .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+  
+  /* ==================================== */
+  /* 📢 Notification Alert System */
+  /* ==================================== */
+  
+  .alert {
+    padding: var(--bismillah-spacing-sm) var(--bismillah-spacing-md);
+    border-radius: var(--bismillah-radius-sm);
+    font-weight: bold;
+    margin: var(--bismillah-spacing-sm) 0;
+  }
+  
+  .alert-primary { background-color: var(--bismillah-primary); color: white; }
+  .alert-success { background-color: var(--bismillah-success); color: white; }
+  .alert-danger { background-color: var(--bismillah-danger); color: white; }
+  .alert-warning { background-color: var(--bismillah-warning); color: black; }
+  
+  /* ==================================== */
+  /* 🎭 Custom Glassmorphism Card */
+  /* ==================================== */
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: var(--bismillah-radius-lg);
+    box-shadow: var(--bismillah-shadow-lg);
+    padding: var(--bismillah-spacing-lg);
+  }
+  
+  /* ==================================== */
+  /* 🌙 Dark Mode Support */
+  /* ==================================== */
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: var(--bismillah-dark);
+      color: white;
+    }
+    .card {
+      background-color: var(--bismillah-secondary);
+      color: white;
+    }
+    .btn {
+      color: white;
+    }
+  }
+/* BismillahCSS - Part 18 */
+
+/* Unique 3D Depth Effect for Cards */
+.bismillah-card-3d {
+    background: var(--bismillah-bg, #fff);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  .bismillah-card-3d:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Advanced Blur Effect */
+  .bismillah-blur {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 15px;
+  }
+  
+  /* Animated Glow Button */
+  .bismillah-glow-btn {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 65, 108, 0.8);
+    transition: all 0.3s ease-in-out;
+  }
+  .bismillah-glow-btn:hover {
+    box-shadow: 0 0 20px rgba(255, 65, 108, 1);
+    transform: scale(1.05);
+  }
+  
+  /* Dynamic Gradient Border */
+  .bismillah-gradient-border {
+    border: 4px solid;
+    border-image-source: linear-gradient(to right, #6a11cb, #2575fc);
+    border-image-slice: 1;
+  }
+  
+  /* Elastic Input Field */
+  .bismillah-input-elastic {
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--bismillah-primary, #007bff);
+    transition: all 0.3s;
+  }
+  .bismillah-input-elastic:focus {
+    outline: none;
+    transform: scale(1.05);
+    border-color: var(--bismillah-accent, #ff4b2b);
+  }
+
+/* BismillahCSS - Part 19 */
+
+/* Neon Button Effect */
+.bismillah-neon-btn {
+    background-color: #111;
+    color: #0ff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  }
+  .bismillah-neon-btn:hover {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
+  }
+  
+  /* Frosted Glass Effect */
+  .bismillah-frosted {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Pulsating Animation */
+  @keyframes bismillah-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .bismillah-pulse {
+    animation: bismillah-pulse 1.5s infinite;
+  }
+  
+  /* Advanced Tooltip */
+  .bismillah-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .bismillah-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+  }
+  
+  /* Ripple Effect for Buttons */
+  .bismillah-ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  .bismillah-ripple::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: bismillah-ripple-animation 0.6s linear;
+  }
+  @keyframes bismillah-ripple-animation {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+
+
+  /* BismillahCSS - Part 20 */
+
+/* Glassmorphism Cards */
+.bismillah-glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-glass-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* 3D Hover Effect */
+  .bismillah-3d-hover {
+    transition: transform 0.3s ease;
+  }
+  .bismillah-3d-hover:hover {
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg);
+  }
+  
+  /* Animated Underline Links */
+  .bismillah-underline {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+  }
+  .bismillah-underline::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-underline:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* Skeleton Loading Effect */
+  .bismillah-skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: bismillah-skeleton-animation 1.5s infinite;
+  }
+  @keyframes bismillah-skeleton-animation {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Scroll Indicator */
+  .bismillah-scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transition: width 0.2s;
+  }
+
+  
+/* BismillahCSS - Part 21 */
+
+/* Expanding Border Hover Effect */
+.bismillah-border-expand {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+  }
+  .bismillah-border-expand::before,
+  .bismillah-border-expand::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease-in-out;
+  }
+  .bismillah-border-expand::before {
+    top: 0;
+    left: 0;
+  }
+  .bismillah-border-expand::after {
+    bottom: 0;
+    right: 0;
+  }
+  .bismillah-border-expand:hover::before,
+  .bismillah-border-expand:hover::after {
+    width: 100%;
+  }
+  
+  /* Floating Button Animation */
+  .bismillah-float {
+    position: relative;
+    animation: bismillah-float 3s infinite ease-in-out;
+  }
+  @keyframes bismillah-float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  /* Neon Glow Effect */
+  .bismillah-neon {
+    color: #fff;
+    background: #0f0f0f;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .bismillah-neon:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 1);
+  }
+  
+  /* Slide-In Animation */
+  .bismillah-slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: bismillah-slide-in 0.6s ease-out forwards;
+  }
+  @keyframes bismillah-slide-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover Flip Card Effect */
+  .bismillah-flip-card {
+    perspective: 1000px;
+  }
+  .bismillah-flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  .bismillah-flip-card:hover .bismillah-flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .bismillah-flip-card-front,
+  .bismillah-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .bismillah-flip-card-back {
+    transform: rotateY(180deg);
+  }
+  
+  /* Rotating Border Button */
+  .bismillah-rotate-border {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid transparent;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-rotate-border::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border: 2px solid currentColor;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-rotate-border:hover::before {
+    transform: rotate(360deg);
+  }
+
+/* BismillahCSS - Part 22 */
+
+/* Navbar Styling */
+.bismillah-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #1e1e1e;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .bismillah-navbar .bismillah-nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  .bismillah-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+  }
+  .bismillah-navbar a:hover {
+    color: #00d4ff;
+  }
+  
+  /* Sidebar Styling */
+  .bismillah-sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c2c2c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  .bismillah-sidebar a:hover {
+    background: #444;
+  }
+  
+  /* Sidebar Toggle */
+  .bismillah-sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    background: #00d4ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: right 0.3s;
+  }
+  .bismillah-sidebar:hover .bismillah-sidebar-toggle {
+    right: 10px;
+  }
+  
+  /* Footer Styling */
+  .bismillah-footer {
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .bismillah-footer a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .bismillah-footer a:hover {
+    text-decoration: underline;
+  }
+
+/* BismillahCSS - Part 23 */
+
+/* Sidebar Styling with Animated Open/Close Effect */
+.bismillah-sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c2c2c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+  }
+  .bismillah-sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  .bismillah-sidebar a:hover {
+    background: #444;
+  }
+  
+  /* Sidebar Toggle Button */
+  .bismillah-sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    background: #00d4ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: left 0.3s;
+  }
+  
+  /* Sidebar Active State */
+  .bismillah-sidebar.active {
+    left: 0;
+  }
+  .bismillah-sidebar.active .bismillah-sidebar-toggle {
+    left: 260px;
+  }
+  
+  /* Sidebar Animation */
+  @keyframes slideIn {
+    from {
+      left: -250px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .bismillah-sidebar.active {
+    animation: slideIn 0.3s forwards;
+  }
+
+/* BismillahCSS - Part 24 */
+
+/* Sidebar Styling with Animated Open/Close Effect */
+.bismillah-sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c2c2c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .bismillah-sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  .bismillah-sidebar a:hover {
+    background: #444;
+  }
+  
+  /* Sidebar Toggle Button */
+  .bismillah-sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    background: #00d4ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: left 0.3s;
+  }
+  
+  /* Sidebar Active State */
+  .bismillah-sidebar.active {
+    left: 0;
+  }
+  .bismillah-sidebar.active .bismillah-sidebar-toggle {
+    left: 260px;
+  }
+  
+  /* Sidebar Animation */
+  @keyframes slideIn {
+    from {
+      left: -250px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .bismillah-sidebar.active {
+    animation: slideIn 0.3s forwards;
+  }
+  
+  /* Responsive Sidebar */
+  @media (max-width: 768px) {
+    .bismillah-sidebar {
+      width: 200px;
+    }
+    .bismillah-sidebar-toggle {
+      left: 200px;
+    }
+    .bismillah-sidebar.active .bismillah-sidebar-toggle {
+      left: 210px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bismillah-sidebar {
+      width: 100%;
+      left: -100%;
+    }
+    .bismillah-sidebar.active {
+      left: 0;
+    }
+    .bismillah-sidebar-toggle {
+      left: 20px;
+    }
+  }
+
+/* BismillahCSS - Part 25 */
+
+/* Sidebar with Submenu and Icons */
+.bismillah-sidebar {
+    width: 250px;
+    height: 100vh;
+    background: #2c2c2c;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  .bismillah-sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  .bismillah-sidebar a:hover {
+    background: #444;
+  }
+  
+  /* Sidebar Toggle Button */
+  .bismillah-sidebar-toggle {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    background: #00d4ff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: left 0.3s;
+  }
+  
+  /* Sidebar Active State */
+  .bismillah-sidebar.active {
+    left: 0;
+  }
+  .bismillah-sidebar.active .bismillah-sidebar-toggle {
+    left: 260px;
+  }
+  
+  /* Sidebar Animation */
+  @keyframes slideIn {
+    from {
+      left: -250px;
+    }
+    to {
+      left: 0;
+    }
+  }
+  .bismillah-sidebar.active {
+    animation: slideIn 0.3s forwards;
+  }
+  
+  /* Responsive Sidebar */
+  @media (max-width: 768px) {
+    .bismillah-sidebar {
+      width: 200px;
+    }
+    .bismillah-sidebar-toggle {
+      left: 200px;
+    }
+    .bismillah-sidebar.active .bismillah-sidebar-toggle {
+      left: 210px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bismillah-sidebar {
+      width: 100%;
+      left: -100%;
+    }
+    .bismillah-sidebar.active {
+      left: 0;
+    }
+    .bismillah-sidebar-toggle {
+      left: 20px;
+    }
+  }
+  
+  /* Sidebar Submenu */
+  .bismillah-sidebar .submenu {
+    display: none;
+    background: #333;
+    padding-left: 20px;
+  }
+  .bismillah-sidebar .submenu a {
+    font-size: 14px;
+  }
+  .bismillah-sidebar .has-submenu > a::after {
+    content: "▼";
+    font-size: 12px;
+    margin-left: auto;
+  }
+  .bismillah-sidebar .has-submenu.active .submenu {
+    display: block;
+  }
+  
+  /* Sidebar Icons */
+  .bismillah-sidebar a .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+/* BismillahCSS - Part 26 */
+
+/* Dark Mode Support for Sidebar */
+.bismillah-dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+  }
+  .bismillah-dark-mode .bismillah-sidebar {
+    background: #1e1e1e;
+    color: white;
+  }
+  .bismillah-dark-mode .bismillah-sidebar a {
+    color: #f1f1f1;
+  }
+  .bismillah-dark-mode .bismillah-sidebar a:hover {
+    background: #333;
+  }
+  .bismillah-dark-mode .bismillah-sidebar .submenu {
+    background: #252525;
+  }
+  
+  /* Dark Mode Toggle Button */
+  .bismillah-dark-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ffcc00;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .bismillah-dark-toggle:hover {
+    background: #ffaa00;
+  }
+  
+  /* Smooth Scroll Effect */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom Scrollbar */
+  .bismillah-scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+  .bismillah-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .bismillah-scrollbar::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  .bismillah-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Animated Floating Button */
+  .bismillah-floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-floating-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Floating Button Animation */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  .bismillah-floating-btn {
+    animation: float 3s ease-in-out infinite;
+  }
+
+/* BismillahCSS - Part 27 */
+
+/* Card Component */
+.bismillah-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect for Cards */
+  .bismillah-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Advanced Card Hover Effects */
+  .bismillah-card-hover {
+    position: relative;
+    overflow: hidden;
+  }
+  .bismillah-card-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: left 0.5s ease-in-out;
+  }
+  .bismillah-card-hover:hover::before {
+    left: 100%;
+  }
+  
+  /* Glassmorphism Card */
+  .bismillah-card-glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-card-glass:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Animated Border Card */
+  .bismillah-card-border {
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid transparent;
+  }
+  .bismillah-card-border::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bismillah-card-border:hover::before {
+    transform: scale(1.05);
+  }
+  
+  /* Pulse Animation on Hover */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .bismillah-card-pulse:hover {
+    animation: pulse 0.6s ease-in-out infinite;
+  }
+
+/* BismillahCSS - Part 28 */
+
+/* Badge Component */
+.bismillah-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #ff4b2b;
+    color: white;
+  }
+  
+  /* Badge Variants */
+  .bismillah-badge-success {
+    background: #28a745;
+  }
+  .bismillah-badge-warning {
+    background: #ffc107;
+    color: black;
+  }
+  .bismillah-badge-danger {
+    background: #dc3545;
+  }
+  .bismillah-badge-info {
+    background: #17a2b8;
+  }
+  
+  /* Badge with Icon */
+  .bismillah-badge-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  /* Label Component */
+  .bismillah-label {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Label with Background */
+  .bismillah-label-bg {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+  }
+  
+  /* Rounded Label */
+  .bismillah-label-rounded {
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 14px;
+    background: #6c757d;
+    color: white;
+  }
+  
+  /* Animated Badge */
+  @keyframes badge-pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .bismillah-badge-animated {
+    animation: badge-pulse 1s infinite;
+  }
