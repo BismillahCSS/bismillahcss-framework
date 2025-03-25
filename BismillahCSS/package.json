@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-     "build": "postcss src/bismillah.css -o dist/bismillah.min.css"
+    "build": "postcss src/bismillah.css -o dist/bismillah.min.css"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.6",
-    "postcss-cli": "^11.0.1"
+    "postcss-cli": "^11.0.1",
+    "postcss-import": "^16.1.0"
   }
 }
