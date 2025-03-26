@@ -6,9 +6,13 @@ config/*
 
 # Ignore tests and documentation (optional)
 tests/
-docs/
 
 # Ignore development files
-*.md
+
 .git/
 .vscode/
+
+src/
+tests/
+node_modules/
+*.log
