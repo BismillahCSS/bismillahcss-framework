@@ -1,5 +1,5 @@
 
-![BismillahCSS Banner](https://raw.githubusercontent.com/BismillahCSS/bismillahcss-framework/main/BismillahCSS/docs/banner.jpeg)
+![BismillahCSS Banner](./docs/banner.jpeg)
 
 [![npm version](https://img.shields.io/npm/v/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)
 [![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/BismillahCSS/LICENSE)
