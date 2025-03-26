@@ -10,3 +10,4 @@
 @import './components/cards.css';  /* Card components */
 @import './components/modal.css';  /* Modal popups */
 @import './components/alerts.css'; /* Notification alerts */
+@import './components/hero.css';   /* Hero section */

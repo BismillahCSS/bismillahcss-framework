@@ -1,0 +1,97 @@
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.bismillah-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 4rem;
+    background: linear-gradient(135deg, #1d4ed8, #9333ea, #ff6b6b);
+    background-size: 300% 300%;
+    animation: gradientAnimation 8s ease infinite;
+    color: white;
+    position: relative;
+}
+
+.bismillah-hero .bismillah-hero-text {
+    max-width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.bismillah-hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bismillah-hero h1:hover {
+    transform: scale(1.05);
+}
+
+.bismillah-hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.bismillah-hero .bismillah-btn {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    color: #1d4ed8;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.bismillah-hero .bismillah-btn::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.3);
+    transition: width 0.4s ease-in-out;
+}
+
+.bismillah-hero .bismillah-btn:hover::before {
+    width: 100%;
+}
+
+.bismillah-hero img {
+    max-width: 40%;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.bismillah-hero img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonial Slider */
+.bismillah-testimonials {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

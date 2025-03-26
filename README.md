@@ -1,10 +1,40 @@
 
 ![BismillahCSS Banner](./docs/banner.jpeg)
 
+
 [![npm version](https://img.shields.io/npm/v/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
 [![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/LICENSE)  
 [![downloads](https://img.shields.io/npm/dt/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
 [![GitHub stars](https://img.shields.io/github/stars/BismillahCSS/bismillahcss-framework.svg?style=social)](https://github.com/BismillahCSS/bismillahcss-framework)
+
+![EXAMPLE](./docs/bismillah.gif)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BismillahCSS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bismillahcss/dist/bismillah.min.css">
+</head>
+<body>
+    <div class="bismillah-hero">
+        <div class="bismillah-hero-text">
+            <h1>Build Faster with BismillahCSS</h1>
+            <p>A lightweight and flexible utility-first CSS framework.</p>
+            <button class="bismillah-btn">Get Started</button>
+        </div>
+        <img src="./hero.png" alt="Hero Image">
+        
+        <div class="bismillah-testimonials">
+            <p> "BismillahCSS made my workflow 10x faster!" - Developer</p>
+        </div>
+    </div>
+    
+</body>
+</html>
+```
 
 ---
 
@@ -185,14 +215,14 @@ BismillahCSS is licensed under the [MIT License](https://github.com/mubashir-dev
 ## Author
 
 Developed by **Mubashir Ali**.  
-[GitHub](https://github.com/mubashir-dev) | [Twitter](https://twitter.com/mubashir_dev)
+[GitHub](https://github.com/mubashir1837) | [Twitter](https://twitter.com/mubashir_1837)
 
 ---
 
 ## Links
 
 - [Documentation](https://github.com/mubashir-dev/bismillahcss/docs)
-- [GitHub Repository](https://github.com/mubashir-dev/bismillahcss)
+- [GitHub Repository](https://github.com/BismillahCSS/bismillahcss-framework.git)
 - [NPM Package](https://www.npmjs.com/package/bismillahcss)
 
 ---

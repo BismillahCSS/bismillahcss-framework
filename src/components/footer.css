@@ -1,0 +1,17 @@
+/* BismillahCSS Footer Styles */
+.bismillah-footer {
+    background-color: var(--bismillah-neutral);
+    color: white;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .bismillah-footer a {
+    color: var(--bismillah-primary);
+    text-decoration: none;
+  }
+  
+  .bismillah-footer a:hover {
+    color: var(--bismillah-secondary);
+  }
+  
