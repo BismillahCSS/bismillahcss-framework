@@ -1,11 +1,16 @@
 {
   "name": "bismillahcss",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "main": "dist/bismillah.min.css",
   "directories": {
     "doc": "docs",
     "test": "tests"
   },
+"files": [
+  "dist/",
+  "docs/",
+  "src/"
+],
   "scripts": {
     "build": "postcss src/bismillah.css -o dist/bismillah.min.css",
     "prepublishOnly": "npm run build"
@@ -15,7 +20,27 @@
     "utility-first",
     "framework",
     "bismillahcss",
-    "frontend"
+    "frontend",
+    "tailwindcss-alternative",
+    "css-framework",
+    "utility-classes",
+    "future-css",
+    "lightweight-css",
+    "advanced-css",
+    "utility-first",
+    "responsive-css",
+    "framework",
+    "bismillahcss",
+    "frontend",
+    "tailwindcss-alternative",
+    "css-framework",
+    "utility-classes",
+    "lightweight-css",
+    "open-source",
+    "responsive-css",
+    "minimal-css",
+    "web-development",
+    "frontend-framework"
   ],
   "author": "Mubashir Ali",
   "license": "MIT",

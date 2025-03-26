@@ -1,9 +1,9 @@
-# BismillahCSS Framework
+[![BismillahCSS](https://raw.githubusercontent.com/BismillahCSS/bismillahcss-framework/statics/bismillah-css.jpg)](https://github.com/BismillahCSS/bismillahcss-framework)
 
-![GitHub](https://img.shields.io/badge/GitHub-BismillahCSS-blue?style=flat-square&logo=github)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=flat-square)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square)
+[![GitHub](https://img.shields.io/badge/GitHub-BismillahCSS-blue?style=flat-square&logo=github)](https://github.com/your-username/bismillahcss-framework)
+[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](https://github.com/your-username/bismillahcss-framework/blob/main/LICENSE)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange?style=flat-square)](https://github.com/your-username/bismillahcss-framework/releases)
+[![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square)](https://github.com/your-username/bismillahcss-framework/issues)
 
 BismillahCSS is a lightweight, customizable CSS framework designed to simplify the development of modern, responsive, and visually appealing web applications. It provides a rich set of utility classes, components, and design tokens to accelerate your development process.
 

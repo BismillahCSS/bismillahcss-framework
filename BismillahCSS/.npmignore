@@ -1,0 +1,14 @@
+# Ignore config and sensitive files
+config/*
+*.env
+*.key
+*.json
+
+# Ignore tests and documentation (optional)
+tests/
+docs/
+
+# Ignore development files
+*.md
+.git/
+.vscode/
