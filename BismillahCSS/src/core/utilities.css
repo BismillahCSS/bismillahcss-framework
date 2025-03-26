@@ -19,6 +19,7 @@
 .p-5 { padding: 20px; }
 .p-auto { padding: auto; }
 
+
 /* Typography */
 .text-xs { font-size: 12px; }
 .text-sm { font-size: 14px; }
@@ -568,11 +569,52 @@ body {
 .bismillah-bg-yellow { background-color: #facc15; }
 .bismillah-bg-purple { background-color: #8b5cf6; }
 
+
 /* Background Gradient */
 .bismillah-bg-gradient-to-r { background-image: linear-gradient(to right, var(--bismillah-color-start), var(--bismillah-color-end)); }
 .bismillah-bg-gradient-to-l { background-image: linear-gradient(to left, var(--bismillah-color-start), var(--bismillah-color-end)); }
 .bismillah-bg-gradient-to-t { background-image: linear-gradient(to top, var(--bismillah-color-start), var(--bismillah-color-end)); }
 .bismillah-bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--bismillah-color-start), var(--bismillah-color-end)); }
+
+
+/* ========== BismillahCSS Neon Backgrounds ========== */
+.bg-neon-blue { background-color: #00f; box-shadow: 0 0 10px #00f, 0 0 40px #00f; }
+.bg-neon-green { background-color: #0f0; box-shadow: 0 0 10px #0f0, 0 0 40px #0f0; }
+.bg-neon-red { background-color: #f00; box-shadow: 0 0 10px #f00, 0 0 40px #f00; }
+.bg-neon-pink { background-color: #ff00ff; box-shadow: 0 0 10px #ff00ff, 0 0 40px #ff00ff; }
+.bg-neon-yellow { background-color: #ff0; box-shadow: 0 0 10px #ff0, 0 0 40px #ff0; }
+
+
+/* ========== BismillahCSS Gradient Backgrounds ========== */
+.bg-gradient-primary { background: linear-gradient(45deg, #007bff, #0056b3); }
+.bg-gradient-success { background: linear-gradient(45deg, #28a745, #218838); }
+.bg-gradient-danger { background: linear-gradient(45deg, #dc3545, #c82333); }
+.bg-gradient-warning { background: linear-gradient(45deg, #ffc107, #e0a800); }
+.bg-gradient-info { background: linear-gradient(45deg, #17a2b8, #117a8b); }
+.bg-gradient-dark { background: linear-gradient(45deg, #343a40, #1d2124); }
+
+/* Fancy Gradients */
+.bg-gradient-rainbow { 
+    background: linear-gradient(90deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffee, #0048ff, #7a00ff);
+    background-size: 400% 400%;
+    animation: gradient-shift 6s infinite linear;
+}
+
+/* Gradient Animation */
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Dark Mode Compatibility */
+@media (prefers-color-scheme: dark) {
+    .bg-neon-blue, .bg-neon-green, .bg-neon-red, .bg-neon-pink, .bg-neon-yellow {
+        filter: brightness(1.2);
+    }
+}
+
 
 /* ========================= */
 /* 🎨 Border Utilities */
@@ -963,6 +1005,9 @@ body {
     background-size: 200% 200%;
     animation: gradientMove 3s infinite linear;
 }
+
+
+
 
 @keyframes gradientMove {
     0% { background-position: 0% 50%; }
@@ -3459,3 +3504,735 @@ body {
 .bismillah-batman-logo span::after {
     right: -10px;
 }
+
+
+
+/* ===================== */
+/* BismillahCSS Utilities */
+/* ===================== */
+
+/* 🌟 Hover Underline Effect */
+.b-underline-hover {
+    position: relative;
+}
+
+.b-underline-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+}
+
+.b-underline-hover:hover::after {
+    width: 100%;
+}
+
+/* ❌ Remove Hover Underline Effect */
+.b-no-underline-hover::after {
+    display: none !important;
+}
+
+
+
+/* ========================= */
+/* 🎨 Advanced Background Effects - Neon */
+/* ========================= */
+
+.bismillah-bg-neon-blue { background-color: #00f; box-shadow: 0 0 10px #00f, 0 0 40px #00f; }
+.bismillah-bg-neon-green { background-color: #0f0; box-shadow: 0 0 10px #0f0, 0 0 40px #0f0; }
+.bismillah-bg-neon-red { background-color: #f00; box-shadow: 0 0 10px #f00, 0 0 40px #f00; }
+.bismillah-bg-neon-pink { background-color: #ff00ff; box-shadow: 0 0 10px #ff00ff, 0 0 40px #ff00ff; }
+
+
+/* ========================= */
+/* 🎨 Advanced Background Effects - Glassmorphism */
+/* ========================= */
+
+.bismillah-bg-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+/* ========================= */
+/* 🎨 Advanced Background Effects - Shimmer */
+/* ========================= */
+
+@keyframes bismillah-shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  
+  .bismillah-bg-shimmer {
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.1) 75%);
+      background-size: 200% 100%;
+      animation: bismillah-shimmer 2s infinite linear;
+  }
+
+  
+/* ========================= */
+/* 🎨 Advanced Background Effects - Animated Gradients */
+/* ========================= */
+
+@keyframes bismillah-gradient-wave {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .bismillah-bg-gradient-animated {
+      background: linear-gradient(-45deg, #ff00ff, #ffcc00, #00ffcc, #00ffff);
+      background-size: 300% 300%;
+      animation: bismillah-gradient-wave 5s infinite ease-in-out;
+  }
+
+  
+
+/* ========================= */
+/* 🎨 Advanced Background Effects - Grid Lines */
+/* ========================= */
+
+.bismillah-bg-grid {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+
+
+/* ========================= */
+/* 🎨 Advanced Background Effects - Dotted Grid */
+/* ========================= */
+
+.bismillah-bg-dotted-grid {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.3) 1px, transparent 1px);
+    background-size: 15px 15px;
+}
+
+
+
+/* ========================= */
+/* 🎨 Advanced Background Effects - Mesh */
+/* ========================= */
+
+.bismillah-bg-mesh2 {
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px),
+                      linear-gradient(-45deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+
+
+
+
+/* 🎨 Basic Solid Colors */
+.bismillah-bg-transparent { background-color: transparent; }
+.bismillah-bg-white { background-color: #ffffff; }
+.bismillah-bg-black { background-color: #000000; }
+.bismillah-bg-gray { background-color: #e5e7eb; }
+.bismillah-bg-red { background-color: #ef4444; }
+.bismillah-bg-blue { background-color: #3b82f6; }
+.bismillah-bg-green { background-color: #10b981; }
+.bismillah-bg-yellow { background-color: #facc15; }
+.bismillah-bg-purple { background-color: #8b5cf6; }
+.bismillah-bg-pink { background-color: #ec4899; }
+.bismillah-bg-orange { background-color: #f97316; }
+.bismillah-bg-teal { background-color: #14b8a6; }
+.bismillah-bg-indigo { background-color: #6366f1; }
+.bismillah-bg-brown { background-color: #8d6e63; }
+.bismillah-bg-lime { background-color: #a3e635; }
+
+/* 🎇 Neon Backgrounds */
+.bismillah-bg-neon-blue { background-color: #0011ff; box-shadow: 0px 0px 10px #0011ff; }
+.bismillah-bg-neon-green { background-color: #00ff00; box-shadow: 0px 0px 10px #00ff00; }
+.bismillah-bg-neon-red { background-color: #ff0000; box-shadow: 0px 0px 10px #ff0000; }
+.bismillah-bg-neon-purple { background-color: #a000f0; box-shadow: 0px 0px 10px #a000f0; }
+
+/* 🌈 Background Gradients */
+.bismillah-bg-gradient-r { background-image: linear-gradient(to right, var(--bismillah-color-start), var(--bismillah-color-end)); }
+.bismillah-bg-gradient-l { background-image: linear-gradient(to left, var(--bismillah-color-start), var(--bismillah-color-end)); }
+.bismillah-bg-gradient-t { background-image: linear-gradient(to top, var(--bismillah-color-start), var(--bismillah-color-end)); }
+.bismillah-bg-gradient-b { background-image: linear-gradient(to bottom, var(--bismillah-color-start), var(--bismillah-color-end)); }
+
+/* 🎭 Glassmorphism Effect */
+.bismillah-bg-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ✨ Shimmer Background */
+@keyframes bismillah-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.bismillah-bg-shimmer {
+  background: linear-gradient(110deg, #f3f3f3 40%, #e2e2e2 50%, #f3f3f3 60%);
+  background-size: 200% 100%;
+  animation: bismillah-shimmer 2s infinite linear;
+}
+
+/* 🎆 Animated Gradient Background */
+@keyframes bismillah-animated-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.bismillah-bg-animated-gradient {
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #ff9900);
+  background-size: 300% 300%;
+  animation: bismillah-animated-gradient 6s infinite linear;
+}
+
+/* 🔲 Grid & Cage Backgrounds */
+.bismillah-bg-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px), 
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+}
+.bismillah-bg-dotted-grid {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.2) 2px, transparent 2px);
+}
+.bismillah-bg-mesh {
+  background-size: 50px 50px;
+  background-image: repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.1) 1px, transparent 10px);
+}
+
+
+
+
+
+/* Padding - All Sides */
+.bismillah-p-0 { padding: 0px; }
+.bismillah-p-1 { padding: 4px; }
+.bismillah-p-2 { padding: 8px; }
+.bismillah-p-3 { padding: 12px; }
+.bismillah-p-4 { padding: 16px; }
+.bismillah-p-5 { padding: 20px; }
+
+/* Padding - X Axis (Left & Right) */
+.bismillah-px-0 { padding-left: 0px; padding-right: 0px; }
+.bismillah-px-1 { padding-left: 4px; padding-right: 4px; }
+.bismillah-px-2 { padding-left: 8px; padding-right: 8px; }
+.bismillah-px-3 { padding-left: 12px; padding-right: 12px; }
+.bismillah-px-4 { padding-left: 16px; padding-right: 16px; }
+.bismillah-px-5 { padding-left: 20px; padding-right: 20px; }
+
+/* Padding - Y Axis (Top & Bottom) */
+.bismillah-py-0 { padding-top: 0px; padding-bottom: 0px; }
+.bismillah-py-1 { padding-top: 4px; padding-bottom: 4px; }
+.bismillah-py-2 { padding-top: 8px; padding-bottom: 8px; }
+.bismillah-py-3 { padding-top: 12px; padding-bottom: 12px; }
+.bismillah-py-4 { padding-top: 16px; padding-bottom: 16px; }
+.bismillah-py-5 { padding-top: 20px; padding-bottom: 20px; }
+
+/* Padding - Specific Sides */
+.bismillah-pt-5 { padding-top: 20px; }
+.bismillah-pr-5 { padding-right: 20px; }
+.bismillah-pb-5 { padding-bottom: 20px; }
+.bismillah-pl-5 { padding-left: 20px; }
+
+
+
+
+
+/* Margin - All Sides */
+.bismillah-m-0 { margin: 0px; }
+.bismillah-m-1 { margin: 4px; }
+.bismillah-m-2 { margin: 8px; }
+.bismillah-m-3 { margin: 12px; }
+.bismillah-m-4 { margin: 16px; }
+.bismillah-m-5 { margin: 20px; }
+
+/* Margin - X Axis (Left & Right) */
+.bismillah-mx-0 { margin-left: 0px; margin-right: 0px; }
+.bismillah-mx-1 { margin-left: 4px; margin-right: 4px; }
+.bismillah-mx-2 { margin-left: 8px; margin-right: 8px; }
+.bismillah-mx-3 { margin-left: 12px; margin-right: 12px; }
+.bismillah-mx-4 { margin-left: 16px; margin-right: 16px; }
+.bismillah-mx-5 { margin-left: 20px; margin-right: 20px; }
+
+/* Margin - Y Axis (Top & Bottom) */
+.bismillah-my-0 { margin-top: 0px; margin-bottom: 0px; }
+.bismillah-my-1 { margin-top: 4px; margin-bottom: 4px; }
+.bismillah-my-2 { margin-top: 8px; margin-bottom: 8px; }
+.bismillah-my-3 { margin-top: 12px; margin-bottom: 12px; }
+.bismillah-my-4 { margin-top: 16px; margin-bottom: 16px; }
+.bismillah-my-5 { margin-top: 20px; margin-bottom: 20px; }
+
+/* Margin - Specific Sides */
+.bismillah-mt-5 { margin-top: 20px; }
+.bismillah-mr-5 { margin-right: 20px; }
+.bismillah-mb-5 { margin-bottom: 20px; }
+.bismillah-ml-5 { margin-left: 20px; }
+
+/* Auto Margin (Centering) */
+.bismillah-mx-auto { margin-left: auto; margin-right: auto; }
+.bismillah-my-auto { margin-top: auto; margin-bottom: auto; }
+
+
+
+@media (min-width: 640px) { .bismillah-mt-md-4 { margin-top: 16px; } }
+@media (min-width: 768px) { .bismillah-mt-lg-4 { margin-top: 16px; } }
+@media (min-width: 1024px) { .bismillah-mt-xl-4 { margin-top: 16px; } }
+
+
+.bismillah-mx-auto { margin-left: auto; margin-right: auto; }
+.bismillah-my-auto { margin-top: auto; margin-bottom: auto; }
+
+
+.bismillah-mb-10p { margin-bottom: 10%; }
+.bismillah-pt-5p { padding-top: 5%; }
+
+
+.bismillah-mt-fluid { margin-top: clamp(8px, 2vw, 24px); }
+
+
+.bismillah--mt-4 { margin-top: -16px; }
+
+
+@media (min-width: 640px) { .bismillah-mt-sm-4 { margin-top: 16px; } }
+@media (min-width: 768px) { .bismillah-mt-md-4 { margin-top: 16px; } }
+@media (min-width: 1024px) { .bismillah-mt-lg-4 { margin-top: 16px; } }
+@media (min-width: 1280px) { .bismillah-mt-xl-4 { margin-top: 16px; } }
+
+
+.bismillah-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.bismillah-container-fluid {
+    width: 100%;
+    padding: 0 16px;
+}
+
+
+
+.bismillah-grid-auto-fit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.bismillah-grid-auto-fill {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
+}
+
+.bismillah-fullscreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 768px) { .bismillah-container-md { max-width: 768px; margin: auto; } }
+@media (min-width: 1024px) { .bismillah-container-lg { max-width: 1024px; margin: auto; } }
+
+
+@media (min-width: 768px) { .bismillah-text-auto-lg { font-size: 20px; } }
+@media (min-width: 1024px) { .bismillah-text-auto-lg { font-size: 24px; } }
+@media (min-width: 1280px) { .bismillah-text-auto-lg { font-size: 28px; } }
+
+
+.bismillah-aspect-16-9 {
+    aspect-ratio: 16 / 9;
+}
+
+.bismillah-aspect-1-1 {
+    aspect-ratio: 1 / 1;
+}
+
+
+
+.bismillah-overflow-auto { overflow: auto; }
+.bismillah-overflow-hidden { overflow: hidden; }
+
+
+@media (min-width: 640px) { .bismillah-bg-sm-blue { background-color: #3b82f6; } }
+@media (min-width: 768px) { .bismillah-bg-md-green { background-color: #10b981; } }
+@media (min-width: 1024px) { .bismillah-bg-lg-red { background-color: #ef4444; } }
+
+
+@media (min-width: 640px) { .bismillah-text-sm { font-size: 14px; } }
+@media (min-width: 768px) { .bismillah-text-md { font-size: 16px; } }
+@media (min-width: 1024px) { .bismillah-text-lg { font-size: 18px; } }
+@media (min-width: 1280px) { .bismillah-text-xl { font-size: 20px; } }
+
+
+
+.bismillah-flex { display: flex; }
+.bismillah-flex-center { display: flex; justify-content: center; align-items: center; }
+.bismillah-flex-between { display: flex; justify-content: space-between; }
+.bismillah-flex-column { display: flex; flex-direction: column; }
+
+
+.bismillah-grid { display: grid; gap: 16px; }
+.bismillah-grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.bismillah-grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.bismillah-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+
+
+.bismillah-text-auto {
+    font-size: clamp(14px, 2vw, 24px);
+}
+
+
+.bismillah-letter-wide { letter-spacing: 2px; }
+.bismillah-letter-wider { letter-spacing: 4px; }
+
+
+.bismillah-text-outline {
+    -webkit-text-stroke: 1px black;
+}
+
+
+.bismillah-text-shimmer {
+    background: linear-gradient(90deg, #ff0, #f00, #ff0);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+
+
+
+
+/* 
+Bismillah TEXT Color */
+
+.bismillah-text-gradient {
+    background: linear-gradient(45deg, #ff0, #f00, #ff0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.bismillah-text-neon-blue {
+    color: #00f;
+    text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 20px #00f;
+}
+
+.bismillah-text-neon-green {
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+
+.bismillah-text-hover-red:hover { color: #ef4444; }
+.bismillah-text-hover-blue:hover { color: #3b82f6; }
+.bismillah-text-hover-green:hover { color: #10b981; }
+
+
+.bismillah-text-3d {
+    color: #ffffff;
+    text-shadow: 2px 2px 0px #000, 4px 4px 0px #ff0;
+}
+
+
+
+.bismillah-text-glass {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+}
+
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.bismillah-text-shimmer {
+    background: linear-gradient(90deg, #ff0, #f00, #ff0);
+    background-size: 200% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+
+.bismillah-text-neon {
+    color: #0ff;
+    text-shadow: 0px 0px 5px #0ff, 0px 0px 10px #0ff, 0px 0px 20px #0ff;
+}
+
+
+@keyframes typewriter {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
+
+.bismillah-text-typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ffffff;
+    width: 0;
+    animation: typewriter 4s steps(20, end) infinite alternate;
+}
+
+
+.bismillah-text-pixel {
+    font-family: 'Press Start 2P', cursive;
+    color: #ff00ff;
+    text-shadow: 3px 3px 0px #000;
+}
+
+
+@keyframes fire {
+    0% { text-shadow: 0px 0px 5px #ff0, 0px 0px 10px #f00, 0px 0px 15px #f00; }
+    50% { text-shadow: 0px 0px 10px #ff0, 0px 0px 20px #f00, 0px 0px 30px #f00; }
+    100% { text-shadow: 0px 0px 5px #ff0, 0px 0px 10px #f00, 0px 0px 15px #f00; }
+}
+
+.bismillah-text-fire {
+    color: #ff0;
+    animation: fire 1.5s infinite alternate;
+}
+
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0px #f00, -2px -2px 0px #0ff; }
+    50% { text-shadow: -2px -2px 0px #f00, 2px 2px 0px #0ff; }
+    100% { text-shadow: 2px 2px 0px #f00, -2px -2px 0px #0ff; }
+}
+
+.bismillah-text-glitch {
+    animation: glitch 0.3s infinite alternate;
+    color: #fff;
+    position: relative;
+}
+
+
+
+@keyframes liquid {
+    0% { transform: skewX(-10deg); }
+    50% { transform: skewX(10deg); }
+    100% { transform: skewX(-10deg); }
+}
+
+.bismillah-text-liquid {
+    display: inline-block;
+    animation: liquid 2s infinite alternate ease-in-out;
+    color: #00f;
+}
+
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bismillah-text-float {
+    animation: floating 3s infinite ease-in-out;
+}
+
+
+
+@keyframes broken-text {
+    0% { clip-path: inset(0 0 50% 0); }
+    50% { clip-path: inset(50% 0 0 0); }
+    100% { clip-path: inset(0 0 50% 0); }
+}
+
+.bismillah-text-broken {
+    animation: broken-text 1s infinite;
+}
+
+
+@keyframes rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+.bismillah-text-rainbow {
+    animation: rainbow 3s infinite linear;
+}
+
+
+@keyframes fire {
+    0% { text-shadow: 0px 0px 5px #ff0, 0px 0px 10px #f00, 0px 0px 15px #f00; }
+    50% { text-shadow: 0px 0px 10px #ff0, 0px 0px 20px #f00, 0px 0px 30px #f00; }
+    100% { text-shadow: 0px 0px 5px #ff0, 0px 0px 10px #f00, 0px 0px 15px #f00; }
+}
+
+.bismillah-text-fire {
+    color: #ff0;
+    animation: fire 1.5s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px 0px #f00, -2px -2px 0px #0ff; }
+    50% { text-shadow: -2px -2px 0px #f00, 2px 2px 0px #0ff; }
+    100% { text-shadow: 2px 2px 0px #f00, -2px -2px 0px #0ff; }
+}
+
+.bismillah-text-glitch {
+    animation: glitch 0.3s infinite alternate;
+    color: #fff;
+    position: relative;
+}
+
+@keyframes liquid {
+    0% { transform: skewX(-10deg); }
+    50% { transform: skewX(10deg); }
+    100% { transform: skewX(-10deg); }
+}
+
+.bismillah-text-liquid {
+    display: inline-block;
+    animation: liquid 2s infinite alternate ease-in-out;
+    color: #00f;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bismillah-text-float {
+    animation: floating 3s infinite ease-in-out;
+}
+
+@keyframes broken-text {
+    0% { clip-path: inset(0 0 50% 0); }
+    50% { clip-path: inset(50% 0 0 0); }
+    100% { clip-path: inset(0 0 50% 0); }
+}
+
+.bismillah-text-broken {
+    animation: broken-text 1s infinite;
+}
+
+@keyframes rainbow {
+    0% { color: red; }
+    20% { color: orange; }
+    40% { color: yellow; }
+    60% { color: green; }
+    80% { color: blue; }
+    100% { color: purple; }
+}
+
+.bismillah-text-rainbow {
+    animation: rainbow 3s infinite linear;
+}
+
+
+.bismillah-text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bismillah-text-center-1 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+
+/* Glow Effect */
+.bismillah-text-glow {
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 10px #0ff, 0px 0px 20px #0ff;
+}
+
+/* 3D Text Effect */
+.bismillah-text-3d {
+    color: #fff;
+    text-shadow: 3px 3px 0px #ff0000, 6px 6px 0px #0000ff;
+    transform: perspective(500px) rotateX(20deg);
+}
+
+/* Wave Animation */
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.bismillah-text-wave {
+    display: inline-block;
+    animation: wave 2s infinite ease-in-out;
+}
+
+/* Typewriter Effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.bismillah-text-typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    animation: typing 3s steps(20, end) infinite;
+}
+
+/* Shadow Move Effect */
+@keyframes shadow-move {
+    0% { text-shadow: -2px -2px 10px #ff0; }
+    50% { text-shadow: 2px 2px 20px #0ff; }
+    100% { text-shadow: -2px -2px 10px #ff0; }
+}
+
+.bismillah-text-shadow-move {
+    animation: shadow-move 2s infinite alternate;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 640px) { .bismillah-sm-hidden { display: none; } }
+@media (max-width: 768px) { .bismillah-md-hidden { display: none; } }
+@media (max-width: 1024px) { .bismillah-lg-hidden { display: none; } }
+@media (max-width: 1280px) { .bismillah-xl-hidden { display: none; } }
+
+
+@media (max-width: 768px) { 
+    .bismillah-md-flex-col { flex-direction: column; } 
+    .bismillah-md-grid-2 { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  
+  @media (max-width: 768px) { 
+    .bismillah-md-text-center { text-align: center; } 
+    .bismillah-md-px-4 { padding-left: 1rem; padding-right: 1rem; }
+  }
+  

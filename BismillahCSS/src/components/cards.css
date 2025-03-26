@@ -78,3 +78,468 @@
         padding: 1rem;
     }
 }
+
+
+/* ========== BismillahCSS Responsive Cards ========== */
+
+/* Card Grid Layout */
+.b-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Default Card Styling */
+.b-card {
+    background: var(--card-bg, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Card Hover Effect */
+.b-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.b-card-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--card-title-color, #333);
+    margin-bottom: 0.5rem;
+}
+
+/* Card Body */
+.b-card-body {
+    font-size: 1rem;
+    color: var(--card-text-color, #555);
+    line-height: 1.6;
+}
+
+/* Card Footer */
+.b-card-footer {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+/* ========== Responsive Adjustments ========== */
+@media (max-width: 1024px) {
+    .b-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .b-card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    
+    .b-card {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .b-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .b-card {
+        padding: 1rem;
+    }
+}
+
+
+/* ========== BismillahCSS Cards ========== */
+.b-card {
+    background: var(--card-bg, #fff);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+}
+
+/* 🏆 Hover Lift Effect */
+.b-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* 📸 Image Section */
+.b-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* 📜 Content */
+.b-card-body {
+    padding: 1.5rem;
+}
+
+/* 🏷️ Badge (e.g., "New", "Sale") */
+.b-card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--badge-color, #ff5733);
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* ✨ Glassmorphism Card */
+.b-card-glass {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+
+/* ========== BismillahCSS Mathematical Rule-Based Card ========== */
+
+/* Fibonacci Ratio Card (1:1.618) */
+.bismillah-math-card {
+    background: var(--card-bg, #ffffff);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    padding: 1.618rem; /* Golden Ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    max-width: 420px; /* Fibonacci Number */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 5px solid var(--math-accent, #007bff);
+}
+
+/* Proportional Hover Effect */
+.bismillah-math-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Centered Math Icon */
+.bismillah-math-icon {
+    font-size: 2rem;
+    color: var(--math-icon, #ff5733);
+    margin-bottom: 1rem;
+}
+
+/* Header with Golden Ratio Font Size */
+.bismillah-math-card-header {
+    font-size: 1.618rem; /* Golden Ratio */
+    font-weight: bold;
+    color: var(--math-title, #222);
+    margin-bottom: 1rem;
+}
+
+/* Formula Section (Balanced Layout) */
+.bismillah-math-formula {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--math-formula, #007bff);
+    background: rgba(0, 123, 255, 0.1);
+    padding: 0.8rem;
+    border-radius: 8px;
+    width: 85%; /* Rule of Thirds */
+    margin: 1rem 0;
+    font-family: "Courier New", monospace;
+}
+
+/* Body Text with Perfect Line Height */
+.bismillah-math-card-body {
+    font-size: 1rem;
+    color: var(--math-text, #444);
+    line-height: 1.618; /* Golden Ratio */
+    width: 90%;
+}
+
+/* Card Footer with Fibonacci Margin */
+.bismillah-math-card-footer {
+    margin-top: 1.618rem; /* Fibonacci Sequence */
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--math-footer, #007bff);
+}
+
+/* Responsive Grid (Mathematical Layout) */
+@media (max-width: 768px) {
+    .bismillah-math-card {
+        padding: 1.2rem;
+        max-width: 360px; /* Fibonacci Number */
+    }
+}
+
+@media (max-width: 480px) {
+    .bismillah-math-card {
+        padding: 1rem;
+        max-width: 300px; /* Fibonacci Number */
+    }
+}
+
+
+
+
+
+
+/* Hexagonal Card */
+.bismillah-hex-card {
+    width: 250px;
+    height: 140px;
+    background: var(--card-bg, #007bff);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-hex-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Trapezium Card */
+.bismillah-trap-card {
+    width: 280px;
+    height: 150px;
+    background: var(--card-bg, #ff5733);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-trap-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Circular Card */
+.bismillah-circle-card {
+    width: 180px;
+    height: 180px;
+    background: var(--card-bg, #28a745);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-circle-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Parallelogram Card */
+.bismillah-para-card {
+    width: 250px;
+    height: 140px;
+    background: var(--card-bg, #6610f2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transform: skew(-20deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-para-card:hover {
+    transform: skew(-20deg) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Pentagon Card */
+.bismillah-pentagon-card {
+    width: 200px;
+    height: 120px;
+    background: var(--card-bg, #ff9800);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-pentagon-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Triangle Card */
+.bismillah-triangle-card {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid var(--card-bg, #e91e63);
+    position: relative;
+}
+
+.bismillah-triangle-card::after {
+    content: "Triangle Card";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* Rhombus Card */
+.bismillah-rhombus-card {
+    width: 150px;
+    height: 150px;
+    background: var(--card-bg, #3f51b5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-rhombus-card span {
+    transform: rotate(-45deg);
+}
+
+
+/* Circular Gradient Card */
+.bismillah-circle-gradient {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, #ff4081, #ff1744);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-circle-gradient:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* 🏆 Football Card */
+.bismillah-football-card {
+    width: 250px;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🌀 Hover Lift Effect */
+.bismillah-football-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ⚽ Football Icon */
+.bismillah-football-icon {
+    font-size: 3rem;
+    animation: bounce 1.5s infinite;
+}
+
+/* 📌 Player Name */
+.bismillah-football-card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 📊 Player Stats */
+.bismillah-football-stats {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* 🎯 Button */
+.bismillah-football-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.bismillah-football-btn:hover {
+    background: #ffaa00;
+}
+
+/* 🏀 Bouncing Football Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+

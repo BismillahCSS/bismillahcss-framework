@@ -3,59 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BismillahCSS Components</title>
-    <link rel="stylesheet" href="src/core/index.css"> 
-    <link rel="stylesheet" href="src/core/utilities.css">
-    <link rel="stylesheet" href="src/core/animations.css">
-    <link rel="stylesheet" href="src/core/themes.css">
-    <link rel="stylesheet" href="src/components/navbar.css">
-    <link rel="stylesheet" href="src/components/buttons.css">
-    <link rel="stylesheet" href="src/components/cards.css">
-    <link rel="stylesheet" href="src/components/footer.css">
-    <link rel="stylesheet" href="src/components/forms.css">
-    <link rel="stylesheet" href="src/components/modal.css">
-    <link rel="stylesheet" href="src/components/alerts.css">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="dist/bismillah.min.css">
+    <link rel="stylesheet" href="">
 </head>
-<body>
+<body class="bismillah-bg-gray bismillah-text-gray-900">
 
-    <!-- 🚀 Navbar -->
-    <nav class="b-navbar">
-        <a href="#" class="b-navbar-logo">
-            <img src="logo.png" alt="Logo"> BismillahCSS
-        </a>
-        <div class="b-navbar-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <div class="b-navbar-dropdown">
-                <a href="#">More ▼</a>
-                <div class="b-navbar-dropdown-menu">
-                    <a href="#">Portfolio</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                </div>
+    <!-- 🌟 Header Section -->
+    <header class="bismillah-bg-black bismillah-text-white bismillah-py-5 bismillah-text-center">
+        <h1 class="bismillah-text-4xl bismillah-font-bold">Mubashir Ali</h1>
+        <p class="bismillah-text-xl">Web Developer | AI Enthusiast | Freelancer</p>
+    </header>
+
+    <!-- 🎯 Hero Section -->
+    <section class="bismillah-flex-center bismillah-h-screen bismillah-bg-gradient-to-r bismillah-from-blue-500 bismillah-to-purple-600 bismillah-text-white">
+        <div class="bismillah-text-center">
+            <h2 class="bismillah-text-5xl bismillah-font-bold">Welcome to My Portfolio</h2>
+            <p class="bismillah-text-xl bismillah-mt-4">Building amazing web experiences!</p>
+            <a href="#projects" class="bismillah-bg-white bismillah-text-black bismillah-px-6 bismillah-py-3 bismillah-rounded-lg bismillah-shadow-lg bismillah-mt-6 bismillah-inline-block">View Projects</a>
+        </div>
+    </section>
+
+    <!-- ℹ️ About Section -->
+    <section id="about" class="bismillah-py-20 bismillah-text-center">
+        <h2 class="bismillah-text-4xl bismillah-font-bold">About Me</h2>
+        <p class="bismillah-text-lg bismillah-max-w-xl bismillah-mx-auto bismillah-mt-4">I am a passionate web developer specializing in modern frameworks and AI-driven applications.</p>
+    </section>
+
+    <!-- 🚀 Projects Section -->
+    <section id="projects" class="bismillah-py-20">
+        <h2 class="bismillah-text-4xl bismillah-text-center bismillah-font-bold">My Projects</h2>
+        <div class="bismillah-grid bismillah-grid-cols-1 md:bismillah-grid-cols-2 lg:bismillah-grid-cols-3 bismillah-gap-6 bismillah-mt-8 bismillah-max-w-6xl bismillah-mx-auto">
+            <div class="bismillah-bg-white bismillah-shadow-lg bismillah-rounded-lg bismillah-p-5">
+                <h3 class="bismillah-text-xl bismillah-font-bold">Project 1</h3>
+                <p>Built a dynamic web app using Next.js & Tailwind.</p>
             </div>
-            <a href="#">Pricing</a>
+            <div class="bismillah-bg-white bismillah-shadow-lg bismillah-rounded-lg bismillah-p-5">
+                <h3 class="bismillah-text-xl bismillah-font-bold">Project 2</h3>
+                <p>Developed an AI-powered chatbot.</p>
+            </div>
         </div>
-        <div class="b-navbar-toggle"><span></span><span></span><span></span></div>
-    </nav>
+    </section>
 
-    <div class="b-card">
-        <img src="codewithmubashir.png" alt="Card Image" class="b-card-image">
-        <div class="b-card-header">Card Title</div>
-        <div class="b-card-body">This is a simple card description with text content.</div>
-        <div class="b-card-footer">
-            <a href="#" class="b-btn b-btn-primary">Learn More</a>
+    <!-- 🎯 Services Section -->
+    <section id="services" class="bismillah-py-20 bismillah-bg-black bismillah-text-white bismillah-text-center">
+        <h2 class="bismillah-text-4xl bismillah-font-bold">My Services</h2>
+        <div class="bismillah-flex bismillah-flex-wrap bismillah-justify-center bismillah-gap-6 bismillah-mt-8">
+            <div class="bismillah-bg-gray-800 bismillah-shadow-lg bismillah-rounded-lg bismillah-p-5">
+                <h3 class="bismillah-text-xl bismillah-font-bold">Web Development</h3>
+                <p>Modern, responsive websites.</p>
+            </div>
+            <div class="bismillah-bg-gray-800 bismillah-shadow-lg bismillah-rounded-lg bismillah-p-5">
+                <h3 class="bismillah-text-xl bismillah-font-bold">AI & ML Solutions</h3>
+                <p>Building smart applications.</p>
+            </div>
         </div>
-    </div>
-    
-    <!-- 🦶 Footer -->
-    <footer class="b-footer">
-        <p>© 2025 BismillahCSS - All rights reserved.</p>
+    </section>
+
+    <!-- 📩 Contact Section -->
+    <section id="contact" class="bismillah-py-20 bismillah-text-center">
+        <h2 class="bismillah-text-4xl bismillah-font-bold">Get in Touch</h2>
+        <form class="bismillah-bg-white bismillah-shadow-lg bismillah-rounded-lg bismillah-max-w-md bismillah-mx-auto bismillah-p-6 bismillah-mt-6">
+            <input type="text" placeholder="Your Name" class="bismillah-border bismillah-w-full bismillah-py-2 bismillah-px-3 bismillah-rounded bismillah-mb-3">
+            <input type="email" placeholder="Your Email" class="bismillah-border bismillah-w-full bismillah-py-2 bismillah-px-3 bismillah-rounded bismillah-mb-3">
+            <textarea placeholder="Your Message" class="bismillah-border bismillah-w-full bismillah-py-2 bismillah-px-3 bismillah-rounded bismillah-mb-3"></textarea>
+            <button type="submit" class="bismillah-bg-black bismillah-text-white bismillah-px-6 bismillah-py-3 bismillah-rounded-lg bismillah-shadow-lg">Send</button>
+        </form>
+    </section>
+
+    <!-- 🌍 Footer -->
+    <footer class="bismillah-bg-black bismillah-text-white bismillah-text-center bismillah-py-4">
+        <p>© 2025 Mubashir Ali | Made with ❤️ & BismillahCSS</p>
     </footer>
-
-    <script src="src/components/navbar.js"></script>
-    <script src="src/components/modal.js"></script>
 
 </body>
 </html>
