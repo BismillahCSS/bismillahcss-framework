@@ -1,3 +1,12 @@
-@import './core/index.css';  /* Or use @import if the path is correct */
-@import './core/utilities.css';
-@import './components/buttons.css';
+@import './core/index.css';        /* Global resets, base styles */
+@import './core/themes.css';       /* Light & Dark mode styles */
+@import './core/utilities.css';    /* Utility classes (margin, padding, flex, etc.) */
+@import './core/animations.css';   /* Transitions, animations, hover effects */
+
+@import './components/navbar.css'; /* Navbar styles */
+@import './components/footer.css'; /* Footer styles */
+@import './components/buttons.css';/* Button styles */
+@import './components/forms.css';  /* Input, form styles */
+@import './components/cards.css';  /* Card components */
+@import './components/modal.css';  /* Modal popups */
+@import './components/alerts.css'; /* Notification alerts */

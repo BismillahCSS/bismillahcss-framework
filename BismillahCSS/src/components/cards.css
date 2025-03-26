@@ -1,0 +1,80 @@
+/* ========== BismillahCSS Card System ========== */
+.b-card {
+    background: var(--card-bg, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.b-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.b-card-header {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--card-title-color, #333);
+    margin-bottom: 0.5rem;
+}
+
+/* Card Body */
+.b-card-body {
+    font-size: 1rem;
+    color: var(--card-text-color, #555);
+    line-height: 1.6;
+}
+
+/* Card Footer */
+.b-card-footer {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+
+/* Card with Image */
+.b-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Buttons inside Cards */
+.b-card-footer .b-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.b-card-footer .b-btn-primary {
+    background: var(--primary-color, #007bff);
+    color: white;
+}
+
+.b-card-footer .b-btn-primary:hover {
+    background: #0056b3;
+}
+
+
+/* Responsive Grid for Cards */
+.b-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .b-card {
+        padding: 1rem;
+    }
+}
