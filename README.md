@@ -1,10 +1,10 @@
 
 ![BismillahCSS Banner](./docs/banner.jpeg)
 
-[![npm version](https://img.shields.io/npm/v/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)
-[![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/BismillahCSS/LICENSE)
-[![downloads](https://img.shields.io/npm/dt/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)
-[![GitHub stars](https://img.shields.io/github/stars/BismillahCSS/bismillahcss-framework.svg?style=social)]()
+[![npm version](https://img.shields.io/npm/v/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
+[![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/LICENSE)  
+[![downloads](https://img.shields.io/npm/dt/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
+[![GitHub stars](https://img.shields.io/github/stars/BismillahCSS/bismillahcss-framework.svg?style=social)](https://github.com/BismillahCSS/bismillahcss-framework)
 
 ---
 
