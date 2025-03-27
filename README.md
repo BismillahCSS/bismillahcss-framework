@@ -6,7 +6,63 @@
 [![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/LICENSE)  
 [![downloads](https://img.shields.io/npm/dt/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
 [![GitHub stars](https://img.shields.io/github/stars/BismillahCSS/bismillahcss-framework.svg?style=social)](https://github.com/BismillahCSS/bismillahcss-framework)
+## Showcase Templates
 
+### NeoFuture Tech Example
+
+```html
+<!DOCTYPE html>
+<html lang="en" class="bismillah-scrollbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoFuture Tech</title>
+    <link rel="stylesheet" href="dist/bismillah.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bismillah-flex bismillah-justify-between bismillah-items-center bismillah-p-4 bismillah-shadow-lg bismillah-bg-dark">
+        <span class="bismillah-futuristic-font bismillah-text-primary bismillah-text-2xl">NeoFuture</span>
+        <div class="bismillah-flex bismillah-gap-5">
+            <a href="#home" class="bismillah-text-light bismillah-hover-text-primary">Home</a>
+            <a href="#features" class="bismillah-text-light bismillah-hover-text-primary">Features</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bismillah-flex bismillah-flex-col bismillah-justify-center bismillah-items-center bismillah-p-10 bismillah-min-h-screen hero-bg">
+        <h1 class="bismillah-text-5xl bismillah-font-extrabold bismillah-futuristic-font">
+            <span class="bismillah-text-primary">Neo</span><span class="bismillah-text-accent">Future</span>
+        </h1>
+        <p class="bismillah-text-xl bismillah-mb-5">Pioneering the next generation of digital experiences.</p>
+        <button class="bismillah-btn-primary bismillah-p-4 bismillah-rounded">Explore Now</button>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="bismillah-bg-dark bismillah-p-10">
+        <h2 class="bismillah-text-3xl bismillah-font-bold bismillah-text-center bismillah-futuristic-font bismillah-text-primary">Revolutionary Features</h2>
+        <div class="bismillah-grid bismillah-grid-cols-1 bismillah-md-grid-2 bismillah-lg-grid-3 bismillah-gap-8">
+            <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font">Quantum Processing</h3>
+                <p>Break traditional computing barriers with quantum efficiency.</p>
+            </div>
+            <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font">Neural Interface</h3>
+                <p>Enable thought-controlled interactions with advanced neural systems.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+```
+
+### Key Features
+- **Hero Section**: A visually stunning introduction with futuristic design.
+- **Navbar**: Responsive navigation with hover effects.
+- **Cards**: Glassmorphism cards showcasing features.
+- **Buttons**: Interactive buttons with hover animations.
+
+For more templates, explore the [documentation](https://github.com/mubashir1837/).
 ![EXAMPLE](./docs/bismillah.gif)
 
 ```html

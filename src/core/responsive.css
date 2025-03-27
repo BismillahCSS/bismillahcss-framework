@@ -1,0 +1,273 @@
+/* ============================= */
+/* 🖥️ BismillahCSS - Responsive Utilities */
+/* ============================= */
+
+@media (max-width: 1024px) {
+.bismillah-hide-lg { display: none;
+}
+.bismillah-grid-cols-2, .bismillah-grid-cols-3 {
+grid-template-columns: 1fr;
+}
+}
+
+  @media (max-width: 1024px) {
+.bismillah-text-lg { font-size: 1.125rem;
+}
+/* 18px */
+    .bismillah-container {
+max-width: 900px;
+}
+}
+
+@media (max-width: 768px) {
+.bismillah-text-md { font-size: 1rem;
+}
+/* 16px */
+    .bismillah-container {
+max-width: 720px;
+}
+.bismillah-flex-md-column {
+flex-direction: column;
+}
+.bismillah-items-md-center {
+align-items: center;
+}
+.bismillah-justify-md-center {
+justify-content: center;
+}
+/* 14px */
+    .bismillah-container {
+max-width: 100%; padding: 0 16px;
+}
+.bismillah-flex-sm-column {
+flex-direction: column;
+}
+.bismillah-items-sm-center {
+align-items: center;
+}
+.bismillah-justify-sm-center {
+justify-content: center;
+}
+}
+
+
+@media (max-width: 1024px) {
+.bismillah-mx-lg-auto { margin-left: auto; margin-right: auto;
+}
+.bismillah-p-lg-4 {
+padding: 1rem;
+}
+/* 16px */
+  .bismillah-w-lg-full {
+width: 100%;
+}
+.bismillah-h-lg-auto {
+height: auto;
+}
+.bismillah-p-md-3 {
+padding: 0.75rem;
+}
+/* 12px */
+  .bismillah-w-md-full {
+width: 100%;
+}
+.bismillah-h-md-auto {
+height: auto;
+}
+.bismillah-p-sm-2 {
+padding: 0.5rem;
+}
+/* 8px */
+  .bismillah-w-sm-full {
+width: 100%;
+}
+.bismillah-h-sm-auto {
+height: auto;
+}
+.bismillah-text-lg-center {
+text-align: center;
+}
+.bismillah-text-lg-right {
+text-align: right;
+}
+.bismillah-flex-lg-row {
+flex-direction: row;
+}
+.bismillah-flex-lg-col {
+flex-direction: column;
+}
+.bismillah-items-lg-center {
+align-items: center;
+}
+.bismillah-text-md-center {
+text-align: center;
+}
+.bismillah-text-md-right {
+text-align: right;
+}
+.bismillah-flex-md-row {
+flex-direction: row;
+}
+.bismillah-flex-md-col {
+flex-direction: column;
+}
+.bismillah-text-sm-center {
+text-align: center;
+}
+.bismillah-text-sm-right {
+text-align: right;
+}
+.bismillah-flex-sm-row {
+flex-direction: row;
+}
+.bismillah-flex-sm-col {
+flex-direction: column;
+}
+.bismillah-w-lg-auto {
+width: auto;
+}
+.bismillah-h-lg-full {
+height: 100%;
+}
+.bismillah-mx-lg-auto {
+margin-left: auto; margin-right: auto;
+}
+.bismillah-my-lg-auto {
+margin-top: auto; margin-bottom: auto;
+}
+.bismillah-w-md-auto {
+width: auto;
+}
+.bismillah-h-md-full {
+height: 100%;
+}
+.bismillah-mx-md-auto {
+margin-left: auto; margin-right: auto;
+}
+.bismillah-my-md-auto {
+margin-top: auto; margin-bottom: auto;
+}
+.bismillah-w-sm-auto {
+width: auto;
+}
+.bismillah-h-sm-full {
+height: 100%;
+}
+.bismillah-mx-sm-auto {
+margin-left: auto; margin-right: auto;
+}
+.bismillah-my-sm-auto {
+margin-top: auto; margin-bottom: auto;
+}
+}
+
+  
+@media (max-width: 1024px) {
+.bismillah-text-lg-left { text-align: left;
+}
+.bismillah-flex-lg {
+display: flex;
+}
+.bismillah-flex-lg-wrap {
+flex-wrap: wrap;
+}
+.bismillah-justify-lg-center {
+justify-content: center;
+}
+.bismillah-flex-md {
+display: flex;
+}
+.bismillah-flex-md-wrap {
+flex-wrap: wrap;
+}
+.bismillah-flex-sm {
+display: flex;
+}
+.bismillah-flex-sm-wrap {
+flex-wrap: wrap;
+}
+.bismillah-m-lg-0 {
+margin: 0;
+}
+.bismillah-m-lg-auto {
+margin: auto;
+}
+.bismillah-p-lg-0 {
+padding: 0;
+}
+.bismillah-m-md-0 {
+margin: 0;
+}
+.bismillah-m-md-auto {
+margin: auto;
+}
+.bismillah-p-md-0 {
+padding: 0;
+}
+.bismillah-p-md-4 {
+padding: 1rem;
+}
+.bismillah-m-sm-0 {
+margin: 0;
+}
+.bismillah-m-sm-auto {
+margin: auto;
+}
+.bismillah-p-sm-0 {
+padding: 0;
+}
+.bismillah-p-sm-4 {
+padding: 1rem;
+}
+.bismillah-block-lg {
+display: block;
+}
+.bismillah-inline-lg {
+display: inline;
+}
+.bismillah-hidden-lg {
+display: none;
+}
+.bismillah-text-lg-left {
+text-align: left;
+}
+.bismillah-justify-lg-start {
+justify-content: flex-start;
+}
+.bismillah-justify-lg-end {
+justify-content: flex-end;
+}
+.bismillah-block-md {
+display: block;
+}
+.bismillah-inline-md {
+display: inline;
+}
+.bismillah-text-md-left {
+text-align: left;
+}
+.bismillah-justify-md-start {
+justify-content: flex-start;
+}
+.bismillah-justify-md-end {
+justify-content: flex-end;
+}
+.bismillah-block-sm {
+display: block;
+}
+.bismillah-inline-sm {
+display: inline;
+}
+.bismillah-hidden-sm {
+display: none;
+}
+.bismillah-text-sm-left {
+text-align: left;
+}
+.bismillah-justify-sm-start {
+justify-content: flex-start;
+}
+.bismillah-justify-sm-end {
+justify-content: flex-end;
+}
+}

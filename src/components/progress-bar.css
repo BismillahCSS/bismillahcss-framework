@@ -1,0 +1,341 @@
+   /* ============================= */
+    /* 📊 BismillahCSS - Advanced Progress Bars */
+    /* ============================= */
+
+    /* Base Progress Container */
+    .bismillah-progress-container {
+        width: 100%;
+        height: 20px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        overflow: hidden;
+        margin: 15px 0;
+        position: relative;
+      }
+  
+      /* Progress Bar */
+      .bismillah-progress-bar {
+        height: 100%;
+        background-color: var(--bismillah-primary-color, #3498db);
+        border-radius: 10px;
+        transition: width 0.5s ease;
+        position: relative;
+      }
+  
+      /* Progress Text */
+      .bismillah-progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: 600;
+        font-size: 12px;
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+        white-space: nowrap;
+      }
+  
+      /* ===== Progress Bar Variants ===== */
+  
+      /* Striped Progress Bar */
+      .bismillah-progress-striped .bismillah-progress-bar {
+        background-image: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        background-size: 40px 40px;
+      }
+  
+      /* Animated Striped Progress Bar */
+      .bismillah-progress-striped-animated .bismillah-progress-bar {
+        background-image: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        background-size: 40px 40px;
+        animation: bismillah-progress-stripes 1s linear infinite;
+      }
+  
+      @keyframes bismillah-progress-stripes {
+        0% {
+          background-position: 40px 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
+  
+      /* Thin Progress Bar */
+      .bismillah-progress-thin {
+        height: 8px;
+      }
+  
+      /* Thick Progress Bar */
+      .bismillah-progress-thick {
+        height: 30px;
+      }
+  
+      /* Rounded Progress Bar */
+      .bismillah-progress-rounded {
+        border-radius: 50px;
+      }
+  
+      .bismillah-progress-rounded .bismillah-progress-bar {
+        border-radius: 50px;
+      }
+  
+      /* ===== Advanced Progress Bar Styles ===== */
+  
+      /* Gradient Progress Bar */
+      .bismillah-progress-gradient .bismillah-progress-bar {
+        background: linear-gradient(45deg, #3498db, #2ecc71);
+      }
+  
+      /* Glow Progress Bar */
+      .bismillah-progress-glow .bismillah-progress-bar {
+        box-shadow: 0 0 10px var(--bismillah-primary-color, #3498db);
+      }
+  
+      /* Neon Progress Bar */
+      .bismillah-progress-neon {
+        background: #1a1a1a;
+      }
+  
+      .bismillah-progress-neon .bismillah-progress-bar {
+        background: #00f;
+        box-shadow: 0 0 10px #00f, 0 0 20px #00f;
+      }
+  
+      /* Segmented Progress Bar */
+      .bismillah-progress-segmented {
+        display: flex;
+        gap: 5px;
+        height: 20px;
+        background: transparent;
+      }
+  
+      .bismillah-progress-segment {
+        flex: 1;
+        background: #f0f0f0;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+  
+      .bismillah-progress-segment.active {
+        background: var(--bismillah-primary-color, #3498db);
+      }
+  
+      /* Steps Progress Bar */
+      .bismillah-progress-steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        position: relative;
+      }
+  
+      .bismillah-progress-steps::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #f0f0f0;
+        transform: translateY(-50%);
+        z-index: 0;
+      }
+  
+      .bismillah-progress-step {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: white;
+        border: 2px solid #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        position: relative;
+        z-index: 1;
+      }
+  
+      .bismillah-progress-step.active {
+        background: var(--bismillah-primary-color, #3498db);
+        border-color: var(--bismillah-primary-color, #3498db);
+        color: white;
+      }
+  
+      .bismillah-progress-step.completed {
+        background: var(--bismillah-primary-color, #3498db);
+        border-color: var(--bismillah-primary-color, #3498db);
+        color: white;
+      }
+  
+      .bismillah-progress-step-connector {
+        flex: 1;
+        height: 2px;
+        background: #f0f0f0;
+        z-index: 0;
+      }
+  
+      .bismillah-progress-step-connector.active {
+        background: var(--bismillah-primary-color, #3498db);
+      }
+  
+      /* Circular Progress Bar */
+      .bismillah-progress-circular {
+        position: relative;
+        width: 100px;
+        height: 100px;
+      }
+  
+      .bismillah-progress-circular-bg {
+        fill: none;
+        stroke: #f0f0f0;
+        stroke-width: 8;
+      }
+  
+      .bismillah-progress-circular-fill {
+        fill: none;
+        stroke: var(--bismillah-primary-color, #3498db);
+        stroke-width: 8;
+        stroke-linecap: round;
+        transform-origin: center;
+        transform: rotate(-90deg);
+        transition: stroke-dashoffset 0.5s ease;
+      }
+  
+      .bismillah-progress-circular-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: bold;
+      }
+  
+      /* Liquid Progress Bar */
+      .bismillah-progress-liquid {
+        background: #f0f0f0;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+      }
+  
+      .bismillah-progress-liquid .bismillah-progress-bar {
+        position: relative;
+        overflow: hidden;
+        background: var(--bismillah-primary-color, #3498db);
+      }
+  
+      .bismillah-progress-liquid .bismillah-progress-bar::after {
+        content: '';
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: linear-gradient(
+          transparent,
+          rgba(255, 255, 255, 0.3) 50%,
+          transparent
+        );
+        transform: rotate(25deg);
+        animation: bismillah-liquid-wave 2s linear infinite;
+      }
+  
+      @keyframes bismillah-liquid-wave {
+        0% {
+          transform: rotate(25deg) translateX(-50%);
+        }
+        100% {
+          transform: rotate(25deg) translateX(0%);
+        }
+      }
+  
+      /* Quantum Progress Bar - Futuristic style with particle effect */
+      .bismillah-progress-quantum {
+        background: rgba(15, 23, 42, 0.8);
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        height: 20px;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+  
+      .bismillah-progress-quantum .bismillah-progress-bar {
+        background: linear-gradient(90deg, #38bdf8, #818cf8);
+        position: relative;
+        overflow: hidden;
+      }
+  
+      .bismillah-progress-quantum .bismillah-progress-bar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: 
+          linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        animation: bismillah-quantum-pulse 2s infinite;
+      }
+  
+      .bismillah-progress-quantum .bismillah-progress-particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+      }
+  
+      .bismillah-progress-quantum .bismillah-progress-particle {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        animation: bismillah-quantum-particle 2s infinite linear;
+      }
+  
+      @keyframes bismillah-quantum-pulse {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+      }
+  
+      @keyframes bismillah-quantum-particle {
+        0% {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(var(--x, 20px), var(--y, 10px));
+          opacity: 0;
+        }
+      }
+  

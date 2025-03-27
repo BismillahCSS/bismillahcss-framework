@@ -1,6 +1,6 @@
 /* ========== BismillahCSS Navbar ========== */
 .b-navbar {
-    width: 100%;
+width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,32 +12,28 @@
     z-index: 1000;
     transition: top 0.3s ease-in-out;
 }
-
 /* Logo */
 .b-navbar-logo {
-    display: flex;
+display: flex;
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--primary-color, #333);
 }
-
 .b-navbar-logo img {
-    width: 40px;
+width: 40px;
     height: 40px;
     margin-right: 10px;
     border-radius: 50%;
 }
-
 /* Navigation Links */
 .b-navbar-links {
-    display: flex;
+display: flex;
     gap: 1.5rem;
 }
-
 .b-navbar-links a {
-    text-decoration: none;
+text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
     color: var(--link-color, #333);
@@ -45,10 +41,9 @@
     padding-bottom: 4px;
     transition: color 0.3s;
 }
-
 /* Animated Underline */
 .b-navbar-links a::after {
-    content: '';
+content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -57,33 +52,28 @@
     background: var(--primary-color, #007bff);
     transition: width 0.3s ease-in-out;
 }
-
 .b-navbar-links a:hover::after {
-    width: 100%;
+width: 100%;
 }
-
 .b-navbar-links a:hover {
-    color: var(--primary-color, #007bff);
+color: var(--primary-color, #007bff);
 }
-
 /* Hamburger Menu */
 .b-navbar-toggle {
-    display: none;
+display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
-
 .b-navbar-toggle span {
-    width: 25px;
+width: 25px;
     height: 3px;
     background: var(--primary-color, #333);
     transition: all 0.3s;
 }
-
 /* Responsive Navbar */
 @media (max-width: 768px) {
-    .b-navbar-links {
+.b-navbar-links {
         display: none;
         flex-direction: column;
         background: var(--navbar-bg, #ffffff);
@@ -93,21 +83,19 @@
         left: 0;
         padding: 1rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .b-navbar-links.open {
-        display: flex;
-    }
-
-    .b-navbar-toggle {
-        display: flex;
-    }
+}
+.b-navbar-links.open {
+display: flex;
+}
+.b-navbar-toggle {
+display: flex;
+}
 }
 
 
 /* ========== BismillahCSS Navbar v3 ========== */
 .b-navbar {
-    width: 100%;
+width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -119,47 +107,12 @@
     z-index: 1000;
     transition: background 0.3s ease-in-out;
 }
-
-/* Logo */
-.b-navbar-logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--primary-color, #333);
-}
-
-.b-navbar-logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-/* Navigation Links */
-.b-navbar-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.b-navbar-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--link-color, #333);
-    position: relative;
-    padding-bottom: 4px;
-    transition: color 0.3s;
-}
-
 /* Dropdown */
 .b-dropdown {
-    position: relative;
+position: relative;
 }
-
 .b-dropdown-menu {
-    display: none;
+display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -167,54 +120,46 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     min-width: 150px;
 }
-
 .b-dropdown-menu a {
-    display: block;
+display: block;
     padding: 8px 12px;
     color: var(--link-color, #333);
 }
-
 .b-dropdown:hover .b-dropdown-menu {
-    display: block;
+display: block;
 }
-
 /* Search Bar */
 .b-navbar-search {
-    flex-grow: 1;
+flex-grow: 1;
     text-align: center;
 }
-
 .b-search-input {
-    width: 200px;
+width: 200px;
     padding: 6px 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 /* Profile */
 .b-navbar-right {
-    display: flex;
+display: flex;
     align-items: center;
     gap: 1rem;
 }
-
 .b-profile img {
-    width: 35px;
+width: 35px;
     height: 35px;
     border-radius: 50%;
 }
-
 /* Dark Mode */
 .b-dark-mode-toggle {
-    background: none;
+background: none;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
 }
-
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .b-navbar-links {
+.b-navbar-links {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -224,21 +169,13 @@
         background: var(--navbar-bg, #ffffff);
         padding: 1rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .b-navbar-links.open {
-        display: flex;
-    }
-
-    .b-navbar-toggle {
-        display: flex;
-    }
+}
 }
 
 
 /* ========== BismillahCSS Navbar v4 ========== */
 .b-navbar {
-    width: 100%;
+width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -250,71 +187,12 @@
     z-index: 1000;
     transition: background 0.3s ease-in-out;
 }
-
-/* Logo */
-.b-navbar-logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: var(--primary-color, #333);
-}
-
-.b-navbar-logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
-/* Navigation Links */
-.b-navbar-links {
-    display: flex;
-    gap: 1.5rem;
-}
-
-.b-navbar-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--link-color, #333);
-    position: relative;
-    transition: color 0.3s;
-}
-
-/* Dropdown */
-.b-dropdown {
-    position: relative;
-}
-
-.b-dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: var(--navbar-bg, #ffffff);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    min-width: 150px;
-}
-
-.b-dropdown-menu a {
-    display: block;
-    padding: 8px 12px;
-    color: var(--link-color, #333);
-}
-
-.b-dropdown:hover .b-dropdown-menu {
-    display: block;
-}
-
 /* Multi-Level Dropdown */
 .b-sub-dropdown {
-    position: relative;
+position: relative;
 }
-
 .b-sub-dropdown-menu {
-    display: none;
+display: none;
     position: absolute;
     top: 0;
     left: 100%;
@@ -322,36 +200,19 @@
     min-width: 150px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-
 .b-sub-dropdown:hover .b-sub-dropdown-menu {
-    display: block;
+display: block;
 }
-
-/* Search Bar */
-.b-navbar-search {
-    flex-grow: 1;
-    text-align: center;
-}
-
-.b-search-input {
-    width: 200px;
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
 /* Notification */
 .b-notification {
-    position: relative;
+position: relative;
     cursor: pointer;
 }
-
 .b-notification-bell {
-    font-size: 1.5rem;
+font-size: 1.5rem;
 }
-
 .b-notification-count {
-    position: absolute;
+position: absolute;
     top: -5px;
     right: -8px;
     background: red;
@@ -360,9 +221,8 @@
     padding: 3px 7px;
     border-radius: 50%;
 }
-
 .b-notification-dropdown {
-    display: none;
+display: none;
     position: absolute;
     top: 30px;
     right: 0;
@@ -371,25 +231,16 @@
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
-
 .b-notification:hover .b-notification-dropdown {
-    display: block;
+display: block;
 }
-
 /* User Profile */
 .b-profile {
-    position: relative;
+position: relative;
     cursor: pointer;
 }
-
-.b-profile img {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-}
-
 .b-user-menu {
-    display: none;
+display: none;
     position: absolute;
     top: 40px;
     right: 0;
@@ -398,46 +249,15 @@
     min-width: 150px;
     padding: 10px;
 }
-
 .b-profile:hover .b-user-menu {
-    display: block;
+display: block;
 }
 
-/* Dark Mode */
-.b-dark-mode-toggle {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .b-navbar-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: var(--navbar-bg, #ffffff);
-        padding: 1rem;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .b-navbar-links.open {
-        display: flex;
-    }
-
-    .b-navbar-toggle {
-        display: flex;
-    }
-}
 
 
 /* ========== BismillahCSS Advanced Navbar ========== */
 .b-navbar {
-    width: 100%;
+width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -449,49 +269,26 @@
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
-
 /* Navbar Logo */
 .b-navbar-logo {
-    display: flex;
+display: flex;
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
     color: var(--primary-color, #333);
 }
-
-.b-navbar-logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
-
 /* Navbar Links */
 .b-navbar-links {
-    display: flex;
+display: flex;
     gap: 1.5rem;
 }
-
-.b-navbar-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--link-color, #333);
-    transition: color 0.3s;
-}
-
-.b-navbar-links a:hover {
-    color: var(--primary-color, #007bff);
-}
-
 /* === Dropdown Menu === */
 .b-navbar-dropdown {
-    position: relative;
+position: relative;
 }
-
 .b-navbar-dropdown-menu {
-    display: none;
+display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -501,61 +298,26 @@
     border-radius: 5px;
     overflow: hidden;
 }
-
 .b-navbar-dropdown-menu a {
-    display: block;
+display: block;
     padding: 10px;
     font-size: 0.95rem;
     text-decoration: none;
     color: var(--link-color, #333);
     transition: background 0.3s;
 }
-
 .b-navbar-dropdown-menu a:hover {
-    background: var(--primary-color, #007bff);
+background: var(--primary-color, #007bff);
     color: white;
 }
-
 /* Show Dropdown on Hover */
 .b-navbar-dropdown:hover .b-navbar-dropdown-menu {
-    display: block;
+display: block;
 }
-
 /* === Mobile Navigation === */
 .b-navbar-toggle {
-    display: none;
+display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
 }
-
-.b-navbar-toggle span {
-    width: 25px;
-    height: 3px;
-    background: var(--primary-color, #333);
-    transition: all 0.3s;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .b-navbar-links {
-        display: none;
-        flex-direction: column;
-        background: var(--navbar-bg, #ffffff);
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 1rem;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .b-navbar-links.open {
-        display: flex;
-    }
-
-    .b-navbar-toggle {
-        display: flex;
-    }
-}
-

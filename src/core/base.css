@@ -1,0 +1,429 @@
+/* 2️⃣ Global Reset */
+* {
+margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 4️⃣ Headings */
+h1, h2, h3, h4, h5, h6 {
+font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+/* 5️⃣ Paragraphs & Links */
+p {
+margin-bottom: 1rem;
+    font-size: 1rem;
+}
+a {
+text-decoration: none;
+    color: var(--bismillah-primary-color);
+}
+a:hover {
+text-decoration: underline;
+}
+/* 6️⃣ Images */
+img {
+max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ============================= */
+/* 🎨 BismillahCSS - Base Styles (Extended) */
+/* ============================= */
+
+/* 7️⃣ Scroll Behavior */
+html {
+scroll-behavior: smooth;
+}
+/* 8️⃣ Default Lists */
+ul, ol {
+padding-left: 20px;
+}
+li {
+margin-bottom: 5px;
+}
+/* 9️⃣ Default Table Styles */
+table {
+width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+padding: 10px;
+    border: 1px solid #ddd;
+}
+th {
+background-color: var(--bismillah-primary-color);
+    color: white;
+    text-align: left;
+}
+/* 🔟 Form Elements */
+input, textarea, select {
+width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--bismillah-border-radius);
+    font-size: 1rem;
+}
+input:focus, textarea:focus, select:focus {
+outline: 2px solid var(--bismillah-primary-color);
+}
+/* 1️⃣1️⃣ Flexbox Helpers */
+.bismillah-flex {
+display: flex;
+}
+/* 1️⃣2️⃣ Grid Helpers */
+.bismillah-grid {
+display: grid;
+}
+/* 1️⃣3️⃣ Default Animation */
+@keyframes bismillah-fade-in {
+from {
+        opacity: 0;
+}
+/* ============================= */
+/* 🎨 BismillahCSS - Base Styles (Extended & Improved) */
+/* ============================= */
+
+/* 1️⃣4️⃣ Default Blockquote Styling */
+blockquote {
+border-left: 4px solid var(--bismillah-primary-color);
+    padding: 10px 15px;
+    font-style: italic;
+    background: #f9f9f9;
+    color: var(--bismillah-text-color);
+    margin: 10px 0;
+}
+/* 1️⃣5️⃣ Code Blocks */
+pre {
+background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: var(--bismillah-border-radius);
+    overflow-x: auto;
+}
+code {
+font-family: "Courier New", monospace;
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+}
+/* 1️⃣6️⃣ Utility for Visibility */
+.bismillah-hidden {
+display: none;
+}
+.bismillah-visible {
+display: block;
+}
+/* 1️⃣7️⃣ Utility for Overflow Control */
+.bismillah-overflow-auto {
+overflow: auto;
+}
+/* 1️⃣8️⃣ Default Button Reset */
+button {
+font-family: inherit;
+    font-size: inherit;
+    border: none;
+    cursor: pointer;
+}
+button:focus {
+outline: 2px solid var(--bismillah-primary-color);
+}
+/* 1️⃣9️⃣ Default Image Styling */
+.bismillah-img-rounded {
+border-radius: var(--bismillah-border-radius);
+}
+.bismillah-img-circle {
+border-radius: 50%;
+}
+/* 2️⃣0️⃣ Default Z-Index Helpers */
+.bismillah-z-0 {
+z-index: 0;
+}
+/* 2️⃣1️⃣ Smooth Transitions */
+.bismillah-transition {
+transition: all 0.3s ease-in-out;
+}
+/* 2️⃣2️⃣ Cursor Utilities */
+.bismillah-cursor-pointer {
+cursor: pointer;
+}
+/* ============================= */
+/* 🎨 BismillahCSS - Extended Base Styles */
+/* ============================= */
+
+/* 2️⃣3️⃣ Smooth Scroll */
+html {
+scroll-behavior: smooth;
+}
+/* 2️⃣4️⃣ Selection Styling */
+::selection {
+background-color: var(--bismillah-primary-color);
+    color: #ffffff;
+}
+/* 2️⃣5️⃣ Scrollbar Customization */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+background: var(--bismillah-primary-color);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: var(--bismillah-secondary-color);
+}
+/* 2️⃣6️⃣ Basic Flexbox Utilities */
+.bismillah-flex {
+display: flex;
+}
+/* 2️⃣7️⃣ Grid System */
+.bismillah-grid {
+display: grid;
+    gap: 1rem;
+}
+/* 2️⃣8️⃣ Typography Helpers */
+.bismillah-text-center {
+text-align: center;
+}
+/* 2️⃣9️⃣ Opacity Utilities */
+.bismillah-opacity-100 {
+opacity: 1;
+}
+.bismillah-opacity-0 {
+opacity: 0;
+}
+/* 3️⃣0️⃣ Width & Height Utilities */
+.bismillah-w-full {
+width: 100%;
+}
+.bismillah-h-full {
+height: 100%;
+}
+.bismillah-w-screen {
+width: 100vw;
+}
+.bismillah-h-screen {
+height: 100vh;
+}
+/* 3️⃣1️⃣ Padding & Margin Shortcuts */
+.bismillah-m-0 {
+margin: 0;
+}
+/* 3️⃣2️⃣ Hover Effects */
+.bismillah-hover-shadow:hover {
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* ============================= */
+/* 🎨 BismillahCSS - Advanced Base Styles */
+/* ============================= */
+
+/* 3️⃣3️⃣ Responsive Image Handling */
+.bismillah-img-responsive {
+max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* 3️⃣4️⃣ Visibility Helpers */
+.bismillah-hidden {
+display: none;
+}
+.bismillah-block {
+display: block;
+}
+/* 3️⃣5️⃣ Positioning Utilities */
+.bismillah-relative {
+position: relative;
+}
+/* 3️⃣6️⃣ Z-Index Utilities */
+.bismillah-z-0 {
+z-index: 0;
+}
+/* 3️⃣7️⃣ Overflow Control */
+.bismillah-overflow-hidden {
+overflow: hidden;
+}
+/* 3️⃣8️⃣ Text Overflow & Wrapping */
+.bismillah-truncate {
+white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.bismillah-break-words {
+word-wrap: break-word;
+    word-break: break-word;
+}
+/* 3️⃣9️⃣ Cursor Utilities */
+.bismillah-cursor-pointer {
+cursor: pointer;
+}
+/* 4️⃣0️⃣ Transform & Transition Utilities */
+.bismillah-transform-scale {
+transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+.bismillah-rotate-90 {
+transform: rotate(90deg);
+}
+.bismillah-rotate-180 {
+transform: rotate(180deg);
+}
+.bismillah-rotate-270 {
+transform: rotate(270deg);
+}
+/* 4️⃣1️⃣ Background Opacity */
+.bismillah-bg-opacity-100 {
+background-color: rgba(0, 0, 0, 1);
+}
+.bismillah-bg-opacity-75 {
+background-color: rgba(0, 0, 0, 0.75);
+}
+.bismillah-bg-opacity-50 {
+background-color: rgba(0, 0, 0, 0.5);
+}
+.bismillah-bg-opacity-25 {
+background-color: rgba(0, 0, 0, 0.25);
+}
+.bismillah-bg-opacity-0 {
+background-color: rgba(0, 0, 0, 0);
+}
+/* 4️⃣2️⃣ Disabled State */
+.bismillah-disabled {
+opacity: 0.5;
+    pointer-events: none;
+}
+/* 4️⃣3️⃣ Border Widths */
+.bismillah-border-0 {
+border-width: 0px;
+}
+.bismillah-border-1 {
+border-width: 1px;
+}
+/* 4️⃣4️⃣ Border Radius */
+.bismillah-rounded-none {
+border-radius: 0px;
+}
+/* 4️⃣5️⃣ Box Shadow */
+.bismillah-shadow-none {
+box-shadow: none;
+}
+/* 4️⃣6️⃣ Button Variants */
+.bismillah-btn {
+display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: var(--bismillah-border-radius, 8px);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.bismillah-btn:hover {
+opacity: 0.8;
+}
+/* 4️⃣7️⃣ Card Component */
+.bismillah-card {
+background: white;
+    border-radius: var(--bismillah-border-radius, 8px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* 4️⃣8️⃣ Container */
+.bismillah-container {
+max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* ============================= */
+/* 🎨 BismillahCSS - More Advanced Base Styles */
+/* ============================= */
+
+/* 4️⃣9️⃣ Grid System */
+.bismillah-grid {
+display: grid;
+}
+/* 5️⃣0️⃣ Flexbox Utilities */
+.bismillah-flex {
+display: flex;
+}
+/* 5️⃣1️⃣ Width & Height */
+.bismillah-w-full {
+width: 100%;
+}
+/* 5️⃣2️⃣ Max Width */
+.bismillah-max-w-xs {
+max-width: 320px;
+}
+.bismillah-max-w-sm {
+max-width: 640px;
+}
+.bismillah-max-w-md {
+max-width: 768px;
+}
+.bismillah-max-w-lg {
+max-width: 1024px;
+}
+.bismillah-max-w-xl {
+max-width: 1280px;
+}
+/* 5️⃣3️⃣ Padding & Margin */
+.bismillah-p-2 {
+padding: 8px;
+}
+/* 5️⃣4️⃣ Animation Utilities */
+@keyframes bismillah-fade-in {
+from { opacity: 0;
+}
+}
+/* 5️⃣5️⃣ Hover & Active States */
+.bismillah-hover-shadow:hover {
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bismillah-active-scale:active {
+transform: scale(0.95);
+}
+/* 5️⃣6️⃣ Scroll Behavior */
+.bismillah-scroll-smooth {
+scroll-behavior: smooth;
+}
+/* 5️⃣7️⃣ Loading Spinner */
+.bismillah-spinner {
+width: 30px;
+    height: 30px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-top-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    animation: bismillah-spin 1s linear infinite;
+}
+
+
+/* 5️⃣8️⃣ Tooltip */
+.bismillah-tooltip {
+position: relative;
+    display: inline-block;
+}
+.bismillah-tooltip::after {
+content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+/* 5️⃣9️⃣ Dark Mode */
+@media (prefers-color-scheme: dark) {
+.bismillah-dark-bg { background-color: #1a1a1a; color: white;
+}
+.bismillah-dark-text {
+color: #f5f5f5;
+}
+}

@@ -1,0 +1,22 @@
+/* ============================= */
+/* 📊 BismillahCSS - Tables */
+/* ============================= */
+
+/* 📋 Table */
+.bismillah-table {
+width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+/* 📝 Table Cells */
+  .bismillah-th, 
+  .bismillah-td {
+padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+/* 📌 Table Headers */
+  .bismillah-th {
+background-color: var(--primary-color);
+    color: white;
+}

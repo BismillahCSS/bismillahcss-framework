@@ -1,0 +1,30 @@
+/* ============================= */
+/* ⚠️ BismillahCSS - Alerts */
+/* ============================= */
+
+/* ⚡ Basic Alert */
+.bismillah-alert {
+    padding: 15px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* ✅ Success Alert */
+  .bismillah-alert-success {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  /* ⚠️ Warning Alert */
+  .bismillah-alert-warning {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  /* ❌ Danger Alert */
+  .bismillah-alert-danger {
+    background-color: var(--accent-color);
+    color: white;
+  }
+  

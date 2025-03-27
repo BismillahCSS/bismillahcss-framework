@@ -1,24 +1,1392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bismillah-scrollbar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NeoFuture Tech</title>
     <link rel="stylesheet" href="dist/bismillah.min.css">
+    <style>
+        :root {
+            --primary-color: #00d4ff;
+            --secondary-color: #7928ca;
+            --accent-color: #ff0080;
+            --background-color: #0a0a1a;
+            --text-color: #ffffff;
+        }
+        
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .bismillah-futuristic-font {
+            font-family: 'Orbitron', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(10, 10, 26, 0.9), rgba(10, 10, 26, 0.8)), 
+                        url('/placeholder.svg?height=1080&width=1920');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .timeline-line {
+            position: absolute;
+            width: 4px;
+            background: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            box-shadow: 0 0 15px var(--primary-color);
+        }
+        
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+            box-shadow: 0 0 10px var(--accent-color);
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::after {
+            right: -10px;
+        }
+        
+        .right::after {
+            left: -10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .timeline-line {
+                left: 31px;
+            }
+            
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-container::after {
+                left: 21px;
+            }
+            
+            .right {
+                left: 0;
+            }
+        }
+        
+        .scroll-indicator {
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 0%;
+        }
+    </style>
 </head>
 <body>
-    <div class="bismillah-hero">
-        <div class="bismillah-hero-text">
-            <h1>Build Faster with BismillahCSS</h1>
-            <p>A lightweight and flexible utility-first CSS framework.</p>
-            <button class="bismillah-btn">Get Started</button>
-        </div>
-        <img src="docs/banner.jpeg" alt="Hero Image">
-        
-        <div class="bismillah-testimonials">
-            <p> "BismillahCSS made my workflow 10x faster!" - Developer</p>
-        </div>
-    </div>
+    <div class="scroll-indicator" id="scrollIndicator"></div>
     
+    <!-- Navbar -->
+    <nav class="bismillah-flex bismillah-justify-between bismillah-items-center bismillah-p-4 bismillah-shadow-lg bismillah-bg-dark bismillah-sticky bismillah-top-0 bismillah-z-50">
+        <div class="bismillah-flex bismillah-items-center">
+            <span class="bismillah-futuristic-font bismillah-text-primary bismillah-text-2xl">NeoFuture</span>
+        </div>
+        <div class="bismillah-flex bismillah-gap-5 bismillah-md-hidden">
+            <a href="#home" class="bismillah-text-light bismillah-hover-text-primary">Home</a>
+            <a href="#features" class="bismillah-text-light bismillah-hover-text-primary">Features</a>
+            <a href="#technology" class="bismillah-text-light bismillah-hover-text-primary">Technology</a>
+            <a href="#roadmap" class="bismillah-text-light bismillah-hover-text-primary">Roadmap</a>
+            <a href="#contact" class="bismillah-text-light bismillah-hover-text-primary">Contact</a>
+        </div>
+        <div class="bismillah-flex bismillah-flex-col bismillah-gap-1 bismillah-cursor-pointer bismillah-sm-block bismillah-hidden-lg" id="navbarToggle">
+            <span class="bismillah-bg-light bismillah-w-6 bismillah-h-1"></span>
+            <span class="bismillah-bg-light bismillah-w-6 bismillah-h-1"></span>
+            <span class="bismillah-bg-light bismillah-w-6 bismillah-h-1"></span>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+   
+    
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg bismillah-flex bismillah-flex-col bismillah-justify-center bismillah-items-center bismillah-p-10 bismillah-min-h-screen">
+        <div class="bismillah-container bismillah-text-center">
+            <h1 class="bismillah-text-5xl bismillah-font-extrabold bismillah-futuristic-font bismillah-mb-4">
+                <span class="bismillah-text-primary">Neo</span><span class="bismillah-text-accent">Future</span> <span class="bismillah-text-light">Tech</span>
+            </h1>
+            <!-- <p class="bismillah-text-xl bismillah-mb-5 bismillah-max-w bismillah-mx-auto">Pioneering the next generation of digital experiences with cutting-edge technology and futuristic design.</p>
+            <div class="bismillah-flex bismillah-justify-center bismillah-flex-wrap bismillah-gap-4">
+                <button class="bismillah-btn-primary bismillah-p-4 bismillah-rounded bismillah-shadow-neon bismillah-hover-scale">
+                    <span class="bismillah-futuristic-font">Explore Technology</span>
+                </button>
+                <button class="bismillah-btn-glass bismillah-p-4 bismillah-rounded bismillah-hover-scale">
+                    <span class="bismillah-futuristic-font ">Join Our Mission</span>
+                </button>
+            </div> -->
+            <div class="bismillah-mt-20 bismillah-float">
+                <img src="docs/banner.jpeg" alt="Futuristic Technology Visualization" class="bismillah-shadow-neon bismillah-rounded bismillah-mx-auto">
+            </div>
+        </div>
+    </section>
+   
+    <!-- Features Section -->
+    <section id="features" class="bismillah-bg-dark bismillah-p-10">
+        <div class="bismillah-container">
+            <div class="bismillah-flex bismillah-flex bismillah-gap-3 bismillah-items-center bismillah-mb-8">
+            <div class="bismillah-reveal-card ">
+                <img src="docs/bismillah.gif" class="bismillah-reveal-card-image" alt="Card image">
+                <div class="bismillah-reveal-card-content">
+                  <h3>Card Title</h3>
+                  <p>Card description goes here...</p>
+                </div>
+              </div>
+
+              <div class="bismillah-spotlight-card">
+                <h3>Spotlight Card</h3>
+                <p>Hover to see the spotlight effect</p>
+              </div>
+              <div class="bismillah-morphing-card">
+                <h3>Morphing Card</h3>
+              </div>
+            </div>
+            <div class="bismillah-flex bismillah-gap-3 bismillah-items-center bismillah-mt-[50px]">
+              <button class="bismillah-slice-btn">Slice Effect</button>
+              <button class="bismillah-pulse-btn">Slice Effect</button>
+              <button class="bismillah-bubble-btn">Bubble Effect</button>
+              <button class="bismillah-shutter-btn">Shutter Effect</button>
+              <button class="bismillah-gradient-border-btn">Gradient Border</button>
+              <button class="bismillah-expanding-border-btn"><span>Expanding Border</span></button>
+            </div>
+
+            <h2 class="bismillah-text-3xl bismillah-font-bold bismillah-text-center bismillah-futuristic-font bismillah-mb-10 bismillah-text-primary">Revolutionary Features</h2>
+            <div class="bismillah-grid bismillah-grid-cols-1 bismillah-md-grid-2 bismillah-lg-grid-3 bismillah-gap-8">
+                <!-- Feature 1 -->
+                <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-border-animate">
+                    <div class="bismillah-text-center bismillah-mb-4">
+                        <div class="bismillah-text-4xl bismillah-text-primary bismillah-mb-3">01</div>
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font">Quantum Processing</h3>
+                    </div>
+                    <p>Harness the power of quantum computing with our revolutionary processing architecture that breaks traditional computing barriers.</p>
+                    <div class="bismillah-mt-4">
+                        <button class="bismillah-btn-glass bismillah-w-full bismillah-py-2 bismillah-hover-scale">Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-border-animate">
+                    <div class="bismillah-text-center bismillah-mb-4">
+                        <div class="bismillah-text-4xl bismillah-text-accent bismillah-mb-3">02</div>
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font">Neural Interface</h3>
+                    </div>
+                    <p>Connect directly with technology through our advanced neural interface system, enabling thought-controlled interactions.</p>
+                    <div class="bismillah-mt-4">
+                        <button class="bismillah-btn-glass bismillah-w-full bismillah-py-2 bismillah-hover-scale">Learn More</button>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-border-animate">
+                    <div class="bismillah-text-center bismillah-mb-4">
+                        <div class="bismillah-text-4xl bismillah-text-secondary bismillah-mb-3">03</div>
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font">Holographic Display</h3>
+                    </div>
+                    <p>Experience true 3D visualization with our holographic display technology that projects interactive content into your environment.</p>
+                    <div class="bismillah-mt-4">
+                        <button class="bismillah-btn-glass bismillah-w-full bismillah-py-2 bismillah-hover-scale">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="bismillah-dimensional-card">
+        <div class="bismillah-dimensional-card-inner">
+          <div class="bismillah-dimensional-card-face bismillah-dimensional-card-front"></div>
+          <div class="bismillah-dimensional-card-wall-left"></div>
+          <div class="bismillah-dimensional-card-wall-right"></div>
+          <div class="bismillah-dimensional-card-wall-top"></div>
+          <div class="bismillah-dimensional-card-wall-bottom"></div>
+          <div class="bismillah-dimensional-card-content">
+            <h3>Dimensional Space</h3>
+            <p>Explore a 3D environment</p>
+          </div>
+        </div>
+      </div>
+      <button class="bismillah-biometric-btn"><span>Biometric Scan</span></button>
+      <button class="bismillah-glitch-btn" data-text="Reality Glitch"><span>Reality Glitch</span></button>
+      <button class="bismillah-chromatic-btn" data-text="Chromatic">Chromatic</button>
+      <button class="bismillah-neuromorphic-btn">Neuromorphic</button>
+      <div class="bismillah-quantum-btn-container">
+        <button class="bismillah-quantum-btn">Quantum A</button>
+        <button class="bismillah-quantum-btn">Quantum B</button>
+      </div>
+      <button class="bismillah-gravity-btn"><span>Gravitational Pull</span></button>
+
+      <button class="bismillah-kinetic-btn">Kinetic Energy</button>
+    
+    
+    <!-- Technology Section -->
+    <section id="technology" class="bismillah-p-10 bismillah-bg-dark">
+        <div class="bismillah-container">
+            <h2 class="bismillah-text-3xl bismillah-font-bold bismillah-text-center bismillah-futuristic-font bismillah-mb-10 bismillah-text-primary">Cutting-Edge Technology</h2>
+            <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-mb-8">
+                <p class="bismillah-text-center bismillah-mb-8">Our technology stack combines the most advanced systems available today with our proprietary innovations to create truly next-generation experiences.</p>
+                
+                <div class="bismillah-grid bismillah-grid-cols-2 bismillah-md-grid-3 bismillah-lg-grid-6 bismillah-gap-4">
+                    <div class="bismillah-card-glass bismillah-rounded-lg bismillah-shadow-neon-blue bismillah-p-4 bismillah-text-center bismillah-hover-scale">
+                        <span class="bismillah-text-primary bismillah-text-2xl">AI</span>
+                    </div>
+                    <div class="bismillah-card-glass bismillah-rounded-lg bismillah-shadow-neon-green bismillah-p-4 bismillah-text-center bismillah-hover-scale">
+                        <span class="bismillah-text-success bismillah-text-2xl">VR</span>
+                    </div>
+                    <div class="bismillah-card-glass bismillah-rounded-lg bismillah-shadow-neon-pink bismillah-p-4 bismillah-text-center bismillah-hover-scale">
+                        <span class="bismillah-text-accent bismillah-text-2xl">AR</span>
+                    </div>
+                    <div class="bismillah-card-glass bismillah-rounded-lg bismillah-shadow-neon-blue bismillah-p-4 bismillah-text-center bismillah-hover-scale">
+                        <span class="bismillah-text-primary bismillah-text-2xl">IoT</span>
+                    </div>
+                    <div class="bismillah-card-glass bismillah-rounded-lg bismillah-shadow-neon-green bismillah-p-4 bismillah-text-center bismillah-hover-scale">
+                        <span class="bismillah-text-success bismillah-text-2xl">5G</span>
+                    </div>
+                    <div class="bismillah-card-glass bismillah-rounded-lg bismillah-shadow-neon-pink bismillah-p-4 bismillah-text-center bismillah-hover-scale">
+                        <span class="bismillah-text-accent bismillah-text-2xl">ML</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bismillah-flex bismillah-flex-col bismillah-md-flex-row bismillah-gap-6">
+                <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-flex-1">
+                    <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-primary bismillah-mb-4">Processing Power</h3>
+                    <div class="bismillah-flex bismillah-justify-between bismillah-mb-2">
+                        <span>Quantum Efficiency</span>
+                        <span class="bismillah-text-accent">98%</span>
+                    </div>
+                    <div class="bismillah-bg-dark bismillah-rounded-full bismillah-h-2 bismillah-mb-4">
+                        <div class="bismillah-bg-accent bismillah-h-2 bismillah-rounded-full" style="width: 98%"></div>
+                    </div>
+                    
+                    <div class="bismillah-flex bismillah-justify-between bismillah-mb-2">
+                        <span>Neural Capacity</span>
+                        <span class="bismillah-text-primary">85%</span>
+                    </div>
+                    <div class="bismillah-bg-dark bismillah-rounded-full bismillah-h-2 bismillah-mb-4">
+                        <div class="bismillah-bg-primary bismillah-h-2 bismillah-rounded-full" style="width: 85%"></div>
+                    </div>
+                    
+                    <div class="bismillah-flex bismillah-justify-between bismillah-mb-2">
+                        <span>Holographic Resolution</span>
+                        <span class="bismillah-text-secondary">92%</span>
+                    </div>
+                    <div class="bismillah-bg-dark bismillah-rounded-full bismillah-h-2 bismillah-mb-4">
+                        <div class="bismillah-bg-secondary bismillah-h-2 bismillah-rounded-full" style="width: 92%"></div>
+                    </div>
+                </div>
+                
+                <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-flex-1">
+                    <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-primary bismillah-mb-4">Energy Consumption</h3>
+                    <div class="bismillah-text-center">
+                        <div class="bismillah-circle-card bismillah-mx-auto bismillah-mb-4" style="height: 150px; width: 150px; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                            <span class="bismillah-text-4xl bismillah-font-bold">-75%</span>
+                        </div>
+                        <p>Reduced energy consumption compared to traditional computing systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="bismillah-p-10 bismillah-bg-dark">
+        <div class="bismillah-container">
+            <h2 class="bismillah-text-3xl bismillah-font-bold bismillah-text-center bismillah-futuristic-font bismillah-mb-10 bismillah-text-primary">Development Roadmap</h2>
+            
+            <div class="bismillah-relative">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-container left">
+                    <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-primary">Q1 2025</h3>
+                        <p>Initial prototype development and core technology research</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-container right">
+                    <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-accent">Q2 2025</h3>
+                        <p>Alpha testing of quantum processing units and neural interfaces</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-container left">
+                    <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-primary">Q3 2025</h3>
+                        <p>Beta release of holographic display technology to select partners</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-container right">
+                    <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-accent">Q4 2025</h3>
+                        <p>Full integration of all systems and preparation for public launch</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-container left">
+                    <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg">
+                        <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-primary">Q1 2026</h3>
+                        <p>Global launch and expansion of the NeoFuture ecosystem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="bismillah-p-10 bismillah-bg-dark">
+        <div class="bismillah-container">
+            <h2 class="bismillah-text-3xl bismillah-font-bold bismillah-text-center bismillah-futuristic-font bismillah-mb-10 bismillah-text-primary">Join The Future</h2>
+            
+            <div class="bismillah-card-glass bismillah-p-6 bismillah-rounded-lg bismillah-max-w bismillah-mx-auto" style="max-width: 600px;">
+                <form>
+                    <div class="bismillah-mb-4">
+                        <label for="name" class="bismillah-block bismillah-mb-2 bismillah-futuristic-font">Your Name</label>
+                        <input type="text" id="name" class="bismillah-w-full bismillah-p-3 bismillah-bg-glass bismillah-border-none bismillah-rounded bismillah-focus-ring" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="bismillah-mb-4">
+                        <label for="email" class="bismillah-block bismillah-mb-2 bismillah-futuristic-font">Email Address</label>
+                        <input type="email" id="email" class="bismillah-w-full bismillah-p-3 bismillah-bg-glass bismillah-border-none bismillah-rounded bismillah-focus-ring" placeholder="Enter your email">
+                    </div>
+                    
+                    <div class="bismillah-mb-4">
+                        <label for="interest" class="bismillah-block bismillah-mb-2 bismillah-futuristic-font">Area of Interest</label>
+                        <select id="interest" class="bismillah-w-full bismillah-p-3 bismillah-bg-glass bismillah-border-none bismillah-rounded bismillah-focus-ring">
+                            <option value="">Select your interest</option>
+                            <option value="quantum">Quantum Processing</option>
+                            <option value="neural">Neural Interface</option>
+                            <option value="holographic">Holographic Display</option>
+                            <option value="other">Other Technology</option>
+                        </select>
+                    </div>
+                    
+                    <div class="bismillah-mb-4">
+                        <label for="message" class="bismillah-block bismillah-mb-2 bismillah-futuristic-font">Your Message</label>
+                        <textarea id="message" rows="4" class="bismillah-w-full bismillah-p-3 bismillah-bg-glass bismillah-border-none bismillah-rounded bismillah-focus-ring" placeholder="Tell us about your interest in NeoFuture"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="bismillah-btn-primary bismillah-w-full bismillah-p-3 bismillah-rounded bismillah-shadow-neon bismillah-hover-scale">
+                        <span class="bismillah-futuristic-font">Submit Application</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bismillah-bg-dark bismillah-p-6 bismillah-border-t bismillah-border-primary">
+        <div class="bismillah-container">
+            <div class="bismillah-flex bismillah-flex-col bismillah-md-flex-row bismillah-justify-between bismillah-gap-6">
+                <div>
+                    <h3 class="bismillah-text-xl bismillah-font-bold bismillah-futuristic-font bismillah-text-primary bismillah-mb-3">NeoFuture Tech</h3>
+                    <p>Pioneering the next generation of digital experiences</p>
+                </div>
+                
+                <div>
+                    <h4 class="bismillah-text-lg bismillah-font-bold bismillah-futuristic-font bismillah-text-primary bismillah-mb-3">Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="bismillah-hover-text-primary">Home</a></li>
+                        <li><a href="#features" class="bismillah-hover-text-primary">Features</a></li>
+                        <li><a href="#technology" class="bismillah-hover-text-primary">Technology</a></li>
+                        <li><a href="#roadmap" class="bismillah-hover-text-primary">Roadmap</a></li>
+                        <li><a href="#contact" class="bismillah-hover-text-primary">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="bismillah-holographic-card">
+                    <div class="bismillah-holographic-card-content">
+                      <h3>Holographic Effect</h3>
+                      <p>Simulated holographic material</p>
+                    </div>
+                  </div>
+
+                  <div class="bismillah-dimensional-card">
+                    <div class="bismillah-dimensional-card-inner">
+                      <div class="bismillah-dimensional-card-face bismillah-dimensional-card-front"></div>
+                      <div class="bismillah-dimensional-card-wall-left"></div>
+                      <div class="bismillah-dimensional-card-wall-right"></div>
+                      <div class="bismillah-dimensional-card-wall-top"></div>
+                      <div class="bismillah-dimensional-card-wall-bottom"></div>
+                      <div class="bismillah-dimensional-card-content">
+                        <h3>Dimensional Space</h3>
+                        <p>Explore a 3D environment</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bismillah-parallax-card">
+                    <div class="bismillah-parallax-card-layers">
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-1" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-2" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-3" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-4" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                    </div>
+                    <div class="bismillah-parallax-card-content">
+                      <h3>Parallax Depth Card</h3>
+                      <p>Hover to experience true depth perception</p>
+                    </div>
+                  </div>
+
+                  <div class="bismillah-quantum-card">
+                    <div class="bismillah-quantum-card-inner">
+                      <div class="bismillah-quantum-card-face bismillah-quantum-card-front">
+                        <!-- Generate cells with JavaScript or manually -->
+                        <div class="bismillah-quantum-cell" style="--cell-index: 1"></div>
+                        <div class="bismillah-quantum-cell" style="--cell-index: 2"></div>
+                        <!-- Add more cells as needed -->
+                      </div>
+                      <div class="bismillah-quantum-card-face bismillah-quantum-card-back">
+                        <!-- Generate cells with JavaScript or manually -->
+                        <div class="bismillah-quantum-cell" style="--cell-index: 1"></div>
+                        <div class="bismillah-quantum-cell" style="--cell-index: 2"></div>
+                        <!-- Add more cells as needed -->
+                      </div>
+                      <div class="bismillah-quantum-card-content">
+                        <h3>Quantum State</h3>
+                        <p>Superposition visualization</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="bismillah-dimensional-card">
+                    <div class="bismillah-dimensional-card-inner">
+                      <div class="bismillah-dimensional-card-face bismillah-dimensional-card-front"></div>
+                      <div class="bismillah-dimensional-card-wall-left"></div>
+                      <div class="bismillah-dimensional-card-wall-right"></div>
+                      <div class="bismillah-dimensional-card-wall-top"></div>
+                      <div class="bismillah-dimensional-card-wall-bottom"></div>
+                      <div class="bismillah-dimensional-card-content">
+                        <h3>Dimensional Space</h3>
+                        <p>Explore a 3D environment</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="bismillah-parallax-card">
+                    <div class="bismillah-parallax-card-layers">
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-1" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-2" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-3" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                      <div class="bismillah-parallax-card-layer bismillah-parallax-card-layer-4" style="background-image: url('/placeholder.svg?height=400&width=300')"></div>
+                    </div>
+                    <div class="bismillah-parallax-card-content">
+                      <h3>Parallax Depth Card</h3>
+                      <p>Hover to experience true depth perception</p>
+                    </div>
+                  </div>
+                
+                <div>
+                    <h4 class="bismillah-text-lg bismillah-font-bold bismillah-futuristic-font bismillah-text-primary bismillah-mb-3">Connect</h4>
+                    <div class="bismillah-flex bismillah-gap-3">
+                        <a href="#" class="bismillah-bg-glass bismillah-p-2 bismillah-rounded-full bismillah-hover-scale">
+                            <span>TW</span>
+                        </a>
+                        <a href="#" class="bismillah-bg-glass bismillah-p-2 bismillah-rounded-full bismillah-hover-scale">
+                            <span>FB</span>
+                        </a>
+                        <a href="#" class="bismillah-bg-glass bismillah-p-2 bismillah-rounded-full bismillah-hover-scale">
+                            <span>IG</span>
+                        </a>
+                        <a href="#" class="bismillah-bg-glass bismillah-p-2 bismillah-rounded-full bismillah-hover-scale">
+                            <span>LI</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+                <h1 style="text-align: center; margin-bottom: 40px;">BismillahCSS Extensions</h1>
+            
+                <!-- Pagination Section -->
+                <section style="margin-bottom: 60px;">
+                  <h2 style="margin-bottom: 30px;">Advanced Pagination Styles</h2>
+            
+                  <!-- Standard Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Standard Pagination</h3>
+                    <nav class="bismillah-pagination">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Rounded Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Rounded Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-rounded">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Bordered Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Bordered Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-bordered">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Compact Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Compact Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-compact">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Floating Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Floating Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-floating">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Gradient Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Gradient Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-gradient">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Neon Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Neon Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-neon">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Animated Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Animated Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-animated">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Minimalist Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Minimalist Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-minimalist">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+            
+                  <!-- Quantum Pagination -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Quantum Pagination</h3>
+                    <nav class="bismillah-pagination bismillah-pagination-quantum">
+                      <div class="bismillah-page-item disabled">
+                        <a class="bismillah-page-link" href="#" aria-label="Previous">
+                          &laquo;
+                        </a>
+                      </div>
+                      <div class="bismillah-page-item active">
+                        <a class="bismillah-page-link" href="#">1</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">2</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#">3</a>
+                      </div>
+                      <div class="bismillah-page-item">
+                        <a class="bismillah-page-link" href="#" aria-label="Next">
+                          &raquo;
+                        </a>
+                      </div>
+                    </nav>
+                  </div>
+                </section>
+            
+                <!-- Progress Bars Section -->
+                <section style="margin-bottom: 60px;">
+                  <h2 style="margin-bottom: 30px;">Advanced Progress Bars</h2>
+            
+                  <!-- Standard Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Standard Progress Bar</h3>
+                    <div class="bismillah-progress-container">
+                      <div class="bismillah-progress-bar" style="width: 75%;">
+                        <span class="bismillah-progress-text">75%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Striped Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Striped Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-striped">
+                      <div class="bismillah-progress-bar" style="width: 65%;">
+                        <span class="bismillah-progress-text">65%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Animated Striped Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Animated Striped Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-striped-animated">
+                      <div class="bismillah-progress-bar" style="width: 85%;">
+                        <span class="bismillah-progress-text">85%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Thin Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Thin Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-thin">
+                      <div class="bismillah-progress-bar" style="width: 60%;">
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Thick Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Thick Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-thick">
+                      <div class="bismillah-progress-bar" style="width: 70%;">
+                        <span class="bismillah-progress-text">70%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Rounded Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Rounded Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-rounded">
+                      <div class="bismillah-progress-bar" style="width: 80%;">
+                        <span class="bismillah-progress-text">80%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Gradient Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Gradient Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-gradient">
+                      <div class="bismillah-progress-bar" style="width: 90%;">
+                        <span class="bismillah-progress-text">90%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Glow Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Glow Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-glow">
+                      <div class="bismillah-progress-bar" style="width: 55%;">
+                        <span class="bismillah-progress-text">55%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Neon Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Neon Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-neon">
+                      <div class="bismillah-progress-bar" style="width: 45%;">
+                        <span class="bismillah-progress-text">45%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Segmented Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Segmented Progress Bar</h3>
+                    <div class="bismillah-progress-segmented">
+                      <div class="bismillah-progress-segment active"></div>
+                      <div class="bismillah-progress-segment active"></div>
+                      <div class="bismillah-progress-segment active"></div>
+                      <div class="bismillah-progress-segment"></div>
+                      <div class="bismillah-progress-segment"></div>
+                    </div>
+                  </div>
+            
+                  <!-- Steps Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Steps Progress Bar</h3>
+                    <div class="bismillah-progress-steps">
+                      <div class="bismillah-progress-step completed">1</div>
+                      <div class="bismillah-progress-step-connector active"></div>
+                      <div class="bismillah-progress-step active">2</div>
+                      <div class="bismillah-progress-step-connector"></div>
+                      <div class="bismillah-progress-step">3</div>
+                      <div class="bismillah-progress-step-connector"></div>
+                      <div class="bismillah-progress-step">4</div>
+                    </div>
+                  </div>
+            
+                  <!-- Circular Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Circular Progress Bar</h3>
+                    <div class="bismillah-progress-circular">
+                      <svg viewBox="0 0 100 100">
+                        <circle class="bismillah-progress-circular-bg" cx="50" cy="50" r="45"></circle>
+                        <circle class="bismillah-progress-circular-fill" cx="50" cy="50" r="45" stroke-dasharray="283" stroke-dashoffset="70"></circle>
+                      </svg>
+                      <div class="bismillah-progress-circular-text">75%</div>
+                    </div>
+                  </div>
+            
+                  <!-- Liquid Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Liquid Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-liquid">
+                      <div class="bismillah-progress-bar" style="width: 65%;">
+                        <span class="bismillah-progress-text">65%</span>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <!-- Quantum Progress Bar -->
+                  <div style="margin-bottom: 40px;">
+                    <h3>Quantum Progress Bar</h3>
+                    <div class="bismillah-progress-container bismillah-progress-quantum">
+                      <div class="bismillah-progress-bar" style="width: 70%;">
+                        <span class="bismillah-progress-text">70%</span>
+                      </div>
+                      <div class="bismillah-progress-particles">
+                        <div class="bismillah-progress-particle" style="top: 5px; left: 10%; --x: 30px; --y: -10px;"></div>
+                        <div class="bismillah-progress-particle" style="top: 15px; left: 20%; --x: -20px; --y: -15px;"></div>
+                        <div class="bismillah-progress-particle" style="top: 8px; left: 30%; --x: 25px; --y: 10px;"></div>
+                        <div class="bismillah-progress-particle" style="top: 12px; left: 40%; --x: -15px; --y: -5px;"></div>
+                        <div class="bismillah-progress-particle" style="top: 5px; left: 50%; --x: 10px; --y: 15px;"></div>
+                        <div class="bismillah-progress-particle" style="top: 15px; left: 60%; --x: -25px; --y: -10px;"></div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+            
+                <!-- Footers Section -->
+                <section style="margin-bottom: 60px;">
+                  <h2 style="margin-bottom: 30px;">Advanced Footers</h2>
+            
+                  <!-- Standard Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Standard Footer</h3>
+                    <footer class="bismillah-footer">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Dark Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Dark Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-dark">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Gradient Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Gradient Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-gradient">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Compact Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Compact Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-compact">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Your Company</h4>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Wave Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Wave Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-wave">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Glassmorphism Footer -->
+                  <div style="margin-bottom: 60px; background: linear-gradient(135deg, #6e8efb, #a777e3); padding: 20px;">
+                    <h3 style="color: white;">Glassmorphism Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-glass">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Floating Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Floating Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-floating">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Neon Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Neon Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-neon">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+            
+                  <!-- Quantum Footer -->
+                  <div style="margin-bottom: 60px;">
+                    <h3>Quantum Footer</h3>
+                    <footer class="bismillah-footer bismillah-footer-quantum">
+                      <div class="bismillah-footer-container">
+                        <div class="bismillah-footer-row">
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">About Us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies aliquam.</p>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Quick Links</h4>
+                            <ul class="bismillah-footer-links">
+                              <li><a href="#">Home</a></li>
+                              <li><a href="#">About</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">Contact</a></li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Contact Us</h4>
+                            <ul class="bismillah-footer-links">
+                              <li>123 Street, City</li>
+                              <li>info@example.com</li>
+                              <li>+123 456 7890</li>
+                            </ul>
+                          </div>
+                          <div class="bismillah-footer-col">
+                            <h4 class="bismillah-footer-title">Follow Us</h4>
+                            <div class="bismillah-footer-social">
+                              <a href="#" class="bismillah-footer-social-icon">FB</a>
+                              <a href="#" class="bismillah-footer-social-icon">TW</a>
+                              <a href="#" class="bismillah-footer-social-icon">IG</a>
+                              <a href="#" class="bismillah-footer-social-icon">LI</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="bismillah-footer-bottom">
+                          <p>&copy; 2025 Your Company. All rights reserved.</p>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </section>
+              </div>
+            
+            <div class="bismillah-text-center bismillah-mt-6 bismillah-pt-6 bismillah-border-t bismillah-border-gray">
+                <p>&copy; 2025 NeoFuture Tech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Mobile menu toggle
+        const navbarToggle = document.getElementById('navbarToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        navbarToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('bismillah-hidden');
+        });
+        
+        // Scroll indicator
+        window.addEventListener('scroll', () => {
+            const scrollIndicator = document.getElementById('scrollIndicator');
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const progress = (window.pageYOffset / totalHeight) * 100;
+            scrollIndicator.style.width = progress + '%';
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('bismillah-hidden');
+                }
+            });
+        });
+    </script>
 </body>
 </html>

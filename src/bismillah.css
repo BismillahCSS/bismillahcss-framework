@@ -2,6 +2,7 @@
 @import './core/themes.css';       /* Light & Dark mode styles */
 @import './core/utilities.css';    /* Utility classes (margin, padding, flex, etc.) */
 @import './core/animations.css';   /* Transitions, animations, hover effects */
+@import './core/base.css';         /* Base CSS  */
 
 @import './components/navbar.css'; /* Navbar styles */
 @import './components/footer.css'; /* Footer styles */
@@ -11,3 +12,10 @@
 @import './components/modal.css';  /* Modal popups */
 @import './components/alerts.css'; /* Notification alerts */
 @import './components/hero.css';   /* Hero section */
+@import './components/progress-bar.css'; /* Progress bar styles */
+@import './components/pagination.css';  /* Pagination styles */
+/*@import './components/tables.css'; /* Table styles */
+/*@import './components/typography.css';  Typography styles */
+/*@import './components/scrollbar.css';  /* Custom scrollbar styles */
+/*@import './components/accordion.css';   Accordion styles */
+
