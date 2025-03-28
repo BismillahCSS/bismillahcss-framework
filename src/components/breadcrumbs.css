@@ -1,0 +1,242 @@
+/* ========== BismillahCSS Breadcrumbs ========== */
+
+.bismillah-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: var(--bismillah-breadcrumb-bg, transparent);
+    border-radius: var(--bismillah-breadcrumb-radius, 6px);
+    font-size: var(--bismillah-breadcrumb-font-size, 0.95rem);
+  }
+  
+  .bismillah-breadcrumbs-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .bismillah-breadcrumb-item {
+    display: flex;
+    align-items: center;
+    color: var(--bismillah-breadcrumb-color, #6c757d);
+    transition: color 0.2s ease;
+  }
+  
+  .bismillah-breadcrumb-item a {
+    color: var(--bismillah-breadcrumb-link-color, #007bff);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .bismillah-breadcrumb-item a:hover {
+    color: var(--bismillah-breadcrumb-link-hover-color, #0056b3);
+    text-decoration: underline;
+  }
+  
+  .bismillah-breadcrumb-item.active {
+    color: var(--bismillah-breadcrumb-active-color, #333);
+    font-weight: 600;
+  }
+  
+  .bismillah-breadcrumb-divider {
+    display: flex;
+    align-items: center;
+    color: var(--bismillah-breadcrumb-divider-color, #adb5bd);
+    padding: 0 0.5rem;
+    user-select: none;
+  }
+  
+  /* Icon Breadcrumbs */
+  .bismillah-breadcrumb-icon {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+    font-size: 1.1em;
+  }
+  
+  /* Breadcrumbs with Background */
+  .bismillah-breadcrumbs.with-bg {
+    background-color: var(--bismillah-breadcrumb-bg-solid, #f8f9fa);
+    padding: 0.75rem 1rem;
+    border-radius: var(--bismillah-breadcrumb-radius, 6px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Compact Breadcrumbs */
+  .bismillah-breadcrumbs.compact {
+    padding: 0.5rem 0;
+    font-size: 0.85rem;
+  }
+  
+  .bismillah-breadcrumbs.compact .bismillah-breadcrumb-divider {
+    padding: 0 0.35rem;
+  }
+  
+  /* Animated Breadcrumbs */
+  .bismillah-breadcrumbs.animated .bismillah-breadcrumb-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bismillah-breadcrumbs.animated .bismillah-breadcrumb-item a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--bismillah-breadcrumb-link-hover-color, #0056b3);
+    transition: width 0.3s ease;
+  }
+  
+  .bismillah-breadcrumbs.animated .bismillah-breadcrumb-item a:hover::after {
+    width: 100%;
+  }
+  
+  /* Pill Breadcrumbs */
+  .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item {
+    background-color: var(--bismillah-breadcrumb-pill-bg, #f0f0f0);
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+  }
+  
+  .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item.active {
+    background-color: var(--bismillah-breadcrumb-pill-active-bg, #e9ecef);
+  }
+  
+  .bismillah-breadcrumbs.pill .bismillah-breadcrumb-divider {
+    display: none;
+  }
+  
+  /* Arrow Breadcrumbs */
+  .bismillah-breadcrumbs.arrow {
+    padding: 0;
+  }
+  
+  .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item {
+    background-color: var(--bismillah-breadcrumb-arrow-bg, #f0f0f0);
+    padding: 0.5rem 1.5rem 0.5rem 2rem;
+    position: relative;
+    margin-right: 0.75rem;
+  }
+  
+  .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 1.2rem solid transparent;
+    border-bottom: 1.2rem solid transparent;
+    border-left: 1rem solid var(--bismillah-breadcrumb-bg, #fff);
+  }
+  
+  .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    border-top: 1.2rem solid transparent;
+    border-bottom: 1.2rem solid transparent;
+    border-left: 1rem solid var(--bismillah-breadcrumb-arrow-bg, #f0f0f0);
+  }
+  
+  .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active {
+    background-color: var(--bismillah-breadcrumb-arrow-active-bg, #e9ecef);
+  }
+  
+  .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active::after {
+    border-left-color: var(--bismillah-breadcrumb-arrow-active-bg, #e9ecef);
+  }
+  
+  .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-divider {
+    display: none;
+  }
+  
+  /* Responsive Breadcrumbs */
+  @media (max-width: 576px) {
+    .bismillah-breadcrumbs {
+      font-size: 0.85rem;
+    }
+    
+    .bismillah-breadcrumbs.responsive .bismillah-breadcrumb-item:not(:last-child):not(:first-child) {
+      display: none;
+    }
+    
+    .bismillah-breadcrumbs.responsive .bismillah-breadcrumb-item:first-child::after {
+      content: '...';
+      padding: 0 0.5rem;
+      color: var(--bismillah-breadcrumb-divider-color, #adb5bd);
+    }
+  }
+  
+  /* Dark Mode */
+  .dark .bismillah-breadcrumbs {
+    color: var(--bismillah-breadcrumb-color-dark, #adb5bd);
+  }
+  
+  .dark .bismillah-breadcrumb-item {
+    color: var(--bismillah-breadcrumb-color-dark, #adb5bd);
+  }
+  
+  .dark .bismillah-breadcrumb-item a {
+    color: var(--bismillah-breadcrumb-link-color-dark, #5e9eff);
+  }
+  
+  .dark .bismillah-breadcrumb-item a:hover {
+    color: var(--bismillah-breadcrumb-link-hover-color-dark, #8cb8ff);
+  }
+  
+  .dark .bismillah-breadcrumb-item.active {
+    color: var(--bismillah-breadcrumb-active-color-dark, #e0e0e0);
+  }
+  
+  .dark .bismillah-breadcrumb-divider {
+    color: var(--bismillah-breadcrumb-divider-color-dark, #666);
+  }
+  
+  .dark .bismillah-breadcrumbs.with-bg {
+    background-color: var(--bismillah-breadcrumb-bg-solid-dark, #2a2a2a);
+  }
+  
+  .dark .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item {
+    background-color: var(--bismillah-breadcrumb-pill-bg-dark, #333);
+  }
+  
+  .dark .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item.active {
+    background-color: var(--bismillah-breadcrumb-pill-active-bg-dark, #444);
+  }
+  
+  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item {
+    background-color: var(--bismillah-breadcrumb-arrow-bg-dark, #333);
+  }
+  
+  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item::after {
+    border-left-color: var(--bismillah-breadcrumb-arrow-bg-dark, #333);
+  }
+  
+  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active {
+    background-color: var(--bismillah-breadcrumb-arrow-active-bg-dark, #444);
+  }
+  
+  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active::after {
+    border-left-color: var(--bismillah-breadcrumb-arrow-active-bg-dark, #444);
+  }
+  
+  /* Accessibility */
+  .bismillah-breadcrumbs a:focus {
+    outline: 2px solid var(--bismillah-focus-color, #007bff);
+    outline-offset: 2px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .bismillah-breadcrumbs * {
+      transition: none !important;
+    }
+  }
+  

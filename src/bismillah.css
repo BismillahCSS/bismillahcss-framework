@@ -14,8 +14,12 @@
 @import './components/hero.css';   /* Hero section */
 @import './components/progress-bar.css'; /* Progress bar styles */
 @import './components/pagination.css';  /* Pagination styles */
-/*@import './components/tables.css'; /* Table styles */
-/*@import './components/typography.css';  Typography styles */
-/*@import './components/scrollbar.css';  /* Custom scrollbar styles */
-/*@import './components/accordion.css';   Accordion styles */
+@import './components/forms.css';  /* Form styles */
+@import './components/breadcrumbs.css'; /* Breadcrumbs styles */
+@import './components/tables.css'; /* Table styles */
+@import './components/typography.css';  /*Typography styles */
+@import './components/scrollbar.css';  /* Custom scrollbar styles*/
+@import './components/accordion.css';  /* Accordion styles */
+@import './components/breadcrumbs.css'; /* breadcrupms styles */
+
 

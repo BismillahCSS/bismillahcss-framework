@@ -1,0 +1,204 @@
+/* ========== BismillahCSS Scrollbar ========== */
+
+/* Base Scrollbar Styles */
+.bismillah-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bismillah-scrollbar-thumb, rgba(0, 0, 0, 0.2)) var(--bismillah-scrollbar-track, transparent);
+  }
+  
+  .bismillah-scrollbar::-webkit-scrollbar {
+    width: var(--bismillah-scrollbar-width, 8px);
+    height: var(--bismillah-scrollbar-height, 8px);
+  }
+  
+  .bismillah-scrollbar::-webkit-scrollbar-track {
+    background: var(--bismillah-scrollbar-track, transparent);
+    border-radius: var(--bismillah-scrollbar-track-radius, 10px);
+  }
+  
+  .bismillah-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--bismillah-scrollbar-thumb, rgba(0, 0, 0, 0.2));
+    border-radius: var(--bismillah-scrollbar-thumb-radius, 10px);
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  .bismillah-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--bismillah-scrollbar-thumb-hover, rgba(0, 0, 0, 0.3));
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  .bismillah-scrollbar::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  
+  /* Thin Scrollbar */
+  .bismillah-scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--bismillah-scrollbar-thumb, rgba(0, 0, 0, 0.2)) var(--bismillah-scrollbar-track, transparent);
+  }
+  
+  .bismillah-scrollbar-thin::-webkit-scrollbar {
+    width: var(--bismillah-scrollbar-thin-width, 4px);
+    height: var(--bismillah-scrollbar-thin-height, 4px);
+  }
+  
+  .bismillah-scrollbar-thin::-webkit-scrollbar-thumb {
+    border-radius: var(--bismillah-scrollbar-thin-radius, 4px);
+    border: 1px solid var(--bismillah-scrollbar-track, transparent);
+  }
+  
+  /* Rounded Scrollbar */
+  .bismillah-scrollbar-rounded::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+  }
+  
+  .bismillah-scrollbar-rounded::-webkit-scrollbar-track {
+    border-radius: 50px;
+  }
+  
+  /* Colored Scrollbar */
+  .bismillah-scrollbar-primary {
+    scrollbar-color: var(--bismillah-primary-color, #007bff) var(--bismillah-scrollbar-track, transparent);
+  }
+  
+  .bismillah-scrollbar-primary::-webkit-scrollbar-thumb {
+    background: var(--bismillah-primary-color, #007bff);
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  .bismillah-scrollbar-primary::-webkit-scrollbar-thumb:hover {
+    background: var(--bismillah-primary-dark, #0069d9);
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  .bismillah-scrollbar-secondary {
+    scrollbar-color: var(--bismillah-secondary-color, #6c757d) var(--bismillah-scrollbar-track, transparent);
+  }
+  
+  .bismillah-scrollbar-secondary::-webkit-scrollbar-thumb {
+    background: var(--bismillah-secondary-color, #6c757d);
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  .bismillah-scrollbar-secondary::-webkit-scrollbar-thumb:hover {
+    background: var(--bismillah-secondary-dark, #5a6268);
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  /* Fancy Scrollbar with Gradient */
+  .bismillah-scrollbar-gradient {
+    scrollbar-color: var(--bismillah-primary-color, #007bff) var(--bismillah-scrollbar-track, transparent);
+  }
+  
+  .bismillah-scrollbar-gradient::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      to bottom,
+      var(--bismillah-gradient-start, #4158d0),
+      var(--bismillah-gradient-end, #c850c0)
+    );
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  .bismillah-scrollbar-gradient::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      to bottom,
+      var(--bismillah-gradient-start-hover, #3a4dc0),
+      var(--bismillah-gradient-end-hover, #b840b0)
+    );
+    border: 2px solid var(--bismillah-scrollbar-track, transparent);
+    background-clip: padding-box;
+  }
+  
+  /* Scrollbar with Track Background */
+  .bismillah-scrollbar-with-track {
+    scrollbar-color: var(--bismillah-scrollbar-thumb, rgba(0, 0, 0, 0.2))
+      var(--bismillah-scrollbar-track-visible, #f0f0f0);
+  }
+  
+  .bismillah-scrollbar-with-track::-webkit-scrollbar-track {
+    background: var(--bismillah-scrollbar-track-visible, #f0f0f0);
+  }
+  
+  /* Scrollbar with Border */
+  .bismillah-scrollbar-bordered::-webkit-scrollbar-thumb {
+    border: 2px solid var(--bismillah-scrollbar-border-color, #ddd);
+    background-clip: padding-box;
+  }
+  
+  /* Scrollbar Always Visible */
+  .bismillah-scrollbar-visible {
+    overflow: auto;
+  }
+  
+  .bismillah-scrollbar-visible::-webkit-scrollbar-thumb {
+    background: var(--bismillah-scrollbar-thumb, rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Hide Scrollbar but Keep Functionality */
+  .bismillah-scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .bismillah-scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Overlay Scrollbar (appears on hover) */
+  .bismillah-scrollbar-overlay::-webkit-scrollbar-thumb {
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+  
+  .bismillah-scrollbar-overlay:hover::-webkit-scrollbar-thumb {
+    background: var(--bismillah-scrollbar-thumb, rgba(0, 0, 0, 0.2));
+  }
+  
+  /* Dark Mode Scrollbar */
+  .dark .bismillah-scrollbar {
+    scrollbar-color: var(--bismillah-scrollbar-thumb-dark, rgba(255, 255, 255, 0.2))
+      var(--bismillah-scrollbar-track-dark, transparent);
+  }
+  
+  .dark .bismillah-scrollbar::-webkit-scrollbar-track {
+    background: var(--bismillah-scrollbar-track-dark, transparent);
+  }
+  
+  .dark .bismillah-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--bismillah-scrollbar-thumb-dark, rgba(255, 255, 255, 0.2));
+    border: 2px solid var(--bismillah-scrollbar-track-dark, transparent);
+  }
+  
+  .dark .bismillah-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--bismillah-scrollbar-thumb-hover-dark, rgba(255, 255, 255, 0.3));
+    border: 2px solid var(--bismillah-scrollbar-track-dark, transparent);
+  }
+  
+  .dark .bismillah-scrollbar-with-track {
+    scrollbar-color: var(--bismillah-scrollbar-thumb-dark, rgba(255, 255, 255, 0.2))
+      var(--bismillah-scrollbar-track-visible-dark, #333);
+  }
+  
+  .dark .bismillah-scrollbar-with-track::-webkit-scrollbar-track {
+    background: var(--bismillah-scrollbar-track-visible-dark, #333);
+  }
+  
+  .dark .bismillah-scrollbar-bordered::-webkit-scrollbar-thumb {
+    border: 2px solid var(--bismillah-scrollbar-border-color-dark, #444);
+  }
+  
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .bismillah-scrollbar-overlay::-webkit-scrollbar-thumb {
+      transition: none !important;
+    }
+  }
+  
+  

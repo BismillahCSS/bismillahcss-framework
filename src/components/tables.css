@@ -1,22 +1,408 @@
-/* ============================= */
-/* 📊 BismillahCSS - Tables */
-/* ============================= */
+/* ========== BismillahCSS Tables ========== */
 
-/* 📋 Table */
+.bismillah-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1.5rem;
+  border-radius: var(--bismillah-table-radius, 8px);
+  box-shadow: var(--bismillah-table-shadow, 0 2px 8px rgba(0, 0, 0, 0.05));
+}
+
 .bismillah-table {
-width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 0;
+  color: var(--bismillah-table-color, #333);
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: var(--bismillah-table-font-size, 0.95rem);
+}
+
+.bismillah-table th,
+.bismillah-table td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--bismillah-table-border-color, #e9ecef);
+  text-align: left;
+}
+
+.bismillah-table thead th {
+  font-weight: 600;
+  color: var(--bismillah-table-head-color, #495057);
+  background-color: var(--bismillah-table-head-bg, #f8f9fa);
+  border-bottom: 2px solid var(--bismillah-table-border-color, #e9ecef);
+  position: relative;
+}
+
+.bismillah-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.bismillah-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* Table Variants */
+
+/* Striped Table */
+.bismillah-table.striped tbody tr:nth-of-type(odd) {
+  background-color: var(--bismillah-table-striped-bg, rgba(0, 0, 0, 0.02));
+}
+
+/* Bordered Table */
+.bismillah-table.bordered th,
+.bismillah-table.bordered td {
+  border: 1px solid var(--bismillah-table-border-color, #e9ecef);
+}
+
+/* Borderless Table */
+.bismillah-table.borderless th,
+.bismillah-table.borderless td {
+  border: 0;
+}
+
+/* Hoverable Table */
+.bismillah-table.hoverable tbody tr:hover {
+  background-color: var(--bismillah-table-hover-bg, rgba(0, 123, 255, 0.05));
+}
+
+/* Compact Table */
+.bismillah-table.compact th,
+.bismillah-table.compact td {
+  padding: 0.4rem 0.75rem;
+}
+
+/* Responsive Table */
+.bismillah-table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 767.98px) {
+  .bismillah-table.responsive {
+    display: block;
+  }
+  
+  .bismillah-table.responsive thead {
+    display: none;
+  }
+  
+  .bismillah-table.responsive tbody,
+  .bismillah-table.responsive tr,
+  .bismillah-table.responsive td {
+    display: block;
+    width: 100%;
+  }
+  
+  .bismillah-table.responsive tr {
     margin-bottom: 1rem;
+    border: 1px solid var(--bismillah-table-border-color, #e9ecef);
+    border-radius: var(--bismillah-table-radius, 8px);
+    overflow: hidden;
+  }
+  
+  .bismillah-table.responsive td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    border-bottom: 1px solid var(--bismillah-table-border-color, #e9ecef);
+  }
+  
+  .bismillah-table.responsive td:last-child {
+    border-bottom: 0;
+  }
+  
+  .bismillah-table.responsive td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    margin-right: auto;
+    color: var(--bismillah-table-head-color, #495057);
+  }
 }
-/* 📝 Table Cells */
-  .bismillah-th, 
-  .bismillah-td {
-padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
+
+/* Table with Sticky Header */
+.bismillah-table-container.sticky-header {
+  max-height: 500px;
+  overflow-y: auto;
 }
-/* 📌 Table Headers */
-  .bismillah-th {
-background-color: var(--primary-color);
-    color: white;
+
+.bismillah-table.sticky-header thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--bismillah-table-head-bg, #f8f9fa);
+}
+
+/* Table with Sortable Columns */
+.bismillah-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.bismillah-table th.sortable::after {
+  content: '↕';
+  margin-left: 0.5rem;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
+
+.bismillah-table th.sortable.asc::after {
+  content: '↑';
+  opacity: 1;
+}
+
+.bismillah-table th.sortable.desc::after {
+  content: '↓';
+  opacity: 1;
+}
+
+/* Table with Row Actions */
+.bismillah-table .row-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bismillah-table .row-action-btn {
+  background: none;
+  border: none;
+  color: var(--bismillah-primary-color, #007bff);
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.bismillah-table .row-action-btn:hover {
+  background-color: var(--bismillah-primary-light, rgba(0, 123, 255, 0.1));
+}
+
+.bismillah-table .row-action-btn.delete {
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+.bismillah-table .row-action-btn.delete:hover {
+  background-color: var(--bismillah-danger-light, rgba(220, 53, 69, 0.1));
+}
+
+/* Table with Checkboxes */
+.bismillah-table .row-checkbox {
+  width: 1.5rem;
+}
+
+/* Table with Status Indicators */
+.bismillah-table .status-indicator {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.bismillah-table .status-active {
+  background-color: var(--bismillah-success-color, #28a745);
+}
+
+.bismillah-table .status-inactive {
+  background-color: var(--bismillah-warning-color, #ffc107);
+}
+
+.bismillah-table .status-error {
+  background-color: var(--bismillah-danger-color, #dc3545);
+}
+
+/* Table with Progress Bars */
+.bismillah-table .progress-container {
+  width: 100%;
+  height: 0.5rem;
+  background-color: var(--bismillah-progress-bg, #e9ecef);
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.bismillah-table .progress-bar {
+  height: 100%;
+  background-color: var(--bismillah-primary-color, #007bff);
+  border-radius: 0.25rem;
+}
+
+/* Table with Expandable Rows */
+.bismillah-table .expandable-row-trigger {
+  cursor: pointer;
+  user-select: none;
+}
+
+.bismillah-table .expandable-row-trigger::before {
+  content: '▶';
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease;
+  font-size: 0.8em;
+}
+
+.bismillah-table .expandable-row-trigger.expanded::before {
+  transform: rotate(90deg);
+}
+
+.bismillah-table .expandable-content {
+  display: none;
+  padding: 1rem;
+  background-color: var(--bismillah-table-expanded-bg, rgba(0, 0, 0, 0.01));
+  border-top: 1px solid var(--bismillah-table-border-color, #e9ecef);
+}
+
+.bismillah-table .expandable-content.expanded {
+  display: block;
+}
+
+/* Table with Fixed Layout */
+.bismillah-table.fixed {
+  table-layout: fixed;
+}
+
+.bismillah-table.fixed td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Table with Row Highlighting */
+.bismillah-table tr.highlighted {
+  background-color: var(--bismillah-table-highlight-bg, rgba(0, 123, 255, 0.1)) !important;
+}
+
+/* Table Pagination */
+.bismillah-table-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--bismillah-table-pagination-bg, #f8f9fa);
+  border-top: 1px solid var(--bismillah-table-border-color, #e9ecef);
+}
+
+.bismillah-table-pagination-info {
+  color: var(--bismillah-muted-color, #6c757d);
+  font-size: 0.9rem;
+}
+
+.bismillah-table-pagination-controls {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.bismillah-table-pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--bismillah-table-border-color, #e9ecef);
+  background-color: var(--bismillah-table-pagination-btn-bg, #fff);
+  color: var(--bismillah-table-pagination-btn-color, #495057);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.bismillah-table-pagination-btn:hover {
+  background-color: var(--bismillah-table-pagination-btn-hover-bg, #e9ecef);
+}
+
+.bismillah-table-pagination-btn.active {
+  background-color: var(--bismillah-primary-color, #007bff);
+  color: white;
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-table-pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Dark Mode */
+.dark .bismillah-table-container {
+  box-shadow: var(--bismillah-table-shadow-dark, 0 2px 8px rgba(0, 0, 0, 0.2));
+}
+
+.dark .bismillah-table {
+  color: var(--bismillah-table-color-dark, #e0e0e0);
+}
+
+.dark .bismillah-table th,
+.dark .bismillah-table td {
+  border-color: var(--bismillah-table-border-color-dark, #444);
+}
+
+.dark .bismillah-table thead th {
+  color: var(--bismillah-table-head-color-dark, #f0f0f0);
+  background-color: var(--bismillah-table-head-bg-dark, #333);
+  border-bottom-color: var(--bismillah-table-border-color-dark, #444);
+}
+
+.dark .bismillah-table.striped tbody tr:nth-of-type(odd) {
+  background-color: var(--bismillah-table-striped-bg-dark, rgba(255, 255, 255, 0.03));
+}
+
+.dark .bismillah-table.hoverable tbody tr:hover {
+  background-color: var(--bismillah-table-hover-bg-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-table.bordered th,
+.dark .bismillah-table.bordered td {
+  border-color: var(--bismillah-table-border-color-dark, #444);
+}
+
+.dark .bismillah-table.sticky-header thead th {
+  background-color: var(--bismillah-table-head-bg-dark, #333);
+}
+
+.dark .bismillah-table .expandable-content {
+  background-color: var(--bismillah-table-expanded-bg-dark, rgba(255, 255, 255, 0.02));
+  border-top-color: var(--bismillah-table-border-color-dark, #444);
+}
+
+.dark .bismillah-table tr.highlighted {
+  background-color: var(--bismillah-table-highlight-bg-dark, rgba(79, 161, 255, 0.15)) !important;
+}
+
+.dark .bismillah-table-pagination {
+  background-color: var(--bismillah-table-pagination-bg-dark, #333);
+  border-top-color: var(--bismillah-table-border-color-dark, #444);
+}
+
+.dark .bismillah-table-pagination-info {
+  color: var(--bismillah-muted-color-dark, #adb5bd);
+}
+
+.dark .bismillah-table-pagination-btn {
+  border-color: var(--bismillah-table-border-color-dark, #444);
+  background-color: var(--bismillah-table-pagination-btn-bg-dark, #2a2a2a);
+  color: var(--bismillah-table-pagination-btn-color-dark, #e0e0e0);
+}
+
+.dark .bismillah-table-pagination-btn:hover {
+  background-color: var(--bismillah-table-pagination-btn-hover-bg-dark, #3a3a3a);
+}
+
+.dark .bismillah-table .progress-container {
+  background-color: var(--bismillah-progress-bg-dark, #444);
+}
+
+/* Accessibility */
+.bismillah-table th:focus,
+.bismillah-table .row-action-btn:focus,
+.bismillah-table-pagination-btn:focus {
+  outline: 2px solid var(--bismillah-focus-color, #007bff);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bismillah-table * {
+    transition: none !important;
+  }
 }

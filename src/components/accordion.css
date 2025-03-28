@@ -1,0 +1,282 @@
+/* ========== BismillahCSS Accordion ========== */
+
+.bismillah-accordion {
+    width: 100%;
+    border-radius: var(--bismillah-accordion-radius, 8px);
+    overflow: hidden;
+    box-shadow: var(--bismillah-accordion-shadow, 0 2px 8px rgba(0, 0, 0, 0.05));
+    background-color: var(--bismillah-accordion-bg, #ffffff);
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--bismillah-accordion-border-color, rgba(0, 0, 0, 0.05));
+  }
+  
+  .bismillah-accordion-item {
+    border-bottom: 1px solid var(--bismillah-accordion-border-color, rgba(0, 0, 0, 0.05));
+  }
+  
+  .bismillah-accordion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .bismillah-accordion-header {
+    margin: 0;
+  }
+  
+  .bismillah-accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bismillah-accordion-button-color, #333);
+    text-align: left;
+    background-color: var(--bismillah-accordion-button-bg, #ffffff);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .bismillah-accordion-button:not(.collapsed) {
+    color: var(--bismillah-accordion-button-active-color, #007bff);
+    background-color: var(--bismillah-accordion-button-active-bg, rgba(0, 123, 255, 0.05));
+  }
+  
+  .bismillah-accordion-button:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    z-index: 1;
+  }
+  
+  .bismillah-accordion-button::after {
+    content: "";
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .bismillah-accordion-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+  }
+  
+  .bismillah-accordion-collapse {
+    overflow: hidden;
+    transition: height 0.35s ease;
+  }
+  
+  .bismillah-accordion-body {
+    padding: 1rem 1.25rem;
+    color: var(--bismillah-accordion-body-color, #495057);
+  }
+  
+  /* Accordion Variants */
+  
+  /* Flush Accordion (without outer borders) */
+  .bismillah-accordion.flush {
+    box-shadow: none;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .bismillah-accordion.flush .bismillah-accordion-item {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+  
+  .bismillah-accordion.flush .bismillah-accordion-button {
+    border-radius: 0;
+  }
+  
+  /* Bordered Accordion */
+  .bismillah-accordion.bordered .bismillah-accordion-item {
+    border: 1px solid var(--bismillah-accordion-border-color, rgba(0, 0, 0, 0.05));
+    border-radius: var(--bismillah-accordion-radius, 8px);
+    margin-bottom: 0.5rem;
+  }
+  
+  .bismillah-accordion.bordered .bismillah-accordion-button {
+    border-radius: calc(var(--bismillah-accordion-radius, 8px) - 1px);
+  }
+  
+  .bismillah-accordion.bordered .bismillah-accordion-button:not(.collapsed) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Colored Accordion */
+  .bismillah-accordion.primary {
+    border-color: var(--bismillah-primary-color, #007bff);
+  }
+  
+  .bismillah-accordion.primary .bismillah-accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: var(--bismillah-primary-color, #007bff);
+  }
+  
+  .bismillah-accordion.primary .bismillah-accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+  
+  /* Accordion with Icons */
+  .bismillah-accordion-icon {
+    margin-right: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--bismillah-accordion-icon-color, #6c757d);
+    transition: all 0.2s ease;
+  }
+  
+  .bismillah-accordion-button:not(.collapsed) .bismillah-accordion-icon {
+    color: var(--bismillah-accordion-icon-active-color, #007bff);
+  }
+  
+  .bismillah-accordion.primary .bismillah-accordion-button:not(.collapsed) .bismillah-accordion-icon {
+    color: #fff;
+  }
+  
+  /* Accordion with Plus/Minus Icons */
+  .bismillah-accordion.plus-minus .bismillah-accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+  }
+  
+  .bismillah-accordion.plus-minus .bismillah-accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23333' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    transform: rotate(0deg);
+  }
+  
+  .bismillah-accordion.plus-minus.primary .bismillah-accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+  
+  /* Accordion with Left Border */
+  .bismillah-accordion.left-border .bismillah-accordion-item {
+    border-left: 4px solid transparent;
+    transition: border-left-color 0.2s ease;
+  }
+  
+  .bismillah-accordion.left-border .bismillah-accordion-item:has(.bismillah-accordion-button:not(.collapsed)) {
+    border-left-color: var(--bismillah-primary-color, #007bff);
+  }
+  
+  /* Accordion with Hover Effect */
+  .bismillah-accordion.hover-effect .bismillah-accordion-button:hover:not(:focus) {
+    background-color: var(--bismillah-accordion-button-hover-bg, rgba(0, 0, 0, 0.02));
+  }
+  
+  /* Compact Accordion */
+  .bismillah-accordion.compact .bismillah-accordion-button {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .bismillah-accordion.compact .bismillah-accordion-body {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  /* Animated Accordion */
+  .bismillah-accordion.animated .bismillah-accordion-collapse {
+    transition: height 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .bismillah-accordion.animated .bismillah-accordion-body {
+    animation: bismillah-accordion-fade-in 0.3s ease-in-out;
+  }
+  
+  @keyframes bismillah-accordion-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Dark Mode */
+  .dark .bismillah-accordion {
+    background-color: var(--bismillah-accordion-bg-dark, #222);
+    border-color: var(--bismillah-accordion-border-color-dark, rgba(255, 255, 255, 0.05));
+    box-shadow: var(--bismillah-accordion-shadow-dark, 0 2px 8px rgba(0, 0, 0, 0.2));
+  }
+  
+  .dark .bismillah-accordion-item {
+    border-color: var(--bismillah-accordion-border-color-dark, rgba(255, 255, 255, 0.05));
+  }
+  
+  .dark .bismillah-accordion-button {
+    color: var(--bismillah-accordion-button-color-dark, #e0e0e0);
+    background-color: var(--bismillah-accordion-button-bg- #e0e0e0);
+    background-color: var(--bismillah-accordion-button-bg-dark, #2a2a2a);
+  }
+  
+  .dark .bismillah-accordion-button:not(.collapsed) {
+    color: var(--bismillah-accordion-button-active-color-dark, #5e9eff);
+    background-color: var(--bismillah-accordion-button-active-bg-dark, rgba(94, 158, 255, 0.1));
+  }
+  
+  .dark .bismillah-accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e0e0e0' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  }
+  
+  .dark .bismillah-accordion-body {
+    color: var(--bismillah-accordion-body-color-dark, #d0d0d0);
+  }
+  
+  .dark .bismillah-accordion.bordered .bismillah-accordion-item {
+    border-color: var(--bismillah-accordion-border-color-dark, rgba(255, 255, 255, 0.05));
+  }
+  
+  .dark .bismillah-accordion.hover-effect .bismillah-accordion-button:hover:not(:focus) {
+    background-color: var(--bismillah-accordion-button-hover-bg-dark, rgba(255, 255, 255, 0.05));
+  }
+  
+  .dark .bismillah-accordion.plus-minus .bismillah-accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e0e0e0' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+  }
+  
+  .dark .bismillah-accordion.plus-minus .bismillah-accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23e0e0e0' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+  }
+  
+  .dark .bismillah-accordion-icon {
+    color: var(--bismillah-accordion-icon-color-dark, #adb5bd);
+  }
+  
+  .dark .bismillah-accordion-button:not(.collapsed) .bismillah-accordion-icon {
+    color: var(--bismillah-accordion-icon-active-color-dark, #5e9eff);
+  }
+  
+  /* Accessibility */
+  .bismillah-accordion-button:focus {
+    outline: 2px solid var(--bismillah-focus-color, #007bff);
+    outline-offset: 2px;
+  }
+  
+  .bismillah-accordion-button[aria-expanded="true"] {
+    font-weight: 600;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .bismillah-accordion-button::after,
+    .bismillah-accordion-collapse,
+    .bismillah-accordion.animated .bismillah-accordion-body {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+  
+  

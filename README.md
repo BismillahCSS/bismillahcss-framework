@@ -2,25 +2,95 @@
 ![BismillahCSS Banner](./docs/banner.jpeg)
 
 
-[![npm version](https://img.shields.io/npm/v/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
-[![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/LICENSE)  
-[![downloads](https://img.shields.io/npm/dt/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)  
+[![npm version](https://img.shields.io/npm/v/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss)
+
+
+[![license](https://img.shields.io/npm/l/bismillahcss.svg)](https://github.com/BismillahCSS/bismillahcss-framework/blob/main/LICENSE)
+
+
+[![downloads](https://img.shields.io/npm/dt/bismillahcss.svg)](https://www.npmjs.com/package/bismillahcss) 
+
+
 [![GitHub stars](https://img.shields.io/github/stars/BismillahCSS/bismillahcss-framework.svg?style=social)](https://github.com/BismillahCSS/bismillahcss-framework)
 ## Showcase Templates
 
 ### NeoFuture Tech Example
 
 ```html
-<!DOCTYPE html>
-<html lang="en" class="bismillah-scrollbar">
+
+
+BismillahCSS is a utility-first CSS framework designed to simplify and accelerate the development of modern, responsive, and customizable web applications. Inspired by the principles of utility-first frameworks like TailwindCSS, BismillahCSS provides a lightweight and flexible solution for developers who want to build beautiful and functional UIs without the overhead of traditional CSS frameworks.
+
+---
+
+##  Core Features
+
+- **Utility-First Approach**: Build custom designs without leaving your HTML.
+- **Responsive Design**: Mobile-first responsive components and utilities.
+- **Dark Mode Support**: Built-in dark mode with automatic detection.
+- **Modern Effects**: Glassmorphism, neon effects, and more.
+- **Customizable**: Easy to customize with CSS variables.
+- **Lightweight**: Minimal file size with no JavaScript dependencies.
+
+---
+
+## Installation
+
+### Using npm
+```bash
+npm install bismillahcss
+```
+
+### Manual Download
+Download the latest version from the [releases page](https://www.npmjs.com/package/bismillahcss).
+
+---
+
+## Base Styles
+
+BismillahCSS includes a set of base styles and variables that provide a solid foundation for your projects.
+
+### Color Variables
+```css
+:root {
+    --bismillah-primary-color: #3498db;
+    --bismillah-secondary-color: #2ecc71;
+    --bismillah-accent-color: #e74c3c;
+    --bismillah-bg-color: #f8f9fa;
+    --bismillah-text-color: #333;
+    --bismillah-border-radius: 8px;
+    --bismillah-font-family: 'Inter', sans-serif;
+}
+```
+
+### Dark Mode
+BismillahCSS automatically detects system preferences for dark mode:
+```css
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bismillah-bg-color: #121212;
+        --bismillah-text-color: #ffffff;
+    }
+}
+```
+
+You can also manually toggle dark mode by adding the `dark-mode` class to the body:
+```html
+<body class="dark-mode">
+    <!-- Your content -->
+</body>
+```
+
+---
+
+This README provides a comprehensive overview of the BismillahCSS framework.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeoFuture Tech</title>
-    <link rel="stylesheet" href="dist/bismillah.min.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
-    <!-- Navbar -->
     <nav class="bismillah-flex bismillah-justify-between bismillah-items-center bismillah-p-4 bismillah-shadow-lg bismillah-bg-dark">
         <span class="bismillah-futuristic-font bismillah-text-primary bismillah-text-2xl">NeoFuture</span>
         <div class="bismillah-flex bismillah-gap-5">
@@ -28,8 +98,6 @@
             <a href="#features" class="bismillah-text-light bismillah-hover-text-primary">Features</a>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <section id="home" class="bismillah-flex bismillah-flex-col bismillah-justify-center bismillah-items-center bismillah-p-10 bismillah-min-h-screen hero-bg">
         <h1 class="bismillah-text-5xl bismillah-font-extrabold bismillah-futuristic-font">
             <span class="bismillah-text-primary">Neo</span><span class="bismillah-text-accent">Future</span>
@@ -37,8 +105,6 @@
         <p class="bismillah-text-xl bismillah-mb-5">Pioneering the next generation of digital experiences.</p>
         <button class="bismillah-btn-primary bismillah-p-4 bismillah-rounded">Explore Now</button>
     </section>
-
-    <!-- Features Section -->
     <section id="features" class="bismillah-bg-dark bismillah-p-10">
         <h2 class="bismillah-text-3xl bismillah-font-bold bismillah-text-center bismillah-futuristic-font bismillah-text-primary">Revolutionary Features</h2>
         <div class="bismillah-grid bismillah-grid-cols-1 bismillah-md-grid-2 bismillah-lg-grid-3 bismillah-gap-8">
