@@ -7,9 +7,11 @@
 @import './components/navbar.css'; /* Navbar styles */
 @import './components/footer.css'; /* Footer styles */
 @import './components/buttons.css';/* Button styles */
+@import './components/cartoons.css'; /* Cartoon styles */
 @import './components/forms.css';  /* Input, form styles */
-@import './components/cards.css';  /* Card components */
+@import './components/typography.css'; /* Typography styles */
 @import './components/modal.css';  /* Modal popups */
+@import './components/avatar.css';  /* Avatar styles */
 @import './components/alerts.css'; /* Notification alerts */
 @import './components/hero.css';   /* Hero section */
 @import './components/progress-bar.css'; /* Progress bar styles */

@@ -1,7 +1,268 @@
-/* BismillahCSS Theme Variables */
+
+/* ========== BismillahCSS Themes ========== */
+
 :root {
---bismillah-primary: #3490dc;
-    --bismillah-secondary: #ffed4a;
-    --bismillah-danger: #e3342f;
-    --bismillah-neutral: #64748B;
-}
+    /* Default Light Theme */
+    --bismillah-bg-color: #ffffff;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #4361ee;
+    --bismillah-secondary-color: #6c757d;
+    --bismillah-success-color: #2ecc71;
+    --bismillah-danger-color: #e74c3c;
+    --bismillah-warning-color: #f39c12;
+    --bismillah-info-color: #3498db;
+    --bismillah-light-color: #f8f9fa;
+    --bismillah-dark-color: #343a40;
+    --bismillah-border-color: #e0e0e0;
+    --bismillah-shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark Theme */
+  .bismillah-theme-dark {
+    --bismillah-bg-color: #121212;
+    --bismillah-text-color: #f0f0f0;
+    --bismillah-primary-color: #6d8efc;
+    --bismillah-secondary-color: #adb5bd;
+    --bismillah-success-color: #4cd787;
+    --bismillah-danger-color: #fc5d65;
+    --bismillah-warning-color: #ffcc29;
+    --bismillah-info-color: #4da8da;
+    --bismillah-light-color: #2a2a2a;
+    --bismillah-dark-color: #e9ecef;
+    --bismillah-border-color: #444444;
+    --bismillah-shadow-color: rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Blue Theme */
+  .bismillah-theme-blue {
+    --bismillah-bg-color: #edf2ff;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #1e40af;
+    --bismillah-secondary-color: #415a77;
+    --bismillah-success-color: #0a8754;
+    --bismillah-danger-color: #ba2d0b;
+    --bismillah-warning-color: #f48c06;
+    --bismillah-info-color: #0077b6;
+    --bismillah-light-color: #e9f1ff;
+    --bismillah-dark-color: #233559;
+    --bismillah-border-color: #c7dbff;
+    --bismillah-shadow-color: rgba(30, 64, 175, 0.15);
+  }
+  
+  /* Green Theme */
+  .bismillah-theme-green {
+    --bismillah-bg-color: #f0fff4;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #2f855a;
+    --bismillah-secondary-color: #5f8d4e;
+    --bismillah-success-color: #38a169;
+    --bismillah-danger-color: #e53e3e;
+    --bismillah-warning-color: #f6ad55;
+    --bismillah-info-color: #3182ce;
+    --bismillah-light-color: #e6ffed;
+    --bismillah-dark-color: #22543d;
+    --bismillah-border-color: #c6f6d5;
+    --bismillah-shadow-color: rgba(47, 133, 90, 0.15);
+  }
+  
+  /* Purple Theme */
+  .bismillah-theme-purple {
+    --bismillah-bg-color: #faf5ff;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #6b46c1;
+    --bismillah-secondary-color: #9f7aea;
+    --bismillah-success-color: #38a169;
+    --bismillah-danger-color: #e53e3e;
+    --bismillah-warning-color: #f6ad55;
+    --bismillah-info-color: #3182ce;
+    --bismillah-light-color: #f1e8ff;
+    --bismillah-dark-color: #44337a;
+    --bismillah-border-color: #e9d8fd;
+    --bismillah-shadow-color: rgba(107, 70, 193, 0.15);
+  }
+  
+  /* Red Theme */
+  .bismillah-theme-red {
+    --bismillah-bg-color: #fff5f5;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #c53030;
+    --bismillah-secondary-color: #f56565;
+    --bismillah-success-color: #38a169;
+    --bismillah-danger-color: #e53e3e;
+    --bismillah-warning-color: #f6ad55;
+    --bismillah-info-color: #3182ce;
+    --bismillah-light-color: #fed7d7;
+    --bismillah-dark-color: #822727;
+    --bismillah-border-color: #feb2b2;
+    --bismillah-shadow-color: rgba(197, 48, 48, 0.15);
+  }
+  
+  /* Orange Theme */
+  .bismillah-theme-orange {
+    --bismillah-bg-color: #fffaf0;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #dd6b20;
+    --bismillah-secondary-color: #ed8936;
+    --bismillah-success-color: #38a169;
+    --bismillah-danger-color: #e53e3e;
+    --bismillah-warning-color: #f6ad55;
+    --bismillah-info-color: #3182ce;
+    --bismillah-light-color: #feebc8;
+    --bismillah-dark-color: #9c4221;
+    --bismillah-border-color: #fbd38d;
+    --bismillah-shadow-color: rgba(221, 107, 32, 0.15);
+  }
+  
+  /* Teal Theme */
+  .bismillah-theme-teal {
+    --bismillah-bg-color: #e6fffa;
+    --bismillah-text-color: #333333;
+    --bismillah-primary-color: #2c7a7b;
+    --bismillah-secondary-color: #4fd1c5;
+    --bismillah-success-color: #38a169;
+    --bismillah-danger-color: #e53e3e;
+    --bismillah-warning-color: #f6ad55;
+    --bismillah-info-color: #3182ce;
+    --bismillah-light-color: #b2f5ea;
+    --bismillah-dark-color: #234e52;
+    --bismillah-border-color: #81e6d9;
+    --bismillah-shadow-color: rgba(44, 122, 123, 0.15);
+  }
+  
+  /* Cyberpunk Theme */
+  .bismillah-theme-cyberpunk {
+    --bismillah-bg-color: #0f0f18;
+    --bismillah-text-color: #f9f9f9;
+    --bismillah-primary-color: #ff3864;
+    --bismillah-secondary-color: #1ec3a4;
+    --bismillah-success-color: #00ff9f;
+    --bismillah-danger-color: #ff3864;
+    --bismillah-warning-color: #ffba02;
+    --bismillah-info-color: #00b8ff;
+    --bismillah-light-color: #212136;
+    --bismillah-dark-color: #d8d8d8;
+    --bismillah-border-color: #473bf0;
+    --bismillah-shadow-color: rgba(255, 56, 100, 0.5);
+  }
+  
+  /* Pastel Theme */
+  .bismillah-theme-pastel {
+    --bismillah-bg-color: #fef6f6;
+    --bismillah-text-color: #5a5a5a;
+    --bismillah-primary-color: #f8a4bd;
+    --bismillah-secondary-color: #a2d2ff;
+    --bismillah-success-color: #bde0fe;
+    --bismillah-danger-color: #ffafcc;
+    --bismillah-warning-color: #ffc8dd;
+    --bismillah-info-color: #cdb4db;
+    --bismillah-light-color: #fdffb6;
+    --bismillah-dark-color: #9c89b8;
+    --bismillah-border-color: #ffcfd2;
+    --bismillah-shadow-color: rgba(248, 164, 189, 0.2);
+  }
+  
+  /* Theme Application Classes */
+  .bismillah-theme-apply {
+    background-color: var(--bismillah-bg-color);
+    color: var(--bismillah-text-color);
+  }
+  
+  .bismillah-bg-primary {
+    background-color: var(--bismillah-primary-color);
+    color: white;
+  }
+  
+  .bismillah-bg-secondary {
+    background-color: var(--bismillah-secondary-color);
+    color: white;
+  }
+  
+  .bismillah-bg-success {
+    background-color: var(--bismillah-success-color);
+    color: white;
+  }
+  
+  .bismillah-bg-danger {
+    background-color: var(--bismillah-danger-color);
+    color: white;
+  }
+  
+  .bismillah-bg-warning {
+    background-color: var(--bismillah-warning-color);
+    color: #212529;
+  }
+  
+  .bismillah-bg-info {
+    background-color: var(--bismillah-info-color);
+    color: white;
+  }
+  
+  .bismillah-bg-light {
+    background-color: var(--bismillah-light-color);
+    color: var(--bismillah-text-color);
+  }
+  
+  .bismillah-bg-dark {
+    background-color: var(--bismillah-dark-color);
+    color: white;
+  }
+  
+  .bismillah-text-primary {
+    color: var(--bismillah-primary-color);
+  }
+  
+  .bismillah-text-secondary {
+    color: var(--bismillah-secondary-color);
+  }
+  
+  .bismillah-text-success {
+    color: var(--bismillah-success-color);
+  }
+  
+  .bismillah-text-danger {
+    color: var(--bismillah-danger-color);
+  }
+  
+  .bismillah-text-warning {
+    color: var(--bismillah-warning-color);
+  }
+  
+  .bismillah-text-info {
+    color: var(--bismillah-info-color);
+  }
+  
+  .bismillah-text-light {
+    color: var(--bismillah-light-color);
+  }
+  
+  .bismillah-text-dark {
+    color: var(--bismillah-dark-color);
+  }
+  
+  .bismillah-border-primary {
+    border-color: var(--bismillah-primary-color);
+  }
+  
+  .bismillah-border-color {
+    border-color: var(--bismillah-border-color);
+  }
+  
+  /* Auto Dark Mode */
+  @media (prefers-color-scheme: dark) {
+    .bismillah-theme-auto {
+      --bismillah-bg-color: #121212;
+      --bismillah-text-color: #f0f0f0;
+      --bismillah-primary-color: #6d8efc;
+      --bismillah-secondary-color: #adb5bd;
+      --bismillah-success-color: #4cd787;
+      --bismillah-danger-color: #fc5d65;
+      --bismillah-warning-color: #ffcc29;
+      --bismillah-info-color: #4da8da;
+      --bismillah-light-color: #2a2a2a;
+      --bismillah-dark-color: #e9ecef;
+      --bismillah-border-color: #444444;
+      --bismillah-shadow-color: rgba(0, 0, 0, 0.25);
+    }
+  }
+  
+  

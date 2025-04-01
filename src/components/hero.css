@@ -95,3 +95,496 @@
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+
+
+/* ========== BismillahCSS Hero Section ========== */
+
+/* Base Hero Section */
+.bismillah-hero {
+    position: relative;
+    width: 100%;
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bismillah-hero-bg, #f8f9fa);
+    overflow: hidden;
+  }
+  
+  /* Hero Container */
+  .bismillah-hero-container {
+    width: 100%;
+    max-width: var(--bismillah-container-width, 1200px);
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Hero Content */
+  .bismillah-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Title */
+  .bismillah-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--bismillah-hero-title-color, #212529);
+  }
+  
+  /* Hero Subtitle */
+  .bismillah-hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: var(--bismillah-hero-subtitle-color, #6c757d);
+  }
+  
+  /* Hero Actions */
+  .bismillah-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  /* Hero Image */
+  .bismillah-hero-image {
+    margin-top: 3rem;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--bismillah-hero-image-shadow, 0 10px 25px rgba(0, 0, 0, 0.1));
+  }
+  
+  /* Hero Variants */
+  
+  /* Centered Hero */
+  .bismillah-hero-centered {
+    text-align: center;
+  }
+  
+  .bismillah-hero-centered .bismillah-hero-content {
+    margin: 0 auto;
+  }
+  
+  /* Left-aligned Hero */
+  .bismillah-hero-left {
+    text-align: left;
+  }
+  
+  .bismillah-hero-left .bismillah-hero-content {
+    margin-left: 0;
+  }
+  
+  .bismillah-hero-left .bismillah-hero-actions {
+    justify-content: flex-start;
+  }
+  
+  /* Right-aligned Hero */
+  .bismillah-hero-right {
+    text-align: right;
+  }
+  
+  .bismillah-hero-right .bismillah-hero-content {
+    margin-right: 0;
+  }
+  
+  .bismillah-hero-right .bismillah-hero-actions {
+    justify-content: flex-end;
+  }
+  
+  /* Split Hero (Text and Image Side by Side) */
+  .bismillah-hero-split {
+    padding: 0;
+    text-align: left;
+  }
+  
+  .bismillah-hero-split .bismillah-hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .bismillah-hero-split .bismillah-hero-content {
+    flex: 1;
+    margin: 0;
+    padding: 5rem 0;
+  }
+  
+  .bismillah-hero-split .bismillah-hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bismillah-hero-split .bismillah-hero-image {
+    margin-top: 0;
+    max-height: 500px;
+    object-fit: contain;
+  }
+  
+  /* Hero with Background Image */
+  .bismillah-hero-bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .bismillah-hero-bg-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .bismillah-hero-bg-image .bismillah-hero-title {
+    color: white;
+  }
+  
+  .bismillah-hero-bg-image .bismillah-hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Hero with Gradient Background */
+  .bismillah-hero-gradient {
+    background: linear-gradient(135deg, var(--bismillah-gradient-start, #4158d0), var(--bismillah-gradient-end, #c850c0));
+    color: white;
+  }
+  
+  .bismillah-hero-gradient .bismillah-hero-title {
+    color: white;
+  }
+  
+  .bismillah-hero-gradient .bismillah-hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Hero with Animated Background */
+  .bismillah-hero-animated-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .bismillah-hero-animated-bg::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, var(--bismillah-gradient-start, #4158d0), var(--bismillah-gradient-end, #c850c0));
+    animation: bismillah-hero-rotate 20s linear infinite;
+    z-index: 1;
+    opacity: 0.8;
+  }
+  
+  .bismillah-hero-animated-bg::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+  }
+  
+  .bismillah-hero-animated-bg .bismillah-hero-container {
+    z-index: 2;
+    color: white;
+  }
+  
+  .bismillah-hero-animated-bg .bismillah-hero-title {
+    color: white;
+  }
+  
+  .bismillah-hero-animated-bg .bismillah-hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  @keyframes bismillah-hero-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Hero with Particles Background */
+  .bismillah-hero-particles {
+    position: relative;
+  }
+  
+  .bismillah-hero-particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .bismillah-hero-particle {
+    position: absolute;
+    display: block;
+    pointer-events: none;
+    width: 10px;
+    height: 10px;
+    background-color: var(--bismillah-primary-color, #007bff);
+    border-radius: 50%;
+    animation: bismillah-hero-particles 25s linear infinite;
+  }
+  
+  .bismillah-hero-particle:nth-child(1) {
+    top: 20%;
+    left: 20%;
+    animation-delay: 0s;
+    animation-duration: 30s;
+    background-color: var(--bismillah-primary-color, #007bff);
+    opacity: 0.3;
+  }
+  
+  .bismillah-hero-particle:nth-child(2) {
+    top: 60%;
+    left: 80%;
+    animation-delay: 2s;
+    animation-duration: 25s;
+    background-color: var(--bismillah-success-color, #28a745);
+    opacity: 0.4;
+  }
+  
+  .bismillah-hero-particle:nth-child(3) {
+    top: 40%;
+    left: 40%;
+    animation-delay: 4s;
+    animation-duration: 35s;
+    background-color: var(--bismillah-warning-color, #ffc107);
+    opacity: 0.2;
+  }
+  
+  .bismillah-hero-particle:nth-child(4) {
+    top: 80%;
+    left: 10%;
+    animation-delay: 6s;
+    animation-duration: 40s;
+    background-color: var(--bismillah-danger-color, #dc3545);
+    opacity: 0.3;
+  }
+  
+  .bismillah-hero-particle:nth-child(5) {
+    top: 10%;
+    left: 70%;
+    animation-delay: 8s;
+    animation-duration: 45s;
+    background-color: var(--bismillah-info-color, #17a2b8);
+    opacity: 0.4;
+  }
+  
+  @keyframes bismillah-hero-particles {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.8;
+      border-radius: 0;
+    }
+    100% {
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+    }
+  }
+  
+  /* Hero with Video Background */
+  .bismillah-hero-video {
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .bismillah-hero-video-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 0;
+  }
+  
+  .bismillah-hero-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .bismillah-hero-video .bismillah-hero-title {
+    color: white;
+  }
+  
+  .bismillah-hero-video .bismillah-hero-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  /* Hero with Waves */
+  .bismillah-hero-waves {
+    position: relative;
+  }
+  
+  .bismillah-hero-waves-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 1;
+  }
+  
+  .bismillah-hero-waves-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+  }
+  
+  .bismillah-hero-waves-bottom .bismillah-hero-wave-fill {
+    fill: var(--bismillah-wave-color, #ffffff);
+  }
+  
+  /* Hero Sizes */
+  .bismillah-hero-sm {
+    padding: 3rem 2rem;
+  }
+  
+  .bismillah-hero-md {
+    padding: 5rem 2rem;
+  }
+  
+  .bismillah-hero-lg {
+    padding: 8rem 2rem;
+  }
+  
+  .bismillah-hero-xl {
+    padding: 12rem 2rem;
+  }
+  
+  .bismillah-hero-full {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .bismillah-hero-title {
+      font-size: 2.5rem;
+    }
+  
+    .bismillah-hero-split .bismillah-hero-container {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    .bismillah-hero-split .bismillah-hero-content {
+      padding: 3rem 0;
+    }
+  
+    .bismillah-hero-split .bismillah-hero-image {
+      max-height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .bismillah-hero {
+      padding: 4rem 1.5rem;
+    }
+  
+    .bismillah-hero-title {
+      font-size: 2rem;
+    }
+  
+    .bismillah-hero-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .bismillah-hero-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bismillah-hero-actions .bismillah-btn {
+      width: 100%;
+    }
+  
+    .bismillah-hero-split .bismillah-hero-content {
+      padding: 2rem 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .bismillah-hero {
+      padding: 3rem 1rem;
+    }
+  
+    .bismillah-hero-title {
+      font-size: 1.75rem;
+    }
+  
+    .bismillah-hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  .dark .bismillah-hero {
+    background-color: var(--bismillah-hero-bg-dark, #1a1a1a);
+  }
+  
+  .dark .bismillah-hero-title {
+    color: var(--bismillah-hero-title-color-dark, #f8f9fa);
+  }
+  
+  .dark .bismillah-hero-subtitle {
+    color: var(--bismillah-hero-subtitle-color-dark, #adb5bd);
+  }
+  
+  .dark .bismillah-hero-waves-bottom .bismillah-hero-wave-fill {
+    fill: var(--bismillah-wave-color-dark, #121212);
+  }
+  
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .bismillah-hero-animated-bg::before,
+    .bismillah-hero-particle,
+    .bismillah-hero-waves-bottom svg {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+  
+  

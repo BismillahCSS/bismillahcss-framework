@@ -7,6 +7,9 @@ module.exports = {
     require("postcss-import"),
     require("postcss-nested"),
     require("autoprefixer"),
-    require('postcss-discard-duplicates')
+    require("postcss-discard-duplicates"),
+    require("cssnano")({
+      preset: "default",
+    }),
   ],
 };

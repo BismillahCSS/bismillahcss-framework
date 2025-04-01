@@ -1380,3 +1380,1046 @@ display: none;
     gap: 5px;
     cursor: pointer;
 }
+
+
+/* ========== BismillahCSS Advanced Navbar ========== */
+.bismillah-navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2rem;
+  background: var(--bismillah-navbar-bg, rgba(255, 255, 255, 0.8));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+/* Navbar Container - for max width control */
+.bismillah-navbar-container {
+  width: 100%;
+  max-width: var(--bismillah-container-width, 1200px);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar Logo */
+.bismillah-navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--bismillah-primary-color, #333);
+  transition: transform 0.3s ease;
+}
+
+.bismillah-navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.bismillah-navbar-logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: var(--bismillah-logo-radius, 8px);
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Navigation Links Container */
+.bismillah-navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* Navigation Link */
+.bismillah-navbar-link {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--bismillah-link-color, #333);
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Animated Underline */
+.bismillah-navbar-link::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.3rem;
+  width: 0;
+  height: 2px;
+  background: var(--bismillah-primary-color, #007bff);
+  transition: width 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+  border-radius: 2px;
+}
+
+.bismillah-navbar-link:hover {
+  color: var(--bismillah-primary-color, #007bff);
+  background: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+}
+
+.bismillah-navbar-link:hover::after {
+  width: calc(100% - 1.5rem);
+}
+
+.bismillah-navbar-link.active {
+  color: var(--bismillah-primary-color, #007bff);
+  background: var(--bismillah-active-bg, rgba(0, 123, 255, 0.1));
+}
+
+.bismillah-navbar-link.active::after {
+  width: calc(100% - 1.5rem);
+}
+
+/* Navbar Right Section */
+.bismillah-navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* === Dropdown Menu === */
+.bismillah-navbar-dropdown {
+  position: relative;
+}
+
+.bismillah-navbar-dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.bismillah-navbar-dropdown-toggle i {
+  transition: transform 0.3s ease;
+}
+
+.bismillah-navbar-dropdown:hover .bismillah-navbar-dropdown-toggle i {
+  transform: rotate(180deg);
+}
+
+.bismillah-navbar-dropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--bismillah-dropdown-bg, #ffffff);
+  min-width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1001;
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+/* Dropdown Arrow */
+.bismillah-navbar-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  background: var(--bismillah-dropdown-bg, #ffffff);
+  border-left: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  border-top: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-navbar-dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--bismillah-link-color, #333);
+  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-navbar-dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.bismillah-navbar-dropdown-menu a i {
+  font-size: 1rem;
+  color: var(--bismillah-icon-color, #666);
+}
+
+.bismillah-navbar-dropdown-menu a:hover {
+  background: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-navbar-dropdown-menu a:hover i {
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+/* Show Dropdown on Hover */
+.bismillah-navbar-dropdown:hover .bismillah-navbar-dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Multi-level Dropdown */
+.bismillah-navbar-subdropdown {
+  position: relative;
+}
+
+.bismillah-navbar-subdropdown > a::after {
+  content: "›";
+  position: absolute;
+  right: 1rem;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.bismillah-navbar-subdropdown:hover > a::after {
+  transform: rotate(90deg);
+}
+
+.bismillah-navbar-subdropdown-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: var(--bismillah-dropdown-bg, #ffffff);
+  min-width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1002;
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-navbar-subdropdown:hover .bismillah-navbar-subdropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* === Search Bar === */
+.bismillah-navbar-search {
+  position: relative;
+}
+
+.bismillah-search-input {
+  width: 200px;
+  padding: 0.6rem 1rem 0.6rem 2.5rem;
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.1));
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  background: var(--bismillah-input-bg, rgba(0, 0, 0, 0.03));
+  color: var(--bismillah-text-color, #333);
+}
+
+.bismillah-search-input:focus {
+  width: 250px;
+  outline: none;
+  border-color: var(--bismillah-primary-color, #007bff);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.bismillah-navbar-search i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bismillah-icon-color, #666);
+  pointer-events: none;
+}
+
+/* === Notification === */
+.bismillah-notification {
+  position: relative;
+  cursor: pointer;
+}
+
+.bismillah-notification-bell {
+  font-size: 1.2rem;
+  color: var(--bismillah-icon-color, #666);
+  transition: color 0.3s ease;
+}
+
+.bismillah-notification:hover .bismillah-notification-bell {
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-notification-count {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  background: var(--bismillah-accent-color, #ff3860);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.15rem 0.4rem;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(255, 56, 96, 0.3);
+}
+
+.bismillah-notification-dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: -100px;
+  background: var(--bismillah-dropdown-bg, #ffffff);
+  min-width: 300px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1001;
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  transform: translateY(10px);
+}
+
+.bismillah-notification:hover .bismillah-notification-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bismillah-notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-notification-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.bismillah-notification-clear {
+  font-size: 0.8rem;
+  color: var(--bismillah-primary-color, #007bff);
+  cursor: pointer;
+}
+
+.bismillah-notification-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  transition: background 0.2s ease;
+}
+
+.bismillah-notification-item:hover {
+  background: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+}
+
+.bismillah-notification-item:last-child {
+  border-bottom: none;
+}
+
+.bismillah-notification-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bismillah-primary-light, rgba(0, 123, 255, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bismillah-primary-color, #007bff);
+  flex-shrink: 0;
+}
+
+.bismillah-notification-content {
+  flex: 1;
+}
+
+.bismillah-notification-message {
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.bismillah-notification-time {
+  font-size: 0.75rem;
+  color: var(--bismillah-muted-color, #888);
+}
+
+.bismillah-notification-footer {
+  padding: 0.75rem 1rem;
+  text-align: center;
+  border-top: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-notification-footer a {
+  color: var(--bismillah-primary-color, #007bff);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* === User Profile === */
+.bismillah-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.bismillah-profile-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  transition: border-color 0.3s ease;
+}
+
+.bismillah-profile:hover .bismillah-profile-avatar {
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bismillah-user-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--bismillah-dropdown-bg, #ffffff);
+  min-width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1001;
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  transform: translateY(10px);
+}
+
+.bismillah-profile:hover .bismillah-user-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bismillah-user-header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  text-align: center;
+}
+
+.bismillah-user-name {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.bismillah-user-email {
+  font-size: 0.85rem;
+  color: var(--bismillah-muted-color, #888);
+}
+
+.bismillah-user-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--bismillah-link-color, #333);
+  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-user-menu-item:last-child {
+  border-bottom: none;
+}
+
+.bismillah-user-menu-item i {
+  font-size: 1rem;
+  color: var(--bismillah-icon-color, #666);
+}
+
+.bismillah-user-menu-item:hover {
+  background: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-user-menu-item:hover i {
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-user-menu-item.logout {
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+.bismillah-user-menu-item.logout i {
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+.bismillah-user-menu-item.logout:hover {
+  background: var(--bismillah-danger-light, rgba(220, 53, 69, 0.05));
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+/* === Dark Mode Toggle === */
+.bismillah-dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--bismillah-icon-color, #666);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.bismillah-dark-mode-toggle:hover {
+  background: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+/* === Call to Action Button === */
+.bismillah-navbar-cta {
+  padding: 0.6rem 1.2rem;
+  background: var(--bismillah-primary-color, #007bff);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+.bismillah-navbar-cta:hover {
+  background: var(--bismillah-primary-dark, #0069d9);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.bismillah-navbar-cta:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+/* === Hamburger Menu === */
+.bismillah-navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+  z-index: 1002;
+}
+
+.bismillah-navbar-toggle span {
+  width: 100%;
+  height: 2px;
+  background: var(--bismillah-text-color, #333);
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.bismillah-navbar-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bismillah-navbar-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.bismillah-navbar-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* === Responsive Navbar === */
+@media (max-width: 1024px) {
+  .bismillah-navbar-search {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .bismillah-navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .bismillah-navbar-toggle {
+    display: flex;
+  }
+
+  .bismillah-navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background: var(--bismillah-sidebar-bg, #ffffff);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 5rem 1.5rem 2rem;
+    z-index: 1001;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .bismillah-navbar-links.open {
+    display: flex;
+    transform: translateX(0);
+  }
+
+  .bismillah-navbar-link {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  }
+
+  .bismillah-navbar-link::after {
+    display: none;
+  }
+
+  .bismillah-navbar-dropdown {
+    width: 100%;
+  }
+
+  .bismillah-navbar-dropdown-menu {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border: none;
+    background: var(--bismillah-dropdown-mobile-bg, rgba(0, 0, 0, 0.02));
+  }
+
+  .bismillah-navbar-dropdown-menu::before {
+    display: none;
+  }
+
+  .bismillah-navbar-dropdown.open .bismillah-navbar-dropdown-menu {
+    max-height: 500px;
+  }
+
+  .bismillah-navbar-dropdown-toggle i {
+    margin-left: auto;
+  }
+
+  .bismillah-navbar-subdropdown-menu {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: none;
+    border-radius: 0;
+    min-width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    border: none;
+    background: var(--bismillah-dropdown-mobile-bg, rgba(0, 0, 0, 0.02));
+    padding-left: 1rem;
+  }
+
+  .bismillah-navbar-subdropdown.open .bismillah-navbar-subdropdown-menu {
+    max-height: 500px;
+  }
+
+  .bismillah-navbar-right {
+    margin-left: auto;
+  }
+
+  .bismillah-notification-dropdown,
+  .bismillah-user-menu {
+    right: -100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bismillah-navbar-logo span {
+    display: none;
+  }
+
+  .bismillah-notification-dropdown,
+  .bismillah-user-menu {
+    right: -50px;
+    min-width: 280px;
+  }
+}
+
+/* === Dark Mode Styles === */
+.dark .bismillah-navbar {
+  background: var(--bismillah-navbar-bg-dark, rgba(18, 18, 18, 0.8));
+  border-bottom-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-navbar-link {
+  color: var(--bismillah-link-color-dark, #e0e0e0);
+}
+
+.dark .bismillah-navbar-link:hover {
+  background: var(--bismillah-hover-bg-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-navbar-dropdown-menu,
+.dark .bismillah-navbar-subdropdown-menu,
+.dark .bismillah-notification-dropdown,
+.dark .bismillah-user-menu {
+  background: var(--bismillah-dropdown-bg-dark, #222);
+  border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-navbar-dropdown-menu::before {
+  background: var(--bismillah-dropdown-bg-dark, #222);
+  border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-navbar-dropdown-menu a,
+.dark .bismillah-user-menu-item,
+.dark .bismillah-notification-item {
+  color: var(--bismillah-link-color-dark, #e0e0e0);
+  border-bottom-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-navbar-dropdown-menu a:hover,
+.dark .bismillah-user-menu-item:hover {
+  background: var(--bismillah-hover-bg-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-search-input {
+  background: var(--bismillah-input-bg-dark, rgba(255, 255, 255, 0.05));
+  color: var(--bismillah-text-color-dark, #e0e0e0);
+  border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.1));
+}
+
+.dark .bismillah-navbar-toggle span {
+  background: var(--bismillah-text-color-dark, #e0e0e0);
+}
+
+/* === Glassmorphism Effect === */
+.bismillah-navbar.glassmorphism {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .bismillah-navbar.glassmorphism {
+  background: rgba(18, 18, 18, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* === Scroll Effect === */
+.bismillah-navbar.scroll-effect {
+  transition: padding 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bismillah-navbar.scroll-effect.scrolled {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* === Animated Navbar === */
+@keyframes bismillah-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bismillah-navbar.animated .bismillah-navbar-link {
+  opacity: 0;
+  animation: bismillah-fadeIn 0.5s forwards;
+}
+
+.bismillah-navbar.animated .bismillah-navbar-link:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.bismillah-navbar.animated .bismillah-navbar-link:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.bismillah-navbar.animated .bismillah-navbar-link:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.bismillah-navbar.animated .bismillah-navbar-link:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.bismillah-navbar.animated .bismillah-navbar-link:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* === Mega Menu === */
+.bismillah-mega-menu {
+  position: static;
+}
+
+.bismillah-mega-dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--bismillah-dropdown-bg, #ffffff);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1001;
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  transform: translateY(10px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.bismillah-mega-menu:hover .bismillah-mega-dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.bismillah-mega-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bismillah-mega-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--bismillah-text-color, #333);
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-mega-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bismillah-mega-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--bismillah-link-color, #333);
+  transition: all 0.2s ease;
+}
+
+.bismillah-mega-link:hover {
+  color: var(--bismillah-primary-color, #007bff);
+  transform: translateX(5px);
+}
+
+.bismillah-mega-featured {
+  flex: 2;
+  min-width: 300px;
+}
+
+.bismillah-featured-card {
+  background: var(--bismillah-card-bg, #f8f9fa);
+  border-radius: 8px;
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.bismillah-featured-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.bismillah-featured-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bismillah-featured-desc {
+  font-size: 0.9rem;
+  color: var(--bismillah-muted-color, #666);
+  margin-bottom: 1rem;
+}
+
+.bismillah-featured-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--bismillah-primary-color, #007bff);
+  color: white;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.bismillah-featured-button:hover {
+  background: var(--bismillah-primary-dark, #0069d9);
+}
+
+/* === Sticky Navbar Animation === */
+.bismillah-navbar.sticky-hide {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.bismillah-navbar.sticky-hide.hidden {
+  transform: translateY(-100%);
+}
+
+/* === Navbar with Gradient === */
+.bismillah-navbar.gradient {
+  background: linear-gradient(90deg, var(--bismillah-gradient-start, #4158d0), var(--bismillah-gradient-end, #c850c0));
+  border-bottom: none;
+}
+
+.bismillah-navbar.gradient .bismillah-navbar-link,
+.bismillah-navbar.gradient .bismillah-notification-bell,
+.bismillah-navbar.gradient .bismillah-dark-mode-toggle {
+  color: white;
+}
+
+.bismillah-navbar.gradient .bismillah-navbar-toggle span {
+  background: white;
+}
+
+.bismillah-navbar.gradient .bismillah-navbar-link::after {
+  background: white;
+}
+
+.bismillah-navbar.gradient .bismillah-navbar-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* === Navbar with Border Bottom Indicator === */
+.bismillah-navbar.border-indicator .bismillah-navbar-link {
+  border-bottom: 3px solid transparent;
+  padding-bottom: calc(0.5rem - 3px);
+}
+
+.bismillah-navbar.border-indicator .bismillah-navbar-link::after {
+  display: none;
+}
+
+.bismillah-navbar.border-indicator .bismillah-navbar-link:hover,
+.bismillah-navbar.border-indicator .bismillah-navbar-link.active {
+  border-bottom-color: var(--bismillah-primary-color, #007bff);
+}
+
+/* === Navbar with Pill Indicator === */
+.bismillah-navbar.pill-indicator .bismillah-navbar-link {
+  border-radius: 50px;
+}
+
+.bismillah-navbar.pill-indicator .bismillah-navbar-link::after {
+  display: none;
+}
+
+.bismillah-navbar.pill-indicator .bismillah-navbar-link:hover,
+.bismillah-navbar.pill-indicator .bismillah-navbar-link.active {
+  background: var(--bismillah-primary-color, #007bff);
+  color: white;
+}
+
+/* === Navbar with Backdrop Blur === */
+.bismillah-navbar.backdrop-blur {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .bismillah-navbar.backdrop-blur {
+  background: rgba(18, 18, 18, 0.5);
+}
+
+/* === Navbar with Neon Effect === */
+.bismillah-navbar.neon {
+  border-bottom: 1px solid var(--bismillah-neon-color, #0ff);
+  box-shadow: 0 0 10px var(--bismillah-neon-color, #0ff);
+}
+
+.bismillah-navbar.neon .bismillah-navbar-link::after {
+  background: var(--bismillah-neon-color, #0ff);
+  box-shadow: 0 0 10px var(--bismillah-neon-color, #0ff);
+}
+
+/* === Accessibility Features === */
+.bismillah-navbar a:focus,
+.bismillah-navbar button:focus {
+  outline: 2px solid var(--bismillah-focus-color, #007bff);
+  outline-offset: 2px;
+}
+
+.bismillah-skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--bismillah-primary-color, #007bff);
+  color: white;
+  padding: 8px;
+  z-index: 1003;
+  transition: top 0.3s;
+}
+
+.bismillah-skip-link:focus {
+  top: 0;
+}
+

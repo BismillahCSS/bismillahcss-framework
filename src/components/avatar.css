@@ -1,0 +1,366 @@
+/* ========== BismillahCSS Avatar ========== */
+
+/* Base Avatar */
+.bismillah-avatar {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--bismillah-avatar-bg, #e5e7eb);
+    color: var(--bismillah-avatar-color, #4b5563);
+    font-weight: 500;
+    overflow: hidden;
+    user-select: none;
+    vertical-align: middle;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Avatar Image */
+  .bismillah-avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  
+  /* Avatar with Initials */
+  .bismillah-avatar-initials {
+    font-size: calc(var(--bismillah-avatar-size, 40px) * 0.4);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  
+  /* Avatar Sizes */
+  .bismillah-avatar-xs {
+    --bismillah-avatar-size: 24px;
+    width: var(--bismillah-avatar-size);
+    height: var(--bismillah-avatar-size);
+    font-size: calc(var(--bismillah-avatar-size) * 0.4);
+  }
+  
+  .bismillah-avatar-sm {
+    --bismillah-avatar-size: 32px;
+    width: var(--bismillah-avatar-size);
+    height: var(--bismillah-avatar-size);
+    font-size: calc(var(--bismillah-avatar-size) * 0.4);
+  }
+  
+  .bismillah-avatar-md {
+    --bismillah-avatar-size: 40px;
+    width: var(--bismillah-avatar-size);
+    height: var(--bismillah-avatar-size);
+    font-size: calc(var(--bismillah-avatar-size) * 0.4);
+  }
+  
+  .bismillah-avatar-lg {
+    --bismillah-avatar-size: 56px;
+    width: var(--bismillah-avatar-size);
+    height: var(--bismillah-avatar-size);
+    font-size: calc(var(--bismillah-avatar-size) * 0.4);
+  }
+  
+  .bismillah-avatar-xl {
+    --bismillah-avatar-size: 80px;
+    width: var(--bismillah-avatar-size);
+    height: var(--bismillah-avatar-size);
+    font-size: calc(var(--bismillah-avatar-size) * 0.4);
+  }
+  
+  .bismillah-avatar-2xl {
+    --bismillah-avatar-size: 112px;
+    width: var(--bismillah-avatar-size);
+    height: var(--bismillah-avatar-size);
+    font-size: calc(var(--bismillah-avatar-size) * 0.4);
+  }
+  
+  /* Avatar Shapes */
+  .bismillah-avatar-circle {
+    border-radius: 50%;
+  }
+  
+  .bismillah-avatar-square {
+    border-radius: 4px;
+  }
+  
+  .bismillah-avatar-rounded {
+    border-radius: 8px;
+  }
+  
+  /* Avatar Status */
+  .bismillah-avatar-status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    border: 2px solid var(--bismillah-avatar-border-color, #ffffff);
+    background-color: var(--bismillah-avatar-status-bg, #9ca3af);
+  }
+  
+  .bismillah-avatar-status-online {
+    background-color: var(--bismillah-success-color, #10b981);
+  }
+  
+  .bismillah-avatar-status-offline {
+    background-color: var(--bismillah-muted-color, #9ca3af);
+  }
+  
+  .bismillah-avatar-status-busy {
+    background-color: var(--bismillah-danger-color, #ef4444);
+  }
+  
+  .bismillah-avatar-status-away {
+    background-color: var(--bismillah-warning-color, #f59e0b);
+  }
+  
+  /* Avatar with Border */
+  .bismillah-avatar-bordered {
+    border: 2px solid var(--bismillah-avatar-border-color, #ffffff);
+  }
+  
+  /* Avatar Group */
+  .bismillah-avatar-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bismillah-avatar-group .bismillah-avatar {
+    margin-right: -8px;
+    border: 2px solid var(--bismillah-avatar-border-color, #ffffff);
+    transition: transform 0.2s ease;
+  }
+  
+  .bismillah-avatar-group .bismillah-avatar:hover {
+    transform: translateY(-5px);
+    z-index: 1;
+  }
+  
+  .bismillah-avatar-group .bismillah-avatar:last-child {
+    margin-right: 0;
+  }
+  
+  /* Avatar with Badge */
+  .bismillah-avatar-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25%, -25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 35%;
+    min-width: 16px;
+    min-height: 16px;
+    border-radius: 50%;
+    background-color: var(--bismillah-primary-color, #3b82f6);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border: 2px solid var(--bismillah-avatar-border-color, #ffffff);
+  }
+  
+  /* Avatar with Icon */
+  .bismillah-avatar-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: calc(var(--bismillah-avatar-size, 40px) * 0.5);
+  }
+  
+  /* Avatar Colors */
+  .bismillah-avatar-primary {
+    background-color: var(--bismillah-primary-light, rgba(59, 130, 246, 0.1));
+    color: var(--bismillah-primary-color, #3b82f6);
+  }
+  
+  .bismillah-avatar-secondary {
+    background-color: var(--bismillah-secondary-light, rgba(107, 114, 128, 0.1));
+    color: var(--bismillah-secondary-color, #6b7280);
+  }
+  
+  .bismillah-avatar-success {
+    background-color: var(--bismillah-success-light, rgba(16, 185, 129, 0.1));
+    color: var(--bismillah-success-color, #10b981);
+  }
+  
+  .bismillah-avatar-danger {
+    background-color: var(--bismillah-danger-light, rgba(239, 68, 68, 0.1));
+    color: var(--bismillah-danger-color, #ef4444);
+  }
+  
+  .bismillah-avatar-warning {
+    background-color: var(--bismillah-warning-light, rgba(245, 158, 11, 0.1));
+    color: var(--bismillah-warning-color, #f59e0b);
+  }
+  
+  .bismillah-avatar-info {
+    background-color: var(--bismillah-info-light, rgba(6, 182, 212, 0.1));
+    color: var(--bismillah-info-color, #06b6d4);
+  }
+  
+  /* Avatar with Fallback */
+  .bismillah-avatar-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bismillah-avatar-fallback-bg, #e5e7eb);
+    color: var(--bismillah-avatar-fallback-color, #4b5563);
+  }
+  
+  /* Interactive Avatar */
+  .bismillah-avatar-interactive {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .bismillah-avatar-interactive:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Avatar with Tooltip */
+  .bismillah-avatar-tooltip {
+    position: relative;
+  }
+  
+  .bismillah-avatar-tooltip::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    padding: 0.25rem 0.5rem;
+    background-color: var(--bismillah-tooltip-bg, rgba(0, 0, 0, 0.8));
+    color: var(--bismillah-tooltip-color, white);
+    font-size: 0.75rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .bismillah-avatar-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--bismillah-tooltip-bg, rgba(0, 0, 0, 0.8)) transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    pointer-events: none;
+    z-index: 10;
+  }
+  
+  .bismillah-avatar-tooltip:hover::before,
+  .bismillah-avatar-tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  
+  /* Avatar with Presence Animation */
+  .bismillah-avatar-presence {
+    position: relative;
+  }
+  
+  .bismillah-avatar-presence::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    background-color: var(--bismillah-success-color, #10b981);
+    border: 2px solid var(--bismillah-avatar-border-color, #ffffff);
+    animation: bismillah-avatar-pulse 2s infinite;
+  }
+  
+  @keyframes bismillah-avatar-pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+  }
+  
+  /* Avatar with Stacked Layout */
+  .bismillah-avatar-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bismillah-avatar-stack-name {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .bismillah-avatar-stack-title {
+    font-size: 0.75rem;
+    color: var(--bismillah-muted-color, #6b7280);
+  }
+  
+  /* Avatar with Gradient Background */
+  .bismillah-avatar-gradient {
+    background: linear-gradient(45deg, var(--bismillah-gradient-start, #4158d0), var(--bismillah-gradient-end, #c850c0));
+    color: white;
+  }
+  
+  /* Dark Mode Styles */
+  .dark .bismillah-avatar {
+    background-color: var(--bismillah-avatar-bg-dark, #374151);
+    color: var(--bismillah-avatar-color-dark, #e5e7eb);
+  }
+  
+  .dark .bismillah-avatar-bordered,
+  .dark .bismillah-avatar-group .bismillah-avatar,
+  .dark .bismillah-avatar-badge,
+  .dark .bismillah-avatar-status {
+    border-color: var(--bismillah-avatar-border-color-dark, #1f2937);
+  }
+  
+  .dark .bismillah-avatar-fallback {
+    background-color: var(--bismillah-avatar-fallback-bg-dark, #374151);
+    color: var(--bismillah-avatar-fallback-color-dark, #e5e7eb);
+  }
+  
+  /* Accessibility */
+  .bismillah-avatar:focus {
+    outline: 2px solid var(--bismillah-focus-color, #3b82f6);
+    outline-offset: 2px;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .bismillah-avatar-group .bismillah-avatar,
+    .bismillah-avatar-interactive,
+    .bismillah-avatar-tooltip::before,
+    .bismillah-avatar-tooltip::after,
+    .bismillah-avatar-presence::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+  

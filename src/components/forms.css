@@ -1081,3 +1081,1560 @@
   
   /* === Form Datepicker === */
   
+
+
+  /* ========== BismillahCSS Form Styles ========== */
+
+/* === Form Container === */
+.bismillah-form {
+  width: 100%;
+  max-width: var(--bismillah-form-width, 600px);
+  margin: 0 auto;
+  padding: var(--bismillah-form-padding, 1.5rem);
+  background: var(--bismillah-form-bg, #ffffff);
+  border-radius: var(--bismillah-form-radius, 8px);
+  box-shadow: var(--bismillah-form-shadow, 0 5px 15px rgba(0, 0, 0, 0.05));
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  transition: all 0.3s ease;
+}
+
+.bismillah-form.compact {
+  padding: 1rem;
+}
+
+.bismillah-form.borderless {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+/* === Form Header === */
+.bismillah-form-header {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.bismillah-form-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--bismillah-heading-color, #333);
+  margin-bottom: 0.5rem;
+}
+
+.bismillah-form-subtitle {
+  font-size: 0.95rem;
+  color: var(--bismillah-muted-color, #666);
+}
+
+/* === Form Group === */
+.bismillah-form-group {
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.bismillah-form-group.inline {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bismillah-form-group.inline .bismillah-form-label {
+  margin-bottom: 0;
+  min-width: 100px;
+}
+
+/* === Form Label === */
+.bismillah-form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--bismillah-label-color, #333);
+  transition: color 0.3s ease;
+}
+
+.bismillah-form-label.required::after {
+  content: "*";
+  color: var(--bismillah-danger-color, #dc3545);
+  margin-left: 0.25rem;
+}
+
+/* === Form Input === */
+.bismillah-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--bismillah-input-text, #333);
+  background-color: var(--bismillah-input-bg, #ffffff);
+  background-clip: padding-box;
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+  transition: all 0.3s ease;
+}
+
+.bismillah-form-input:focus {
+  color: var(--bismillah-input-focus-text, #333);
+  background-color: var(--bismillah-input-focus-bg, #ffffff);
+  border-color: var(--bismillah-primary-color, #007bff);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.bismillah-form-input::placeholder {
+  color: var(--bismillah-placeholder-color, #adb5bd);
+  opacity: 1;
+}
+
+.bismillah-form-input:disabled,
+.bismillah-form-input[readonly] {
+  background-color: var(--bismillah-input-disabled-bg, #f8f9fa);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Input Sizes */
+.bismillah-form-input.sm {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: calc(var(--bismillah-input-radius, 6px) - 1px);
+}
+
+.bismillah-form-input.lg {
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  border-radius: calc(var(--bismillah-input-radius, 6px) + 1px);
+}
+
+/* === Form Textarea === */
+.bismillah-form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* === Form Select === */
+.bismillah-form-select {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--bismillah-input-text, #333);
+  background-color: var(--bismillah-input-bg, #ffffff);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+  appearance: none;
+  transition: all 0.3s ease;
+}
+
+.bismillah-form-select:focus {
+  border-color: var(--bismillah-primary-color, #007bff);
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.bismillah-form-select:disabled {
+  background-color: var(--bismillah-input-disabled-bg, #f8f9fa);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Select Sizes */
+.bismillah-form-select.sm {
+  padding: 0.4rem 2.25rem 0.4rem 0.75rem;
+  font-size: 0.875rem;
+  background-size: 14px 10px;
+}
+
+.bismillah-form-select.lg {
+  padding: 1rem 3rem 1rem 1.25rem;
+  font-size: 1.125rem;
+  background-size: 18px 14px;
+}
+
+/* Multiple Select */
+.bismillah-form-select[multiple] {
+  padding-right: 1rem;
+  background-image: none;
+  height: auto;
+  min-height: 120px;
+}
+
+/* === Form Checkbox & Radio === */
+.bismillah-form-check {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding-left: 1.75rem;
+  cursor: pointer;
+}
+
+.bismillah-form-check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.bismillah-form-check-label {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: var(--bismillah-label-color, #333);
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Custom Checkbox */
+.bismillah-checkbox-mark {
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: var(--bismillah-input-bg, #ffffff);
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.bismillah-form-check:hover .bismillah-checkbox-mark {
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-check-input:checked ~ .bismillah-checkbox-mark {
+  background-color: var(--bismillah-primary-color, #007bff);
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-checkbox-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.bismillah-form-check-input:checked ~ .bismillah-checkbox-mark:after {
+  display: block;
+}
+
+/* Custom Radio */
+.bismillah-radio-mark {
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: var(--bismillah-input-bg, #ffffff);
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.bismillah-form-check:hover .bismillah-radio-mark {
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-check-input:checked ~ .bismillah-radio-mark {
+  background-color: var(--bismillah-input-bg, #ffffff);
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-radio-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-check-input:checked ~ .bismillah-radio-mark:after {
+  display: block;
+}
+
+/* Disabled state */
+.bismillah-form-check-input:disabled ~ .bismillah-checkbox-mark,
+.bismillah-form-check-input:disabled ~ .bismillah-radio-mark {
+  background-color: var(--bismillah-input-disabled-bg, #f8f9fa);
+  cursor: not-allowed;
+}
+
+.bismillah-form-check-input:disabled ~ .bismillah-form-check-label {
+  color: var(--bismillah-muted-color, #6c757d);
+  cursor: not-allowed;
+}
+
+/* Switch Toggle */
+.bismillah-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  margin: 0;
+}
+
+.bismillah-switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.bismillah-switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bismillah-switch-bg, #ccc);
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.bismillah-switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.bismillah-switch-input:checked + .bismillah-switch-slider {
+  background-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-switch-input:focus + .bismillah-switch-slider {
+  box-shadow: 0 0 1px var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-switch-input:checked + .bismillah-switch-slider:before {
+  transform: translateX(26px);
+}
+
+.bismillah-switch-input:disabled + .bismillah-switch-slider {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.bismillah-switch-label {
+  margin-left: 10px;
+  font-size: 0.95rem;
+  color: var(--bismillah-label-color, #333);
+}
+
+/* === Form Range === */
+.bismillah-form-range {
+  width: 100%;
+  height: 1.5rem;
+  padding: 0;
+  background-color: transparent;
+  appearance: none;
+}
+
+.bismillah-form-range:focus {
+  outline: none;
+}
+
+.bismillah-form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: var(--bismillah-primary-color, #007bff);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+  margin-top: -6px;
+}
+
+.bismillah-form-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--bismillah-primary-color, #007bff);
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+}
+
+.bismillah-form-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  color: transparent;
+  cursor: pointer;
+  background-color: var(--bismillah-range-track-bg, #dee2e6);
+  border-color: transparent;
+  border-radius: 2px;
+}
+
+.bismillah-form-range::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  color: transparent;
+  cursor: pointer;
+  background-color: var(--bismillah-range-track-bg, #dee2e6);
+  border-color: transparent;
+  border-radius: 2px;
+}
+
+.bismillah-form-range:disabled::-webkit-slider-thumb {
+  background-color: var(--bismillah-muted-color, #adb5bd);
+  cursor: not-allowed;
+}
+
+.bismillah-form-range:disabled::-moz-range-thumb {
+  background-color: var(--bismillah-muted-color, #adb5bd);
+  cursor: not-allowed;
+}
+
+/* === Form File Input === */
+.bismillah-form-file {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.bismillah-form-file-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bismillah-form-file-label {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: var(--bismillah-input-bg, #ffffff);
+  border: 1px dashed var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+  font-size: 1rem;
+  color: var(--bismillah-muted-color, #6c757d);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bismillah-form-file-icon {
+  margin-right: 0.5rem;
+  color: var(--bismillah-primary-color, #007bff);
+  font-size: 1.25rem;
+}
+
+.bismillah-form-file-input:focus ~ .bismillah-form-file-label {
+  border-color: var(--bismillah-primary-color, #007bff);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.bismillah-form-file-input:hover ~ .bismillah-form-file-label {
+  border-color: var(--bismillah-primary-color, #007bff);
+  background-color: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+}
+
+.bismillah-form-file-input:disabled ~ .bismillah-form-file-label {
+  background-color: var(--bismillah-input-disabled-bg, #f8f9fa);
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* File Drop Zone */
+.bismillah-file-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border: 2px dashed var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+  background-color: var(--bismillah-dropzone-bg, #f8f9fa);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.bismillah-file-dropzone:hover,
+.bismillah-file-dropzone.dragover {
+  border-color: var(--bismillah-primary-color, #007bff);
+  background-color: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+}
+
+.bismillah-dropzone-icon {
+  font-size: 2.5rem;
+  color: var(--bismillah-muted-color, #6c757d);
+  margin-bottom: 1rem;
+}
+
+.bismillah-dropzone-text {
+  font-size: 1rem;
+  color: var(--bismillah-text-color, #333);
+  margin-bottom: 0.5rem;
+}
+
+.bismillah-dropzone-hint {
+  font-size: 0.875rem;
+  color: var(--bismillah-muted-color, #6c757d);
+}
+
+/* === Form Help Text === */
+.bismillah-form-text {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--bismillah-muted-color, #6c757d);
+}
+
+/* === Form Validation States === */
+.bismillah-form-input.is-valid,
+.bismillah-form-select.is-valid,
+.bismillah-form-textarea.is-valid {
+  border-color: var(--bismillah-success-color, #28a745);
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2328a745' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 11.08V12a10 10 0 1 1-5.93-9.14'/%3E%3Cpath d='M22 4L12 14.01l-3-3'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.bismillah-form-input.is-invalid,
+.bismillah-form-select.is-invalid,
+.bismillah-form-textarea.is-invalid {
+  border-color: var(--bismillah-danger-color, #dc3545);
+  padding-right: calc(1.5em + 0.75rem);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23dc3545' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M15 9l-6 6M9 9l6 6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right calc(0.375em + 0.1875rem) center;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.bismillah-valid-feedback,
+.bismillah-invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.bismillah-valid-feedback {
+  color: var(--bismillah-success-color, #28a745);
+}
+
+.bismillah-invalid-feedback {
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+.bismillah-form-input.is-valid ~ .bismillah-valid-feedback,
+.bismillah-form-select.is-valid ~ .bismillah-valid-feedback,
+.bismillah-form-textarea.is-valid ~ .bismillah-valid-feedback,
+.bismillah-form-input.is-invalid ~ .bismillah-invalid-feedback,
+.bismillah-form-select.is-invalid ~ .bismillah-invalid-feedback,
+.bismillah-form-textarea.is-invalid ~ .bismillah-invalid-feedback {
+  display: block;
+}
+
+/* === Form Floating Labels === */
+.bismillah-form-floating {
+  position: relative;
+}
+
+.bismillah-form-floating .bismillah-form-input,
+.bismillah-form-floating .bismillah-form-textarea {
+  height: calc(3.5rem + 2px);
+  padding: 1.625rem 1rem 0.625rem;
+}
+
+.bismillah-form-floating .bismillah-form-textarea {
+  min-height: calc(3.5rem + 2px);
+}
+
+.bismillah-form-floating .bismillah-form-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 1rem;
+  pointer-events: none;
+  border: 1px solid transparent;
+  transform-origin: 0 0;
+  transition: opacity .1s ease-in-out, transform .1s ease-in-out;
+  color: var(--bismillah-placeholder-color, #adb5bd);
+  margin: 0;
+}
+
+.bismillah-form-floating .bismillah-form-input:focus,
+.bismillah-form-floating .bismillah-form-textarea:focus,
+.bismillah-form-floating .bismillah-form-input:not(:placeholder-shown),
+.bismillah-form-floating .bismillah-form-textarea:not(:placeholder-shown) {
+  padding-top: 1.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.bismillah-form-floating .bismillah-form-input:focus ~ .bismillah-form-label,
+.bismillah-form-floating .bismillah-form-textarea:focus ~ .bismillah-form-label,
+.bismillah-form-floating .bismillah-form-input:not(:placeholder-shown) ~ .bismillah-form-label,
+.bismillah-form-floating .bismillah-form-textarea:not(:placeholder-shown) ~ .bismillah-form-label {
+  opacity: 0.65;
+  transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-floating .bismillah-form-input::placeholder,
+.bismillah-form-floating .bismillah-form-textarea::placeholder {
+  color: transparent;
+}
+
+/* === Form Grid === */
+.bismillah-form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.bismillah-form-col {
+  flex: 1 0 0%;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.bismillah-form-col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.bismillah-form-col-1 {
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
+}
+.bismillah-form-col-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.bismillah-form-col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.bismillah-form-col-4 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+}
+.bismillah-form-col-5 {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+}
+.bismillah-form-col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.bismillah-form-col-7 {
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+.bismillah-form-col-8 {
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+.bismillah-form-col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+.bismillah-form-col-10 {
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+.bismillah-form-col-11 {
+  flex: 0 0 91.666667%;
+  max-width: 91.666667%;
+}
+.bismillah-form-col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .bismillah-form-col-sm-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .bismillah-form-col-sm-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .bismillah-form-col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .bismillah-form-col-sm-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .bismillah-form-col-sm-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .bismillah-form-col-sm-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .bismillah-form-col-sm-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .bismillah-form-col-sm-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .bismillah-form-col-sm-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .bismillah-form-col-sm-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .bismillah-form-col-sm-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .bismillah-form-col-sm-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bismillah-form-col-md-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .bismillah-form-col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .bismillah-form-col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .bismillah-form-col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .bismillah-form-col-md-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .bismillah-form-col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .bismillah-form-col-md-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .bismillah-form-col-md-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .bismillah-form-col-md-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .bismillah-form-col-md-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .bismillah-form-col-md-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .bismillah-form-col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .bismillah-form-col-lg-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+  .bismillah-form-col-lg-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+  .bismillah-form-col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .bismillah-form-col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .bismillah-form-col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+  .bismillah-form-col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .bismillah-form-col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+  .bismillah-form-col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .bismillah-form-col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .bismillah-form-col-lg-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+  .bismillah-form-col-lg-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+  .bismillah-form-col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* === Form Buttons === */
+.bismillah-form-btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: var(--bismillah-btn-radius, 6px);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.bismillah-form-btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.bismillah-form-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* Button Variants */
+.bismillah-form-btn-primary {
+  color: #fff;
+  background-color: var(--bismillah-primary-color, #007bff);
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-btn-primary:hover {
+  background-color: var(--bismillah-primary-dark, #0069d9);
+  border-color: var(--bismillah-primary-dark, #0069d9);
+}
+
+.bismillah-form-btn-secondary {
+  color: #fff;
+  background-color: var(--bismillah-secondary-color, #6c757d);
+  border-color: var(--bismillah-secondary-color, #6c757d);
+}
+
+.bismillah-form-btn-secondary:hover {
+  background-color: var(--bismillah-secondary-dark, #5a6268);
+  border-color: var(--bismillah-secondary-dark, #5a6268);
+}
+
+.bismillah-form-btn-success {
+  color: #fff;
+  background-color: var(--bismillah-success-color, #28a745);
+  border-color: var(--bismillah-success-color, #28a745);
+}
+
+.bismillah-form-btn-success:hover {
+  background-color: var(--bismillah-success-dark, #218838);
+  border-color: var(--bismillah-success-dark, #218838);
+}
+
+.bismillah-form-btn-danger {
+  color: #fff;
+  background-color: var(--bismillah-danger-color, #dc3545);
+  border-color: var(--bismillah-danger-color, #dc3545);
+}
+
+.bismillah-form-btn-danger:hover {
+  background-color: var(--bismillah-danger-dark, #c82333);
+  border-color: var(--bismillah-danger-dark, #c82333);
+}
+
+.bismillah-form-btn-outline-primary {
+  color: var(--bismillah-primary-color, #007bff);
+  background-color: transparent;
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-btn-outline-primary:hover {
+  color: #fff;
+  background-color: var(--bismillah-primary-color, #007bff);
+  border-color: var(--bismillah-primary-color, #007bff);
+}
+
+.bismillah-form-btn-outline-secondary {
+  color: var(--bismillah-secondary-color, #6c757d);
+  background-color: transparent;
+  border-color: var(--bismillah-secondary-color, #6c757d);
+}
+
+.bismillah-form-btn-outline-secondary:hover {
+  color: #fff;
+  background-color: var(--bismillah-secondary-color, #6c757d);
+  border-color: var(--bismillah-secondary-color, #6c757d);
+}
+
+/* Button Sizes */
+.bismillah-form-btn-sm {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.875rem;
+  border-radius: calc(var(--bismillah-btn-radius, 6px) - 1px);
+}
+
+.bismillah-form-btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  border-radius: calc(var(--bismillah-btn-radius, 6px) + 1px);
+}
+
+/* Button with Icon */
+.bismillah-form-btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.bismillah-form-btn-icon-only {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bismillah-form-btn-icon-only.bismillah-form-btn-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.bismillah-form-btn-icon-only.bismillah-form-btn-lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Button with Loading State */
+.bismillah-form-btn-loading {
+  position: relative;
+  color: transparent !important;
+}
+
+.bismillah-form-btn-loading::after {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: calc(50% - 0.5rem);
+  left: calc(50% - 0.5rem);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-color: white;
+  animation: bismillah-spin 0.8s linear infinite;
+}
+
+@keyframes bismillah-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Button Group */
+.bismillah-form-btn-group {
+  display: inline-flex;
+  position: relative;
+}
+
+.bismillah-form-btn-group .bismillah-form-btn {
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.bismillah-form-btn-group .bismillah-form-btn:not(:first-child) {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bismillah-form-btn-group .bismillah-form-btn:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* === Form Footer === */
+.bismillah-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+/* === Form Divider === */
+.bismillah-form-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.bismillah-form-divider::before,
+.bismillah-form-divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+}
+
+.bismillah-form-divider::before {
+  margin-right: 1rem;
+}
+
+.bismillah-form-divider::after {
+  margin-left: 1rem;
+}
+
+.bismillah-form-divider-text {
+  font-size: 0.875rem;
+  color: var(--bismillah-muted-color, #6c757d);
+}
+
+/* === Form Fieldset === */
+.bismillah-form-fieldset {
+  border: 1px solid var(--bismillah-border-color, rgba(0, 0, 0, 0.05));
+  border-radius: var(--bismillah-input-radius, 6px);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.bismillah-form-legend {
+  width: auto;
+  padding: 0 0.5rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--bismillah-heading-color, #333);
+}
+
+/* === Form Input Groups === */
+.bismillah-input-group {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+}
+
+.bismillah-input-group-prepend,
+.bismillah-input-group-append {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bismillah-input-text, #333);
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--bismillah-input-group-bg, #f8f9fa);
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+}
+
+.bismillah-input-group-prepend {
+  border-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.bismillah-input-group-append {
+  border-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bismillah-input-group .bismillah-form-input {
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+.bismillah-input-group .bismillah-form-input:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bismillah-input-group .bismillah-form-input:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* === Form Search === */
+.bismillah-form-search {
+  position: relative;
+}
+
+.bismillah-form-search .bismillah-form-input {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.bismillah-form-search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bismillah-muted-color, #6c757d);
+  pointer-events: none;
+}
+
+.bismillah-form-search-clear {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bismillah-muted-color, #6c757d);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.bismillah-form-search-clear:hover {
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+/* === Form OTP Input === */
+.bismillah-form-otp {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.bismillah-form-otp-input {
+  width: 3rem;
+  height: 3.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+  transition: all 0.3s ease;
+}
+
+.bismillah-form-otp-input:focus {
+  border-color: var(--bismillah-primary-color, #007bff);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+  outline: none;
+}
+
+/* === Form Password === */
+.bismillah-form-password {
+  position: relative;
+}
+
+.bismillah-form-password .bismillah-form-input {
+  padding-right: 3rem;
+}
+
+.bismillah-form-password-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--bismillah-muted-color, #6c757d);
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.bismillah-form-password-toggle:hover {
+  color: var(--bismillah-primary-color, #007bff);
+}
+
+/* === Form Datepicker === */
+.bismillah-form-datepicker {
+  position: relative;
+}
+
+.bismillah-form-datepicker .bismillah-form-input {
+  padding-right: 2.5rem;
+}
+
+.bismillah-form-datepicker-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--bismillah-muted-color, #6c757d);
+  pointer-events: none;
+}
+
+/* === Form Rating === */
+.bismillah-form-rating {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.bismillah-form-rating-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.bismillah-form-rating-star {
+  color: var(--bismillah-rating-inactive, #e4e5e7);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.bismillah-form-rating-input:checked ~ .bismillah-form-rating-star,
+.bismillah-form-rating-input:checked ~ label .bismillah-form-rating-star {
+  color: var(--bismillah-rating-active, #ffc107);
+}
+
+.bismillah-form-rating-star:hover,
+.bismillah-form-rating-input:not(:checked) ~ .bismillah-form-rating-star:hover,
+.bismillah-form-rating-input:not(:checked) ~ label:hover .bismillah-form-rating-star,
+.bismillah-form-rating-input:not(:checked) ~ label:hover ~ label .bismillah-form-rating-star {
+  color: var(--bismillah-rating-hover, #ffdb70);
+}
+
+/* === Form Tags Input === */
+.bismillah-form-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+  min-height: 3rem;
+  background-color: var(--bismillah-input-bg, #ffffff);
+  transition: all 0.3s ease;
+}
+
+.bismillah-form-tags:focus-within {
+  border-color: var(--bismillah-primary-color, #007bff);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.15);
+}
+
+.bismillah-form-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--bismillah-tag-bg, rgba(0, 123, 255, 0.1));
+  color: var(--bismillah-primary-color, #007bff);
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.bismillah-form-tag-remove {
+  background: none;
+  border: none;
+  color: var(--bismillah-primary-color, #007bff);
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.bismillah-form-tag-remove:hover {
+  color: var(--bismillah-danger-color, #dc3545);
+}
+
+.bismillah-form-tags-input {
+  flex: 1;
+  min-width: 100px;
+  border: none;
+  outline: none;
+  padding: 0.25rem;
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+/* === Form Color Picker === */
+.bismillah-form-color {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bismillah-form-color-input {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: none;
+  border-radius: var(--bismillah-input-radius, 6px);
+  cursor: pointer;
+  background: transparent;
+}
+
+.bismillah-form-color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.bismillah-form-color-input::-webkit-color-swatch {
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+}
+
+.bismillah-form-color-input::-moz-color-swatch {
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: var(--bismillah-input-radius, 6px);
+}
+
+.bismillah-form-color-value {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+  color: var(--bismillah-text-color, #333);
+}
+
+/* === Form Autocomplete === */
+.bismillah-form-autocomplete {
+  position: relative;
+}
+
+.bismillah-form-autocomplete-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: var(--bismillah-dropdown-bg, #ffffff);
+  border: 1px solid var(--bismillah-input-border, #ced4da);
+  border-radius: 0 0 var(--bismillah-input-radius, 6px) var(--bismillah-input-radius, 6px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.bismillah-form-autocomplete-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bismillah-form-autocomplete-item:hover,
+.bismillah-form-autocomplete-item.active {
+  background-color: var(--bismillah-hover-bg, rgba(0, 123, 255, 0.05));
+}
+
+/* === Dark Mode Styles === */
+.dark .bismillah-form {
+  background: var(--bismillah-form-bg-dark, #222);
+  border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-form-title {
+  color: var(--bismillah-heading-color-dark, #e0e0e0);
+}
+
+.dark .bismillah-form-subtitle,
+.dark .bismillah-form-text {
+  color: var(--bismillah-muted-color-dark, #adb5bd);
+}
+
+.dark .bismillah-form-label {
+  color: var(--bismillah-label-color-dark, #e0e0e0);
+}
+
+.dark .bismillah-form-input,
+.dark .bismillah-form-select,
+.dark .bismillah-form-textarea {
+  color: var(--bismillah-input-text-dark, #e0e0e0);
+  background-color: var(--bismillah-input-bg-dark, #333);
+  border-color: var(--bismillah-input-border-dark, #555);
+}
+
+.dark .bismillah-form-input:focus,
+.dark .bismillah-form-select:focus,
+.dark .bismillah-form-textarea:focus {
+  border-color: var(--bismillah-primary-color, #007bff);
+  background-color: var(--bismillah-input-focus-bg-dark, #3a3a3a);
+}
+
+.dark .bismillah-form-input::placeholder {
+  color: var(--bismillah-placeholder-color-dark, #777);
+}
+
+.dark .bismillah-form-input:disabled,
+.dark .bismillah-form-select:disabled,
+.dark .bismillah-form-textarea:disabled {
+  background-color: var(--bismillah-input-disabled-bg-dark, #2a2a2a);
+}
+
+.dark .bismillah-checkbox-mark,
+.dark .bismillah-radio-mark {
+  background-color: var(--bismillah-input-bg-dark, #333);
+  border-color: var(--bismillah-input-border-dark, #555);
+}
+
+.dark .bismillah-form-check-input:disabled ~ .bismillah-checkbox-mark,
+.dark .bismillah-form-check-input:disabled ~ .bismillah-radio-mark {
+  background-color: var(--bismillah-input-disabled-bg-dark, #2a2a2a);
+}
+
+.dark .bismillah-switch-slider {
+  background-color: var(--bismillah-switch-bg-dark, #555);
+}
+
+.dark .bismillah-form-file-label {
+  background-color: var(--bismillah-input-bg-dark, #333);
+  border-color: var(--bismillah-input-border-dark, #555);
+  color: var(--bismillah-muted-color-dark, #adb5bd);
+}
+
+.dark .bismillah-file-dropzone {
+  background-color: var(--bismillah-dropzone-bg-dark, #2a2a2a);
+  border-color: var(--bismillah-input-border-dark, #555);
+}
+
+.dark .bismillah-input-group-prepend,
+.dark .bismillah-input-group-append {
+  background-color: var(--bismillah-input-group-bg-dark, #2a2a2a);
+  border-color: var(--bismillah-input-border-dark, #555);
+  color: var(--bismillah-input-text-dark, #e0e0e0);
+}
+
+.dark .bismillah-form-divider::before,
+.dark .bismillah-form-divider::after {
+  border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-form-divider-text {
+  color: var(--bismillah-muted-color-dark, #adb5bd);
+}
+
+.dark .bismillah-form-fieldset {
+  border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
+}
+
+.dark .bismillah-form-legend {
+  color: var(--bismillah-heading-color-dark, #e0e0e0);
+}
+
+.dark .bismillah-form-tags {
+  background-color: var(--bismillah-input-bg-dark, #333);
+  border-color: var(--bismillah-input-border-dark, #555);
+}
+
+.dark .bismillah-form-autocomplete-results {
+  background-color: var(--bismillah-dropdown-bg-dark, #333);
+  border-color: var(--bismillah-input-border-dark, #555);
+}
+
+/* === Accessibility Features === */
+.bismillah-form-input:focus,
+.bismillah-form-select:focus,
+.bismillah-form-textarea:focus,
+.bismillah-form-check-input:focus ~ .bismillah-checkbox-mark,
+.bismillah-form-check-input:focus ~ .bismillah-radio-mark,
+.bismillah-switch-input:focus + .bismillah-switch-slider,
+.bismillah-form-btn:focus {
+  outline: 2px solid var(--bismillah-focus-color, #007bff);
+  outline-offset: 2px;
+}
+
+/* High contrast focus styles for accessibility */
+@media (forced-colors: active) {
+  .bismillah-form-input:focus,
+  .bismillah-form-select:focus,
+  .bismillah-form-textarea:focus,
+  .bismillah-form-check-input:focus ~ .bismillah-checkbox-mark,
+  .bismillah-form-check-input:focus ~ .bismillah-radio-mark,
+  .bismillah-switch-input:focus + .bismillah-switch-slider,
+  .bismillah-form-btn:focus {
+    outline: 3px solid CanvasText;
+  }
+}
+
+/* Screen reader only text */
+.bismillah-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .bismillah-form-input,
+  .bismillah-form-select,
+  .bismillah-form-textarea,
+  .bismillah-checkbox-mark,
+  .bismillah-radio-mark,
+  .bismillah-switch-slider,
+  .bismillah-form-btn,
+  .bismillah-form-file-label,
+  .bismillah-form-btn-loading::after {
+    transition: none;
+  }
+}
+

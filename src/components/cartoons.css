@@ -1,0 +1,747 @@
+/* ========== BismillahCSS Cartoons ========== */
+
+/* Base Cartoon Container */
+.bismillah-cartoon {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  /* ===== Mickey Mouse ===== */
+  .bismillah-mickey {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #000;
+    border-radius: 50%;
+    margin: 40px auto;
+  }
+  
+  .bismillah-mickey::before,
+  .bismillah-mickey::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    top: -25px;
+  }
+  
+  .bismillah-mickey::before {
+    left: -20px;
+  }
+  
+  .bismillah-mickey::after {
+    right: -20px;
+  }
+  
+  .bismillah-mickey-face {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    background-color: #ffdbac;
+    border-radius: 50%;
+    top: 30px;
+    left: 20px;
+  }
+  
+  .bismillah-mickey-nose {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 45px;
+    left: 47.5px;
+  }
+  
+  .bismillah-mickey-eyes {
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 35px;
+  }
+  
+  .bismillah-mickey-eyes.left {
+    left: 35px;
+  }
+  
+  .bismillah-mickey-eyes.right {
+    right: 35px;
+  }
+  
+  .bismillah-mickey-pupils {
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 40px;
+  }
+  
+  .bismillah-mickey-pupils.left {
+    left: 37.5px;
+  }
+  
+  .bismillah-mickey-pupils.right {
+    right: 37.5px;
+  }
+  
+  .bismillah-mickey-mouth {
+    position: absolute;
+    width: 40px;
+    height: 15px;
+    border-bottom: 3px solid #000;
+    border-radius: 50%;
+    top: 60px;
+    left: 40px;
+  }
+  
+  /* ===== SpongeBob SquarePants ===== */
+  .bismillah-spongebob {
+    position: relative;
+    width: 120px;
+    height: 140px;
+    background-color: #ffff00;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 30px auto;
+  }
+  
+  .bismillah-spongebob-holes {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffcc00;
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+  
+  .bismillah-spongebob-holes:nth-child(1) {
+    top: 20px;
+    left: 20px;
+  }
+  
+  .bismillah-spongebob-holes:nth-child(2) {
+    top: 60px;
+    left: 40px;
+  }
+  
+  .bismillah-spongebob-holes:nth-child(3) {
+    top: 100px;
+    left: 25px;
+  }
+  
+  .bismillah-spongebob-holes:nth-child(4) {
+    top: 30px;
+    right: 30px;
+  }
+  
+  .bismillah-spongebob-holes:nth-child(5) {
+    top: 80px;
+    right: 20px;
+  }
+  
+  .bismillah-spongebob-eyes {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 30px;
+  }
+  
+  .bismillah-spongebob-eyes.left {
+    left: 20px;
+  }
+  
+  .bismillah-spongebob-eyes.right {
+    right: 20px;
+  }
+  
+  .bismillah-spongebob-pupils {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: #00f;
+    border: 1px solid #000;
+    border-radius: 50%;
+    top: 35px;
+  }
+  
+  .bismillah-spongebob-pupils.left {
+    left: 30px;
+  }
+  
+  .bismillah-spongebob-pupils.right {
+    right: 30px;
+  }
+  
+  .bismillah-spongebob-lashes {
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: #000;
+    top: 25px;
+  }
+  
+  .bismillah-spongebob-lashes.left1 {
+    left: 25px;
+    transform: rotate(-30deg);
+  }
+  
+  .bismillah-spongebob-lashes.left2 {
+    left: 30px;
+    transform: rotate(-15deg);
+  }
+  
+  .bismillah-spongebob-lashes.left3 {
+    left: 35px;
+    transform: rotate(0deg);
+  }
+  
+  .bismillah-spongebob-lashes.right1 {
+    right: 25px;
+    transform: rotate(30deg);
+  }
+  
+  .bismillah-spongebob-lashes.right2 {
+    right: 30px;
+    transform: rotate(15deg);
+  }
+  
+  .bismillah-spongebob-lashes.right3 {
+    right: 35px;
+    transform: rotate(0deg);
+  }
+  
+  .bismillah-spongebob-nose {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ffff00;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 60px;
+    left: 52.5px;
+  }
+  
+  .bismillah-spongebob-mouth {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    border: 2px solid #000;
+    border-radius: 0 0 30px 30px;
+    top: 80px;
+    left: 30px;
+    background-color: #fff;
+  }
+  
+  .bismillah-spongebob-teeth {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #000;
+    top: 80px;
+  }
+  
+  .bismillah-spongebob-teeth.left {
+    left: 40px;
+  }
+  
+  .bismillah-spongebob-teeth.right {
+    left: 65px;
+  }
+  
+  /* ===== Pikachu ===== */
+  .bismillah-pikachu {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #ffde00;
+    border-radius: 50%;
+    margin: 40px auto;
+  }
+  
+  .bismillah-pikachu-ears {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: #ffde00;
+    border-radius: 50% 50% 0 0;
+    top: -40px;
+  }
+  
+  .bismillah-pikachu-ears.left {
+    left: 20px;
+    transform: rotate(-30deg);
+  }
+  
+  .bismillah-pikachu-ears.right {
+    right: 20px;
+    transform: rotate(30deg);
+  }
+  
+  .bismillah-pikachu-ears-tip {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50% 50% 0 0;
+    top: -45px;
+  }
+  
+  .bismillah-pikachu-ears-tip.left {
+    left: 27.5px;
+    transform: rotate(-30deg);
+  }
+  
+  .bismillah-pikachu-ears-tip.right {
+    right: 27.5px;
+    transform: rotate(30deg);
+  }
+  
+  .bismillah-pikachu-eyes {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 30px;
+  }
+  
+  .bismillah-pikachu-eyes.left {
+    left: 30px;
+  }
+  
+  .bismillah-pikachu-eyes.right {
+    right: 30px;
+  }
+  
+  .bismillah-pikachu-eyes-highlight {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 32px;
+  }
+  
+  .bismillah-pikachu-eyes-highlight.left {
+    left: 32px;
+  }
+  
+  .bismillah-pikachu-eyes-highlight.right {
+    right: 32px;
+  }
+  
+  .bismillah-pikachu-nose {
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 50px;
+    left: 55px;
+  }
+  
+  .bismillah-pikachu-cheeks {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6666;
+    border-radius: 50%;
+    top: 55px;
+  }
+  
+  .bismillah-pikachu-cheeks.left {
+    left: 15px;
+  }
+  
+  .bismillah-pikachu-cheeks.right {
+    right: 15px;
+  }
+  
+  .bismillah-pikachu-mouth {
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    border-bottom: 2px solid #000;
+    border-radius: 50%;
+    top: 60px;
+    left: 50px;
+  }
+  
+  /* ===== Doraemon ===== */
+  .bismillah-doraemon {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #00a0e9;
+    border-radius: 50%;
+    margin: 40px auto;
+  }
+  
+  .bismillah-doraemon-face {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 30px;
+    left: 10px;
+  }
+  
+  .bismillah-doraemon-eyes {
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 25px;
+  }
+  
+  .bismillah-doraemon-eyes.left {
+    left: 30px;
+  }
+  
+  .bismillah-doraemon-eyes.right {
+    right: 30px;
+  }
+  
+  .bismillah-doraemon-pupils {
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 35px;
+  }
+  
+  .bismillah-doraemon-pupils.left {
+    left: 40px;
+  }
+  
+  .bismillah-doraemon-pupils.right {
+    right: 40px;
+  }
+  
+  .bismillah-doraemon-nose {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ff0000;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 50px;
+    left: 47.5px;
+  }
+  
+  .bismillah-doraemon-whiskers {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    top: 70px;
+  }
+  
+  .bismillah-doraemon-whiskers.left1 {
+    left: 10px;
+    transform: rotate(10deg);
+  }
+  
+  .bismillah-doraemon-whiskers.left2 {
+    left: 10px;
+    top: 80px;
+  }
+  
+  .bismillah-doraemon-whiskers.left3 {
+    left: 10px;
+    top: 90px;
+    transform: rotate(-10deg);
+  }
+  
+  .bismillah-doraemon-whiskers.right1 {
+    right: 10px;
+    transform: rotate(-10deg);
+  }
+  
+  .bismillah-doraemon-whiskers.right2 {
+    right: 10px;
+    top: 80px;
+  }
+  
+  .bismillah-doraemon-whiskers.right3 {
+    right: 10px;
+    top: 90px;
+    transform: rotate(10deg);
+  }
+  
+  .bismillah-doraemon-mouth {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    border-bottom: 2px solid #000;
+    border-radius: 50%;
+    top: 60px;
+    left: 20px;
+  }
+  
+  .bismillah-doraemon-bell {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #ffde00;
+    border: 2px solid #000;
+    border-radius: 50%;
+    top: 110px;
+    left: 47.5px;
+  }
+  
+  .bismillah-doraemon-bell::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    top: 10px;
+    left: 2.5px;
+  }
+  
+  .bismillah-doraemon-bell::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 15px;
+    left: 10px;
+  }
+  
+  /* ===== Hello Kitty ===== */
+  .bismillah-hello-kitty {
+    position: relative;
+    width: 120px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin: 40px auto;
+  }
+  
+  .bismillah-hello-kitty-ears {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 50% 50% 0 0;
+    top: -15px;
+  }
+  
+  .bismillah-hello-kitty-ears.left {
+    left: 20px;
+    transform: rotate(-30deg);
+  }
+  
+  .bismillah-hello-kitty-ears.right {
+    right: 20px;
+    transform: rotate(30deg);
+  }
+  
+  .bismillah-hello-kitty-eyes {
+    position: absolute;
+    width: 8px;
+    height: 15px;
+    background-color: #000;
+    border-radius: 50%;
+    top: 40px;
+  }
+  
+  .bismillah-hello-kitty-eyes.left {
+    left: 40px;
+  }
+  
+  .bismillah-hello-kitty-eyes.right {
+    right: 40px;
+  }
+  
+  .bismillah-hello-kitty-nose {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ffde00;
+    border: 1px solid #000;
+    border-radius: 50%;
+    top: 50px;
+    left: 55px;
+  }
+  
+  .bismillah-hello-kitty-whiskers {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #000;
+    top: 55px;
+  }
+  
+  .bismillah-hello-kitty-whiskers.left1 {
+    left: 15px;
+    transform: rotate(10deg);
+  }
+  
+  .bismillah-hello-kitty-whiskers.left2 {
+    left: 15px;
+    top: 60px;
+  }
+  
+  .bismillah-hello-kitty-whiskers.left3 {
+    left: 15px;
+    top: 65px;
+    transform: rotate(-10deg);
+  }
+  
+  .bismillah-hello-kitty-whiskers.right1 {
+    right: 15px;
+    transform: rotate(-10deg);
+  }
+  
+  .bismillah-hello-kitty-whiskers.right2 {
+    right: 15px;
+    top: 60px;
+  }
+  
+  .bismillah-hello-kitty-whiskers.right3 {
+    right: 15px;
+    top: 65px;
+    transform: rotate(10deg);
+  }
+  
+  .bismillah-hello-kitty-bow {
+    position: absolute;
+    width: 30px;
+    height: 15px;
+    background-color: #ff0066;
+    border: 1px solid #000;
+    border-radius: 5px;
+    top: 10px;
+    left: 45px;
+  }
+  
+  .bismillah-hello-kitty-bow::before,
+  .bismillah-hello-kitty-bow::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: #ff0066;
+    border: 1px solid #000;
+    border-radius: 50% 50% 0 50%;
+    top: -5px;
+  }
+  
+  .bismillah-hello-kitty-bow::before {
+    left: -10px;
+    transform: rotate(-45deg);
+  }
+  
+  .bismillah-hello-kitty-bow::after {
+    right: -10px;
+    transform: rotate(45deg);
+  }
+  
+  /* ===== Animated Cartoons ===== */
+  
+  /* Blinking Eyes Animation */
+  .bismillah-cartoon-blink .bismillah-mickey-eyes,
+  .bismillah-cartoon-blink .bismillah-spongebob-eyes,
+  .bismillah-cartoon-blink .bismillah-pikachu-eyes,
+  .bismillah-cartoon-blink .bismillah-doraemon-eyes,
+  .bismillah-cartoon-blink .bismillah-hello-kitty-eyes {
+    animation: bismillah-cartoon-blink 3s infinite;
+  }
+  
+  @keyframes bismillah-cartoon-blink {
+    0%,
+    45%,
+    55%,
+    100% {
+      transform: scaleY(1);
+    }
+    50% {
+      transform: scaleY(0.1);
+    }
+  }
+  
+  /* Bounce Animation */
+  .bismillah-cartoon-bounce {
+    animation: bismillah-cartoon-bounce 2s infinite;
+  }
+  
+  @keyframes bismillah-cartoon-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  /* Shake Animation */
+  .bismillah-cartoon-shake {
+    animation: bismillah-cartoon-shake 2s infinite;
+  }
+  
+  @keyframes bismillah-cartoon-shake {
+    0%,
+    100% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+  /* Wave Animation */
+  .bismillah-cartoon-wave .bismillah-doraemon-whiskers.right1,
+  .bismillah-cartoon-wave .bismillah-doraemon-whiskers.right2,
+  .bismillah-cartoon-wave .bismillah-doraemon-whiskers.right3,
+  .bismillah-cartoon-wave .bismillah-hello-kitty-whiskers.right1,
+  .bismillah-cartoon-wave .bismillah-hello-kitty-whiskers.right2,
+  .bismillah-cartoon-wave .bismillah-hello-kitty-whiskers.right3 {
+    animation: bismillah-cartoon-wave 2s infinite;
+  }
+  
+  @keyframes bismillah-cartoon-wave {
+    0%,
+    100% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  /* Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .bismillah-cartoon-blink,
+    .bismillah-cartoon-bounce,
+    .bismillah-cartoon-shake,
+    .bismillah-cartoon-wave {
+      animation: none !important;
+    }
+  }
+  
+  
