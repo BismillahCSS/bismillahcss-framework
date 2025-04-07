@@ -156,7 +156,7 @@ This README provides a comprehensive overview of the BismillahCSS framework.
 Developed by **Mubashir Ali**.  
 
 <p >
-<a href="https://github.com/mubashir1837" target="_blank">
+<a href="https://github.com/bismillahcss" target="_blank">
     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" 
          alt="GitHub" width="50" height="50"
          style="filter: invert(20%) sepia(85%) saturate(5000%) hue-rotate(220deg) brightness(80%) contrast(90%);">
