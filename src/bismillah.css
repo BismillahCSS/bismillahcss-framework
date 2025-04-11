@@ -5,6 +5,8 @@
 @import './core/base.css';         /* Base CSS  */
 
 @import './components/navbar.css'; /* Navbar styles */
+@import './components/cards.css'; /* Card styles */
+@import './components/bismillah-future-ui.css'; /* Sidebar styles */
 @import './components/footer.css'; /* Footer styles */
 @import './components/buttons.css';/* Button styles */
 @import './components/cartoons.css'; /* Cartoon styles */
@@ -23,5 +25,15 @@
 @import './components/scrollbar.css';  /* Custom scrollbar styles*/
 @import './components/accordion.css';  /* Accordion styles */
 @import './components/breadcrumbs.css'; /* breadcrupms styles */
+@import './components/bismillah-future-ui.css'; /* Future UI components */
+@import './components/modern-compnents.css'; /* Modern components */
+@import './components/modern-ui.css'; /* Modern UI components */
+@import './components/bismillah-components.css'; /* Responsive styles */
+@import './components/bismillah-responsive.css'; /* Responsive styles */
+
+
+
+
+
 
 

@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BismillahCSS Utilities Showcase</title>
-  <link rel="stylesheet" href="dist/bismillah.min.css">
+
   
   <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="dist/bismillah.min.css">
   
   <style>
     :root {
@@ -32,11 +32,16 @@
       background-color: #f8f9fa;
       color: #333;
       transition: background-color 0.3s ease, color 0.3s ease;
+
     }
     
     .dark {
       background-color: #121212;
       color: #e0e0e0;
+    }
+    .light{
+      background-color: #f8f9fa;
+      color: #333;
     }
     
     .container {
@@ -141,7 +146,7 @@
     }
     
     .code-example {
-      background-color: #f5f5f5;
+      background-color: rgb(99, 91, 91);
       padding: 0.5rem;
       border-radius: 4px;
       font-family: monospace;
@@ -164,29 +169,37 @@
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="bismillah-navbar">
-    <div class="bismillah-navbar-container">
-      <a href="#" class="bismillah-navbar-logo">
-        <img src="https://via.placeholder.com/40" alt="Logo">
-        <span>BismillahCSS</span>
-      </a>
-      
-      <div class="bismillah-navbar-links">
-        <a href="#spacing" class="bismillah-navbar-link">Spacing</a>
-        <a href="#colors" class="bismillah-navbar-link">Colors</a>
-        <a href="#typography" class="bismillah-navbar-link">Typography</a>
-        <a href="#effects" class="bismillah-navbar-link">Effects</a>
-        <a href="#responsive" class="bismillah-navbar-link">Responsive</a>
-      </div>
-      
-      <div class="bismillah-navbar-right">
-        <a href="#" class="bismillah-navbar-cta">
-          <i class="fas fa-download"></i> Download
+
+  <nav class="bismillah-navbar bismillah-w-full bismillah-bg-white bismillah-backdrop-blur-lg bismillah-shadow-md bismillah-sticky bismillah-top-0 bismillah-z-1000 bismillah-border-b">
+    <div class="bismillah-container bismillah-flex bismillah-justify-between bismillah-items-center">
+        <a href="#" class="bismillah-flex bismillah-items-center bismillah-font-bold bismillah-text-xl">
+            <img src="" alt="Logo" class="bismillah-w-10 bismillah-h-10 bismillah-mr-2 bismillah-rounded-md">
+            BismillahCSS
         </a>
-      </div>
+
+        <div class="bismillah-flex bismillah-gap-6">
+            <a href="#spacing" class="bismillah-text-md bismillah-font-medium">Spacing</a>
+            <a href="#colors" class="bismillah-text-md bismillah-font-medium">Colors</a>
+            <a href="#typography" class="bismillah-text-md bismillah-font-medium">Typography</a>
+            <a href="#effects" class="bismillah-text-md bismillah-font-medium">Effects</a>
+            <a href="#responsive" class="bismillah-text-md bismillah-font-medium">Responsive</a>
+        </div>
+
+        <div class="bismillah-flex bismillah-gap-4 bismillah-items-center">
+            <input type="text" placeholder="Search..." class="bismillah-px-4 bismillah-py-2 bismillah-rounded-full bismillah-border bismillah-bg-gray-50">
+            <div class="bismillah-relative">
+                <img src="https://via.placeholder.com/38" alt="User" class="bismillah-w-10 bismillah-h-10 bismillah-rounded-full">
+            </div>
+        </div>
     </div>
-  </nav>
+</nav>
+
+<div class="bismillah-pikachu  ismillah-pikachu-mouth bismillah-pikachu-tail ">
+  <div class="bismillah-pikachu-ears">
+    <div class="bismillah-pikachu-ear-left"></div>
+    <div class="bismillah-pikachu-ear-right"></div>
+  </div>
+</div>
 
   <div class="container">
     <h1 class="bismillah-h1">BismillahCSS Utilities Showcase</h1>

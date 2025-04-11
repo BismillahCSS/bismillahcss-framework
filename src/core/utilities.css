@@ -5569,6 +5569,16 @@ transition: all 0.3s ease-in-out;
   .bismillah-text-danger {
     color: #dc2626;
   }
+
+  /* BismillahCSS Utility for Optional Underline on Hover */
+.bismillah-underline {
+  text-decoration: none;
+}
+
+.bismillah-underline:hover {
+  text-decoration: underline;
+}
+
   .bismillah-text-info {
     color: #0ea5e9;
   }

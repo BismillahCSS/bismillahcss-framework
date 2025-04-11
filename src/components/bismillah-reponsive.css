@@ -1,0 +1,862 @@
+/**
+ * BismillahCSS Responsive Extension
+ * Responsive design elements with bismillah- prefix
+ *
+ * This extension provides responsive components and utilities
+ * not included in the core BismillahCSS framework.
+ */
+
+/* ====================================
+   RESPONSIVE BREAKPOINTS
+   ==================================== */
+/* 
+   Mobile: < 768px
+   Tablet: 768px - 1023px
+   Desktop: 1024px - 1279px
+   Large Desktop: >= 1280px
+*/
+
+/* ====================================
+   CONTAINER & LAYOUT
+   ==================================== */
+
+   .bismillah-container-fluid {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .bismillah-container-responsive {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* Container breakpoints */
+  @media (min-width: 640px) {
+    .bismillah-container-responsive {
+      max-width: 640px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bismillah-container-responsive {
+      max-width: 768px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bismillah-container-responsive {
+      max-width: 1024px;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .bismillah-container-responsive {
+      max-width: 1280px;
+    }
+  }
+  
+  /* ====================================
+     RESPONSIVE GRID SYSTEM
+     ==================================== */
+  
+  .bismillah-grid {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  /* Basic grid columns for different screen sizes */
+  .bismillah-grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  .bismillah-grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  
+  .bismillah-grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  
+  .bismillah-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  
+  .bismillah-grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  
+  .bismillah-grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  
+  .bismillah-grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+  
+  /* Responsive grid columns */
+  /* Small (sm) */
+  @media (min-width: 640px) {
+    .bismillah-sm-grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .bismillah-sm-grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .bismillah-sm-grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  
+    .bismillah-sm-grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  
+    .bismillah-sm-grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  
+    .bismillah-sm-grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  
+  /* Medium (md) */
+  @media (min-width: 768px) {
+    .bismillah-md-grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .bismillah-md-grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .bismillah-md-grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  
+    .bismillah-md-grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  
+    .bismillah-md-grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  
+    .bismillah-md-grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  
+  /* Large (lg) */
+  @media (min-width: 1024px) {
+    .bismillah-lg-grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .bismillah-lg-grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .bismillah-lg-grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  
+    .bismillah-lg-grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  
+    .bismillah-lg-grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  
+    .bismillah-lg-grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  
+  /* Extra Large (xl) */
+  @media (min-width: 1280px) {
+    .bismillah-xl-grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  
+    .bismillah-xl-grid-cols-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .bismillah-xl-grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  
+    .bismillah-xl-grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  
+    .bismillah-xl-grid-cols-6 {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+  
+    .bismillah-xl-grid-cols-12 {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  
+  /* Grid gap utilities */
+  .bismillah-gap-0 {
+    gap: 0;
+  }
+  
+  .bismillah-gap-1 {
+    gap: 0.25rem;
+  }
+  
+  .bismillah-gap-2 {
+    gap: 0.5rem;
+  }
+  
+  .bismillah-gap-4 {
+    gap: 1rem;
+  }
+  
+  .bismillah-gap-6 {
+    gap: 1.5rem;
+  }
+  
+  .bismillah-gap-8 {
+    gap: 2rem;
+  }
+  
+  /* Grid column span utilities */
+  .bismillah-col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+  
+  .bismillah-col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  
+  .bismillah-col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  
+  .bismillah-col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+  
+  .bismillah-col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+  
+  .bismillah-col-span-12 {
+    grid-column: span 12 / span 12;
+  }
+  
+  /* Responsive column spans */
+  @media (min-width: 640px) {
+    .bismillah-sm-col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+  
+    .bismillah-sm-col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+  
+    .bismillah-sm-col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+  
+    .bismillah-sm-col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+  
+    .bismillah-sm-col-span-6 {
+      grid-column: span 6 / span 6;
+    }
+  
+    .bismillah-sm-col-span-12 {
+      grid-column: span 12 / span 12;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bismillah-md-col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+  
+    .bismillah-md-col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+  
+    .bismillah-md-col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+  
+    .bismillah-md-col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+  
+    .bismillah-md-col-span-6 {
+      grid-column: span 6 / span 6;
+    }
+  
+    .bismillah-md-col-span-12 {
+      grid-column: span 12 / span 12;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bismillah-lg-col-span-1 {
+      grid-column: span 1 / span 1;
+    }
+  
+    .bismillah-lg-col-span-2 {
+      grid-column: span 2 / span 2;
+    }
+  
+    .bismillah-lg-col-span-3 {
+      grid-column: span 3 / span 3;
+    }
+  
+    .bismillah-lg-col-span-4 {
+      grid-column: span 4 / span 4;
+    }
+  
+    .bismillah-lg-col-span-6 {
+      grid-column: span 6 / span 6;
+    }
+  
+    .bismillah-lg-col-span-12 {
+      grid-column: span 12 / span 12;
+    }
+  }
+  
+  /* ====================================
+     RESPONSIVE NAVIGATION
+     ==================================== */
+  
+  .bismillah-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 50;
+  }
+  
+  .bismillah-navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .bismillah-navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .bismillah-navbar-item {
+    margin-left: 1.5rem;
+  }
+  
+  .bismillah-navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  .bismillah-navbar-link:hover {
+    color: #4f46e5;
+  }
+  
+  .bismillah-navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .bismillah-navbar-toggle-icon {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .bismillah-navbar-toggle-icon::before,
+  .bismillah-navbar-toggle-icon::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .bismillah-navbar-toggle-icon::before {
+    top: -8px;
+  }
+  
+  .bismillah-navbar-toggle-icon::after {
+    bottom: -8px;
+  }
+  
+  /* Mobile navigation styles */
+  @media (max-width: 767px) {
+    .bismillah-navbar-toggle {
+      display: block;
+    }
+  
+    .bismillah-navbar-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background-color: #ffffff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+      display: none;
+      align-items: flex-start;
+    }
+  
+    .bismillah-navbar-menu.bismillah-active {
+      display: flex;
+    }
+  
+    .bismillah-navbar-item {
+      margin: 0;
+      width: 100%;
+    }
+  
+    .bismillah-navbar-link {
+      display: block;
+      padding: 0.75rem 1.5rem;
+      width: 100%;
+    }
+  
+    /* Hamburger menu animation */
+    .bismillah-navbar-toggle.bismillah-active .bismillah-navbar-toggle-icon {
+      background-color: transparent;
+    }
+  
+    .bismillah-navbar-toggle.bismillah-active .bismillah-navbar-toggle-icon::before {
+      transform: rotate(45deg);
+      top: 0;
+    }
+  
+    .bismillah-navbar-toggle.bismillah-active .bismillah-navbar-toggle-icon::after {
+      transform: rotate(-45deg);
+      bottom: 0;
+    }
+  }
+  
+  /* ====================================
+     RESPONSIVE IMAGES
+     ==================================== */
+  
+  .bismillah-img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .bismillah-img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .bismillah-img-contain {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Image aspect ratios */
+  .bismillah-aspect-ratio {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .bismillah-aspect-ratio::before {
+    content: "";
+    display: block;
+  }
+  
+  .bismillah-aspect-ratio img,
+  .bismillah-aspect-ratio video,
+  .bismillah-aspect-ratio iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* 16:9 aspect ratio */
+  .bismillah-aspect-16-9::before {
+    padding-top: 56.25%;
+  }
+  
+  /* 4:3 aspect ratio */
+  .bismillah-aspect-4-3::before {
+    padding-top: 75%;
+  }
+  
+  /* 1:1 aspect ratio (square) */
+  .bismillah-aspect-1-1::before {
+    padding-top: 100%;
+  }
+  
+  /* 3:2 aspect ratio */
+  .bismillah-aspect-3-2::before {
+    padding-top: 66.66%;
+  }
+  
+  /* 2:3 aspect ratio (portrait) */
+  .bismillah-aspect-2-3::before {
+    padding-top: 150%;
+  }
+  
+  /* ====================================
+     RESPONSIVE UTILITIES
+     ==================================== */
+  
+  /* Hide on different screen sizes */
+  .bismillah-hide-xs {
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .bismillah-hide-xs {
+      display: initial;
+    }
+  
+    .bismillah-hide-sm {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bismillah-hide-sm {
+      display: initial;
+    }
+  
+    .bismillah-hide-md {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bismillah-hide-md {
+      display: initial;
+    }
+  
+    .bismillah-hide-lg {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .bismillah-hide-lg {
+      display: initial;
+    }
+  
+    .bismillah-hide-xl {
+      display: none;
+    }
+  }
+  
+  /* Show only on specific screen sizes */
+  .bismillah-show-xs-only {
+    display: initial;
+  }
+  
+  .bismillah-show-sm-only,
+  .bismillah-show-md-only,
+  .bismillah-show-lg-only,
+  .bismillah-show-xl-only {
+    display: none;
+  }
+  
+  @media (min-width: 640px) {
+    .bismillah-show-xs-only {
+      display: none;
+    }
+  
+    .bismillah-show-sm-only {
+      display: initial;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bismillah-show-sm-only {
+      display: none;
+    }
+  
+    .bismillah-show-md-only {
+      display: initial;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bismillah-show-md-only {
+      display: none;
+    }
+  
+    .bismillah-show-lg-only {
+      display: initial;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .bismillah-show-lg-only {
+      display: none;
+    }
+  
+    .bismillah-show-xl-only {
+      display: initial;
+    }
+  }
+  
+  /* Text alignment responsive utilities */
+  .bismillah-text-left {
+    text-align: left;
+  }
+  
+  .bismillah-text-center {
+    text-align: center;
+  }
+  
+  .bismillah-text-right {
+    text-align: right;
+  }
+  
+  @media (min-width: 640px) {
+    .bismillah-sm-text-left {
+      text-align: left;
+    }
+  
+    .bismillah-sm-text-center {
+      text-align: center;
+    }
+  
+    .bismillah-sm-text-right {
+      text-align: right;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bismillah-md-text-left {
+      text-align: left;
+    }
+  
+    .bismillah-md-text-center {
+      text-align: center;
+    }
+  
+    .bismillah-md-text-right {
+      text-align: right;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bismillah-lg-text-left {
+      text-align: left;
+    }
+  
+    .bismillah-lg-text-center {
+      text-align: center;
+    }
+  
+    .bismillah-lg-text-right {
+      text-align: right;
+    }
+  }
+  
+  /* Flex direction responsive utilities */
+  .bismillah-flex-row {
+    flex-direction: row;
+  }
+  
+  .bismillah-flex-col {
+    flex-direction: column;
+  }
+  
+  @media (min-width: 640px) {
+    .bismillah-sm-flex-row {
+      flex-direction: row;
+    }
+  
+    .bismillah-sm-flex-col {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .bismillah-md-flex-row {
+      flex-direction: row;
+    }
+  
+    .bismillah-md-flex-col {
+      flex-direction: column;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .bismillah-lg-flex-row {
+      flex-direction: row;
+    }
+  
+    .bismillah-lg-flex-col {
+      flex-direction: column;
+    }
+  }
+  
+  /* ====================================
+     RESPONSIVE CARDS
+     ==================================== */
+  
+  .bismillah-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bismillah-card-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .bismillah-card-body {
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  .bismillah-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+  }
+  
+  .bismillah-card-text {
+    margin-bottom: 1rem;
+  }
+  
+  .bismillah-card-footer {
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Horizontal card layout for larger screens */
+  @media (min-width: 768px) {
+    .bismillah-card-horizontal {
+      flex-direction: row;
+    }
+  
+    .bismillah-card-horizontal .bismillah-card-img {
+      width: 33.333%;
+      height: auto;
+    }
+  
+    .bismillah-card-horizontal .bismillah-card-body {
+      width: 66.666%;
+    }
+  }
+  
+  /* ====================================
+     RESPONSIVE FORMS
+     ==================================== */
+  
+  .bismillah-form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .bismillah-form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .bismillah-form-control {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+  
+  .bismillah-form-control:focus {
+    border-color: #4f46e5;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+  }
+  
+  /* Responsive form layout */
+  @media (min-width: 768px) {
+    .bismillah-form-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -0.5rem;
+      margin-left: -0.5rem;
+    }
+  
+    .bismillah-form-col {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  
+    .bismillah-form-col-full {
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+  
+  /* JavaScript helper for the mobile navigation */
+  /* 
+     Add this script to your page:
+  
+     document.addEventListener('DOMContentLoaded', function() {
+       const navbarToggle = document.querySelector('.bismillah-navbar-toggle');
+       const navbarMenu = document.querySelector('.bismillah-navbar-menu');
+       
+       navbarToggle.addEventListener('click', function() {
+         navbarToggle.classList.toggle('bismillah-active');
+         navbarMenu.classList.toggle('bismillah-active');
+       });
+     });
+  */
+  

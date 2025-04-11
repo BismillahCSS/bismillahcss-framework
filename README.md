@@ -1,6 +1,6 @@
 
 <a href="https://www.npmjs.com/package/bismillahcss">
-    <img src="https://private-user-images.githubusercontent.com/163585695/425956740-751fae65-79ad-43a2-aef7-db0a46fcec8b.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMyMTY0MTMsIm5iZiI6MTc0MzIxNjExMywicGF0aCI6Ii8xNjM1ODU2OTUvNDI1OTU2NzQwLTc1MWZhZTY1LTc5YWQtNDNhMi1hZWY3LWRiMGE0NmZjZWM4Yi5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDMyOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTAzMjlUMDI0MTUzWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OTU0N2RlNTUzZWRiZGU2MWNjYTliNzUzZDgzY2Q5MDIwMTE3Yzg5ZGRmNWYzNDBkMGZjZTk1NGIzYzE2ZjgxMyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.PBH895njYbOl2txacca3-jJgU03AGVO6lgiNFfGlD3I" alt="npm version">
+    <img src="docs/bismillah.svg" alt="npm version">
 </a>
 
 <div align="center">
