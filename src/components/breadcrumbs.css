@@ -176,55 +176,55 @@
   }
   
   /* Dark Mode */
-  .dark .bismillah-breadcrumbs {
+  .bismillah-dark .bismillah-breadcrumbs {
     color: var(--bismillah-breadcrumb-color-dark, #adb5bd);
   }
   
-  .dark .bismillah-breadcrumb-item {
+  .bismillah-dark .bismillah-breadcrumb-item {
     color: var(--bismillah-breadcrumb-color-dark, #adb5bd);
   }
   
-  .dark .bismillah-breadcrumb-item a {
+  .bismillah-dark .bismillah-breadcrumb-item a {
     color: var(--bismillah-breadcrumb-link-color-dark, #5e9eff);
   }
   
-  .dark .bismillah-breadcrumb-item a:hover {
+  .bismillah-dark .bismillah-breadcrumb-item a:hover {
     color: var(--bismillah-breadcrumb-link-hover-color-dark, #8cb8ff);
   }
   
-  .dark .bismillah-breadcrumb-item.active {
+  .bismillah-dark .bismillah-breadcrumb-item.active {
     color: var(--bismillah-breadcrumb-active-color-dark, #e0e0e0);
   }
   
-  .dark .bismillah-breadcrumb-divider {
+  .bismillah-dark .bismillah-breadcrumb-divider {
     color: var(--bismillah-breadcrumb-divider-color-dark, #666);
   }
   
-  .dark .bismillah-breadcrumbs.with-bg {
+  .bismillah-dark .bismillah-breadcrumbs.with-bg {
     background-color: var(--bismillah-breadcrumb-bg-solid-dark, #2a2a2a);
   }
   
-  .dark .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item {
+  .bismillah-dark .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item {
     background-color: var(--bismillah-breadcrumb-pill-bg-dark, #333);
   }
   
-  .dark .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item.active {
+  .bismillah-dark .bismillah-breadcrumbs.pill .bismillah-breadcrumb-item.active {
     background-color: var(--bismillah-breadcrumb-pill-active-bg-dark, #444);
   }
   
-  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item {
+  .bismillah-dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item {
     background-color: var(--bismillah-breadcrumb-arrow-bg-dark, #333);
   }
   
-  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item::after {
+  .bismillah-dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item::after {
     border-left-color: var(--bismillah-breadcrumb-arrow-bg-dark, #333);
   }
   
-  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active {
+  .bismillah-dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active {
     background-color: var(--bismillah-breadcrumb-arrow-active-bg-dark, #444);
   }
   
-  .dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active::after {
+  .bismillah-dark .bismillah-breadcrumbs.arrow .bismillah-breadcrumb-item.active::after {
     border-left-color: var(--bismillah-breadcrumb-arrow-active-bg-dark, #444);
   }
   

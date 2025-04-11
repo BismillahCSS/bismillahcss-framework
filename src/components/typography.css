@@ -451,46 +451,46 @@
   }
   
   /* Dark Mode */
-  .dark .bismillah-typography {
+  .bismillah-dark .bismillah-typography {
     color: var(--bismillah-text-color-dark, #e0e0e0);
   }
   
-  .dark .bismillah-h1,
-  .dark .bismillah-h2,
-  .dark .bismillah-h3,
-  .dark .bismillah-h4,
-  .dark .bismillah-h5,
-  .dark .bismillah-h6 {
+  .bismillah-dark .bismillah-h1,
+  .bismillah-dark .bismillah-h2,
+  .bismillah-dark .bismillah-h3,
+  .bismillah-dark .bismillah-h4,
+  .bismillah-dark .bismillah-h5,
+  .bismillah-dark .bismillah-h6 {
     color: var(--bismillah-heading-color-dark, #f0f0f0);
   }
   
-  .dark .bismillah-display-1,
-  .dark .bismillah-display-2,
-  .dark .bismillah-display-3,
-  .dark .bismillah-display-4 {
+  .bismillah-dark .bismillah-display-1,
+  .bismillah-dark .bismillah-display-2,
+  .bismillah-dark .bismillah-display-3,
+  .bismillah-dark .bismillah-display-4 {
     color: var(--bismillah-display-color-dark, #f0f0f0);
   }
   
-  .dark .bismillah-blockquote {
+  .bismillah-dark .bismillah-blockquote {
     background-color: var(--bismillah-blockquote-bg-dark, rgba(0, 123, 255, 0.1));
   }
   
-  .dark .bismillah-blockquote-footer {
+  .bismillah-dark .bismillah-blockquote-footer {
     color: var(--bismillah-muted-color-dark, #adb5bd);
   }
   
-  .dark .bismillah-code {
+  .bismillah-dark .bismillah-code {
     color: var(--bismillah-code-color-dark, #f06595);
     background-color: var(--bismillah-code-bg-dark, rgba(240, 101, 149, 0.1));
   }
   
-  .dark .bismillah-pre {
+  .bismillah-dark .bismillah-pre {
     color: var(--bismillah-pre-color-dark, #e0e0e0);
     background-color: var(--bismillah-pre-bg-dark, #2a2a2a);
     border-color: var(--bismillah-pre-border-color-dark, #444);
   }
   
-  .dark .bismillah-hr {
+  .bismillah-dark .bismillah-hr {
     border-top-color: var(--bismillah-hr-color-dark, rgba(255, 255, 255, 0.1));
   }
   

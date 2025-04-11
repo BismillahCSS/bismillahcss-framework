@@ -106,13 +106,13 @@ letter-spacing: -0.05em;
   --background-color: #121212;
   --text-color: #ffffff;
 }
-.bg-accent {
+.bismillah-bg-accent {
 background-color: var(--accent-color);
 }
-.bg-light {
+.bismillah-bg-light {
 background-color: #f8f9fa;
 }
-.bg-dark {
+.bismillah-bg-dark {
 background-color: #343a40;
 }
 .bismillah-text-primary {
@@ -231,16 +231,16 @@ margin: 40px;
 /* 🎨 BismillahCSS - Borders */
 /* ============================= */
 
-.border {
+.bismillah-border {
 border: 1px solid #ccc;
 }
-.border-accent {
+.bismillah-border-accent {
 border-color: var(--accent-color);
 }
-.border-light {
+.bismillah-border-light {
 border-color: #f8f9fa;
 }
-.border-dark {
+.bismillah-border-dark {
 border-color: #343a40;
 }
 /* ============================= */
@@ -315,7 +315,7 @@ top: 0;
 .bismillah-right-0 {
 right: 0;
 }
-.bottom-0 {
+.bismillah-bottom-0 {
 bottom: 0;
 }
 .bismillah-left-0 {
@@ -327,7 +327,7 @@ top: 4px;
 .bismillah-right-1 {
 right: 4px;
 }
-.bottom-1 {
+.bismillah-bottom-1 {
 bottom: 4px;
 }
 .bismillah-left-1 {
@@ -339,7 +339,7 @@ top: 8px;
 .bismillah-right-2 {
 right: 8px;
 }
-.bottom-2 {
+.bismillah-bottom-2 {
 bottom: 8px;
 }
 .bismillah-left-2 {
@@ -435,7 +435,7 @@ from { transform: translateY(20px); opacity: 0;
 animation: slideUp 0.5s ease-in-out;
 }
 
-.bounce {
+.bismillah-bounce {
 animation: bounce 1s infinite;
 }
 /* ============================= */
@@ -484,12 +484,12 @@ object-position: top;
 /* ============================= */
 
 @media (max-width: 640px) {
-.sm-hidden { display: none !important;
+.bismillah-sm-hidden { display: none !important;
 }
 }
 
 @media (min-width: 640px) {
-.sm-block { display: block !important;
+.bismillah-sm-block { display: block !important;
 }
 }
 
@@ -526,7 +526,7 @@ text-decoration: none;
 .bismillah-hidden {
 display: none;
 }
-.block {
+.bismillah-block {
 display: block;
 }
 /* ============================= */
@@ -545,13 +545,13 @@ display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap
 /* 🔲 Smart Borders - (New Concept) */
 /* ============================= */
 
-.border-dynamic {
+.bismillah-border-dynamic {
 border: 2px solid var(--primary-color, black); border-radius: 10px; transition: all 0.3s ease-in-out;
 }
-.border-glow:hover {
+.bismillah-border-glow:hover {
 border: 2px solid cyan; box-shadow: 0 0 10px cyan;
 }
-.border-gradient {
+.bismillah-border-gradient {
 border: 3px solid transparent; background: linear-gradient(white, white) padding-box, linear-gradient(45deg, #ff416c, #ff4b2b) border-box; border-radius: 12px;
 }
 /* ============================= */
@@ -574,10 +574,10 @@ box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
 /* 🎨 Smart Gradient Backgrounds */
 /* ============================= */
 
-.bg-dynamic {
+.bismillah-bg-dynamic {
 background: linear-gradient(135deg, var(--start-color, #ff4b2b), var(--end-color, #ff416c)); transition: background 0.5s ease-in-out;
 }
-.bg-hover-gradient:hover {
+.bismillah-bg-hover-gradient:hover {
 background: linear-gradient(135deg, #ff416c, #ff4b2b);
 }
 /* ============================= */
@@ -639,7 +639,7 @@ background: #ff416c;
   /* 🌀 Smart Button System (New) */
   /* ============================= */
   
-  .btn {
+  .bismillah-btn {
 display: inline-block;
     padding: 12px 20px;
     border-radius: 8px;
@@ -648,22 +648,22 @@ display: inline-block;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
-.btn-primary {
+.bismillah-btn-primary {
 background: linear-gradient(135deg, #ff4b2b, #ff416c);
     color: white;
 }
-.btn-primary:hover {
+.bismillah-btn-primary:hover {
 background: linear-gradient(135deg, #ff416c, #ff4b2b);
     transform: scale(1.05);
 }
 /* Glassmorphism Buttons */
-  .btn-glass {
+  .bismillah-btn-glass {
 background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.btn-glass:hover {
+.bismillah-btn-glass:hover {
 background: rgba(255, 255, 255, 0.3);
     border-color: rgba(255, 255, 255, 0.5);
 }
@@ -727,7 +727,7 @@ width: 50px;
 transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
 }
-.button-hover:hover {
+.bismillah-button-hover:hover {
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 /* ============================= */
@@ -967,7 +967,7 @@ left: 25px;
 }
 }
   
-  .bounce-in {
+  .bismillah-bounce-in {
 animation: bounce-in 0.6s ease-in-out;
 }
 /* ============================= */
@@ -1229,14 +1229,14 @@ background: rgba(0, 0, 0, 0.3);
   /* ==================================== */
   
   /* Gradient Backgrounds */
-  .bg-gradient-primary {
+  .bismillah-bg-gradient-primary {
 background: linear-gradient(45deg, #007bff, #6610f2);
 }
-.bg-gradient-secondary {
+.bismillah-bg-gradient-secondary {
 background: linear-gradient(45deg, #6c757d, #343a40);
 }
 /* Image Background */
-  .bg-cover {
+  .bismillah-bg-cover {
 background-size: cover;
     background-position: center;
 }
@@ -1273,7 +1273,7 @@ animation: fadeIn 0.5s ease-in-out;
 }
 }
   
-  .bounce {
+  .bismillah-bounce {
 animation: bounce 1s infinite;
 }
 /* ==================================== */
@@ -1406,16 +1406,16 @@ body { font-size: var(--bismillah-text-sm);
     --bismillah-radius-xl: 24px;
 }
 /* Border Utility Classes */
-  .border-sm {
+  .bismillah-border-sm {
 border: var(--bismillah-border-sm);
 }
-.border-md {
+.bismillah-border-md {
 border: var(--bismillah-border-md);
 }
-.border-lg {
+.bismillah-border-lg {
 border: var(--bismillah-border-lg);
 }
-.border-xl {
+.bismillah-border-xl {
 border: var(--bismillah-border-xl);
 }
 /* Border Radius */
@@ -1449,7 +1449,7 @@ from { opacity: 0; transform: translateY(10px);
   .bismillah-fade-in {
 animation: fadeIn 0.5s ease-in-out;
 }
-.bounce {
+.bismillah-bounce {
 animation: bounce 1s infinite;
 }
 .bismillah-pulse {
@@ -1540,7 +1540,7 @@ font-family: Arial, sans-serif;
   /* 🖲️ Custom Button System */
   /* ==================================== */
   
-  .btn {
+  .bismillah-btn {
 display: inline-block;
     padding: var(--bismillah-spacing-sm) var(--bismillah-spacing-md);
     font-size: 1rem;
@@ -1552,27 +1552,27 @@ display: inline-block;
     transition: all 0.3s ease-in-out;
     border: none;
 }
-.btn-secondary {
+.bismillah-btn-secondary {
 background-color: var(--bismillah-secondary);
     color: white;
 }
-.btn-success {
+.bismillah-btn-success {
 background-color: var(--bismillah-success);
     color: white;
 }
-.btn-danger {
+.bismillah-btn-danger {
 background-color: var(--bismillah-danger);
     color: white;
 }
-.btn-warning {
+.bismillah-btn-warning {
 background-color: var(--bismillah-warning);
     color: black;
 }
-.btn-info {
+.bismillah-btn-info {
 background-color: var(--bismillah-info);
     color: white;
 }
-.btn:hover {
+.bismillah-btn:hover {
 filter: brightness(90%);
     transform: translateY(-2px);
 }
@@ -1642,7 +1642,7 @@ body {
 background-color: var(--bismillah-secondary);
       color: white;
 }
-.btn {
+.bismillah-btn {
 color: white;
 }
 }

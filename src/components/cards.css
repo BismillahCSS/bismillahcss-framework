@@ -1,5 +1,35 @@
 /* ========== BismillahCSS Card System ========== */
-.b-card {
+
+/**
+ * BismillahCSS Card Components
+ */
+
+/* Glassmorphism Card */
+.bismillah-card-glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+
+/* Modern Card */
+.bismillah-card-modern {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bismillah-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.bismillah-b-card {
 background: var(--card-bg, #ffffff);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -7,37 +37,37 @@ background: var(--card-bg, #ffffff);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
 }
-.b-card:hover {
+.bismillah-b-card:hover {
 transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 /* Card Header */
-.b-card-header {
+.bismillah-b-card-header {
 font-size: 1.4rem;
     font-weight: bold;
     color: var(--card-title-color, #333);
     margin-bottom: 0.5rem;
 }
 /* Card Body */
-.b-card-body {
+.bismillah-b-card-body {
 font-size: 1rem;
     color: var(--card-text-color, #555);
     line-height: 1.6;
 }
 /* Card Footer */
-.b-card-footer {
+.bismillah-b-card-footer {
 margin-top: 1rem;
     text-align: right;
 }
 /* Card with Image */
-.b-card-image {
+.bismillah-b-card-image {
 width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
 /* Buttons inside Cards */
-.b-card-footer .b-btn {
+.bismillah-b-card-footer .b-btn {
 padding: 0.5rem 1rem;
     font-size: 0.9rem;
     font-weight: bold;
@@ -46,15 +76,15 @@ padding: 0.5rem 1rem;
     text-decoration: none;
     transition: background 0.3s;
 }
-.b-card-footer .b-btn-primary {
+.bismillah-b-card-footer .b-btn-primary {
 background: var(--primary-color, #007bff);
     color: white;
 }
-.b-card-footer .b-btn-primary:hover {
+.bismillah-b-card-footer .b-btn-primary:hover {
 background: #0056b3;
 }
 /* Responsive Grid for Cards */
-.b-card-grid {
+.bismillah-b-card-grid {
 display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
@@ -62,7 +92,7 @@ display: grid;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {
-.b-card {
+.bismillah-b-card {
         padding: 1rem;
 }
 }
@@ -71,14 +101,14 @@ display: grid;
 /* ========== BismillahCSS Responsive Cards ========== */
 
 /* Card Grid Layout */
-.b-card-grid {
+.bismillah-b-card-grid {
 display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     padding: 1rem;
 }
 /* Default Card Styling */
-.b-card {
+.bismillah-b-card {
 background: var(--card-bg, #ffffff);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -87,23 +117,23 @@ background: var(--card-bg, #ffffff);
     overflow: hidden;
 }
 /* Card Hover Effect */
-.b-card:hover {
+.bismillah-b-card:hover {
 transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 /* ========== Responsive Adjustments ========== */
 @media (max-width: 1024px) {
-.b-card-grid {
+.bismillah-b-card-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.b-card {
+.bismillah-b-card {
 padding: 1.2rem;
 }
 }
 
 
 /* ========== BismillahCSS Cards ========== */
-.b-card {
+.bismillah-b-card {
 background: var(--card-bg, #fff);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -112,22 +142,22 @@ background: var(--card-bg, #fff);
     max-width: 350px;
 }
 /* 🏆 Hover Lift Effect */
-.b-card:hover {
+.bismillah-b-card:hover {
 transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 /* 📸 Image Section */
-.b-card img {
+.bismillah-b-card img {
 width: 100%;
     height: auto;
     object-fit: cover;
 }
 /* 📜 Content */
-.b-card-body {
+.bismillah-b-card-body {
 padding: 1.5rem;
 }
 /* 🏷️ Badge (e.g., "New", "Sale") */
-.b-card-badge {
+.bismillah-b-card-badge {
 position: absolute;
     top: 10px;
     right: 10px;
@@ -139,7 +169,7 @@ position: absolute;
     border-radius: 5px;
 }
 /* ✨ Glassmorphism Card */
-.b-card-glass {
+.bismillah-b-card-glass {
 background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);

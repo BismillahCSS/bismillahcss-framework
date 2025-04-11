@@ -2482,105 +2482,105 @@
 }
 
 /* === Dark Mode Styles === */
-.dark .bismillah-form {
+.bismillah-dark .bismillah-form {
   background: var(--bismillah-form-bg-dark, #222);
   border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
 }
 
-.dark .bismillah-form-title {
+.bismillah-dark .bismillah-form-title {
   color: var(--bismillah-heading-color-dark, #e0e0e0);
 }
 
-.dark .bismillah-form-subtitle,
-.dark .bismillah-form-text {
+.bismillah-dark .bismillah-form-subtitle,
+.bismillah-dark .bismillah-form-text {
   color: var(--bismillah-muted-color-dark, #adb5bd);
 }
 
-.dark .bismillah-form-label {
+.bismillah-dark .bismillah-form-label {
   color: var(--bismillah-label-color-dark, #e0e0e0);
 }
 
-.dark .bismillah-form-input,
-.dark .bismillah-form-select,
-.dark .bismillah-form-textarea {
+.bismillah-dark .bismillah-form-input,
+.bismillah-dark .bismillah-form-select,
+.bismillah-dark .bismillah-form-textarea {
   color: var(--bismillah-input-text-dark, #e0e0e0);
   background-color: var(--bismillah-input-bg-dark, #333);
   border-color: var(--bismillah-input-border-dark, #555);
 }
 
-.dark .bismillah-form-input:focus,
-.dark .bismillah-form-select:focus,
-.dark .bismillah-form-textarea:focus {
+.bismillah-dark .bismillah-form-input:focus,
+.bismillah-dark .bismillah-form-select:focus,
+.bismillah-dark .bismillah-form-textarea:focus {
   border-color: var(--bismillah-primary-color, #007bff);
   background-color: var(--bismillah-input-focus-bg-dark, #3a3a3a);
 }
 
-.dark .bismillah-form-input::placeholder {
+.bismillah-dark .bismillah-form-input::placeholder {
   color: var(--bismillah-placeholder-color-dark, #777);
 }
 
-.dark .bismillah-form-input:disabled,
-.dark .bismillah-form-select:disabled,
-.dark .bismillah-form-textarea:disabled {
+.bismillah-dark .bismillah-form-input:disabled,
+.bismillah-dark .bismillah-form-select:disabled,
+.bismillah-dark .bismillah-form-textarea:disabled {
   background-color: var(--bismillah-input-disabled-bg-dark, #2a2a2a);
 }
 
-.dark .bismillah-checkbox-mark,
-.dark .bismillah-radio-mark {
+.bismillah-dark .bismillah-checkbox-mark,
+.bismillah-dark .bismillah-radio-mark {
   background-color: var(--bismillah-input-bg-dark, #333);
   border-color: var(--bismillah-input-border-dark, #555);
 }
 
-.dark .bismillah-form-check-input:disabled ~ .bismillah-checkbox-mark,
-.dark .bismillah-form-check-input:disabled ~ .bismillah-radio-mark {
+.bismillah-dark .bismillah-form-check-input:disabled ~ .bismillah-checkbox-mark,
+.bismillah-dark .bismillah-form-check-input:disabled ~ .bismillah-radio-mark {
   background-color: var(--bismillah-input-disabled-bg-dark, #2a2a2a);
 }
 
-.dark .bismillah-switch-slider {
+.bismillah-dark .bismillah-switch-slider {
   background-color: var(--bismillah-switch-bg-dark, #555);
 }
 
-.dark .bismillah-form-file-label {
+.bismillah-dark .bismillah-form-file-label {
   background-color: var(--bismillah-input-bg-dark, #333);
   border-color: var(--bismillah-input-border-dark, #555);
   color: var(--bismillah-muted-color-dark, #adb5bd);
 }
 
-.dark .bismillah-file-dropzone {
+.bismillah-dark .bismillah-file-dropzone {
   background-color: var(--bismillah-dropzone-bg-dark, #2a2a2a);
   border-color: var(--bismillah-input-border-dark, #555);
 }
 
-.dark .bismillah-input-group-prepend,
-.dark .bismillah-input-group-append {
+.bismillah-dark .bismillah-input-group-prepend,
+.bismillah-dark .bismillah-input-group-append {
   background-color: var(--bismillah-input-group-bg-dark, #2a2a2a);
   border-color: var(--bismillah-input-border-dark, #555);
   color: var(--bismillah-input-text-dark, #e0e0e0);
 }
 
-.dark .bismillah-form-divider::before,
-.dark .bismillah-form-divider::after {
+.bismillah-dark .bismillah-form-divider::before,
+.bismillah-dark .bismillah-form-divider::after {
   border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
 }
 
-.dark .bismillah-form-divider-text {
+.bismillah-dark .bismillah-form-divider-text {
   color: var(--bismillah-muted-color-dark, #adb5bd);
 }
 
-.dark .bismillah-form-fieldset {
+.bismillah-dark .bismillah-form-fieldset {
   border-color: var(--bismillah-border-color-dark, rgba(255, 255, 255, 0.05));
 }
 
-.dark .bismillah-form-legend {
+.bismillah-dark .bismillah-form-legend {
   color: var(--bismillah-heading-color-dark, #e0e0e0);
 }
 
-.dark .bismillah-form-tags {
+.bismillah-dark .bismillah-form-tags {
   background-color: var(--bismillah-input-bg-dark, #333);
   border-color: var(--bismillah-input-border-dark, #555);
 }
 
-.dark .bismillah-form-autocomplete-results {
+.bismillah-dark .bismillah-form-autocomplete-results {
   background-color: var(--bismillah-dropdown-bg-dark, #333);
   border-color: var(--bismillah-input-border-dark, #555);
 }

@@ -561,19 +561,19 @@
   }
   
   /* Dark Mode Styles */
-  .dark .bismillah-hero {
+  .bismillah-dark .bismillah-hero {
     background-color: var(--bismillah-hero-bg-dark, #1a1a1a);
   }
   
-  .dark .bismillah-hero-title {
+  .bismillah-dark .bismillah-hero-title {
     color: var(--bismillah-hero-title-color-dark, #f8f9fa);
   }
   
-  .dark .bismillah-hero-subtitle {
+  .bismillah-dark .bismillah-hero-subtitle {
     color: var(--bismillah-hero-subtitle-color-dark, #adb5bd);
   }
   
-  .dark .bismillah-hero-waves-bottom .bismillah-hero-wave-fill {
+  .bismillah-dark .bismillah-hero-waves-bottom .bismillah-hero-wave-fill {
     fill: var(--bismillah-wave-color-dark, #121212);
   }
   

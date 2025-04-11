@@ -325,71 +325,71 @@
 }
 
 /* Dark Mode */
-.dark .bismillah-table-container {
+.bismillah-dark .bismillah-table-container {
   box-shadow: var(--bismillah-table-shadow-dark, 0 2px 8px rgba(0, 0, 0, 0.2));
 }
 
-.dark .bismillah-table {
+.bismillah-dark .bismillah-table {
   color: var(--bismillah-table-color-dark, #e0e0e0);
 }
 
-.dark .bismillah-table th,
-.dark .bismillah-table td {
+.bismillah-dark .bismillah-table th,
+.bismillah-dark .bismillah-table td {
   border-color: var(--bismillah-table-border-color-dark, #444);
 }
 
-.dark .bismillah-table thead th {
+.bismillah-dark .bismillah-table thead th {
   color: var(--bismillah-table-head-color-dark, #f0f0f0);
   background-color: var(--bismillah-table-head-bg-dark, #333);
   border-bottom-color: var(--bismillah-table-border-color-dark, #444);
 }
 
-.dark .bismillah-table.striped tbody tr:nth-of-type(odd) {
+.bismillah-dark .bismillah-table.striped tbody tr:nth-of-type(odd) {
   background-color: var(--bismillah-table-striped-bg-dark, rgba(255, 255, 255, 0.03));
 }
 
-.dark .bismillah-table.hoverable tbody tr:hover {
+.bismillah-dark .bismillah-table.hoverable tbody tr:hover {
   background-color: var(--bismillah-table-hover-bg-dark, rgba(255, 255, 255, 0.05));
 }
 
-.dark .bismillah-table.bordered th,
-.dark .bismillah-table.bordered td {
+.bismillah-dark .bismillah-table.bordered th,
+.bismillah-dark .bismillah-table.bordered td {
   border-color: var(--bismillah-table-border-color-dark, #444);
 }
 
-.dark .bismillah-table.sticky-header thead th {
+.bismillah-dark .bismillah-table.sticky-header thead th {
   background-color: var(--bismillah-table-head-bg-dark, #333);
 }
 
-.dark .bismillah-table .expandable-content {
+.bismillah-dark .bismillah-table .expandable-content {
   background-color: var(--bismillah-table-expanded-bg-dark, rgba(255, 255, 255, 0.02));
   border-top-color: var(--bismillah-table-border-color-dark, #444);
 }
 
-.dark .bismillah-table tr.highlighted {
+.bismillah-dark .bismillah-table tr.highlighted {
   background-color: var(--bismillah-table-highlight-bg-dark, rgba(79, 161, 255, 0.15)) !important;
 }
 
-.dark .bismillah-table-pagination {
+.bismillah-dark .bismillah-table-pagination {
   background-color: var(--bismillah-table-pagination-bg-dark, #333);
   border-top-color: var(--bismillah-table-border-color-dark, #444);
 }
 
-.dark .bismillah-table-pagination-info {
+.bismillah-dark .bismillah-table-pagination-info {
   color: var(--bismillah-muted-color-dark, #adb5bd);
 }
 
-.dark .bismillah-table-pagination-btn {
+.bismillah-dark .bismillah-table-pagination-btn {
   border-color: var(--bismillah-table-border-color-dark, #444);
   background-color: var(--bismillah-table-pagination-btn-bg-dark, #2a2a2a);
   color: var(--bismillah-table-pagination-btn-color-dark, #e0e0e0);
 }
 
-.dark .bismillah-table-pagination-btn:hover {
+.bismillah-dark .bismillah-table-pagination-btn:hover {
   background-color: var(--bismillah-table-pagination-btn-hover-bg-dark, #3a3a3a);
 }
 
-.dark .bismillah-table .progress-container {
+.bismillah-dark .bismillah-table .progress-container {
   background-color: var(--bismillah-progress-bg-dark, #444);
 }
 

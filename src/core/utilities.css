@@ -98,53 +98,53 @@ color: #DC2626;
 .bismillah-text-info {
 color: #0EA5E9;
 }
-.bg-primary {
+.bismillah-bg-primary {
 background-color: #1E40AF;
 }
-.bg-secondary {
+.bismillah-bg-secondary {
 background-color: #64748B;
 }
-.bg-success {
+.bismillah-bg-success {
 background-color: #16A34A;
 }
-.bg-warning {
+.bismillah-bg-warning {
 background-color: #EAB308;
 }
-.bg-danger {
+.bismillah-bg-danger {
 background-color: #DC2626;
 }
-.bg-info {
+.bismillah-bg-info {
 background-color: #0EA5E9;
 }
 /* Borders */
-.border {
+.bismillah-border {
 border: 1px solid #e5e7eb;
 }
-.border-0 {
+.bismillah-border-0 {
 border: none;
 }
-.border-2 {
+.bismillah-border-2 {
 border-width: 2px;
 }
-.border-4 {
+.bismillah-border-4 {
 border-width: 4px;
 }
-.border-8 {
+.bismillah-border-8 {
 border-width: 8px;
 }
-.border-primary {
+.bismillah-border-primary {
 border-color: #1E40AF;
 }
-.border-secondary {
+.bismillah-border-secondary {
 border-color: #64748B;
 }
-.border-success {
+.bismillah-border-success {
 border-color: #16A34A;
 }
-.border-warning {
+.bismillah-border-warning {
 border-color: #EAB308;
 }
-.border-danger {
+.bismillah-border-danger {
 border-color: #DC2626;
 }
 .bismillah-rounded-none {
@@ -501,42 +501,42 @@ background-image: linear-gradient(to top, var(--bismillah-color-start), var(--bi
 background-image: linear-gradient(to bottom, var(--bismillah-color-start), var(--bismillah-color-end));
 }
 /* ========== BismillahCSS Neon Backgrounds ========== */
-.bg-neon-blue {
+.bismillah-bg-neon-blue {
 background-color: #00f; box-shadow: 0 0 10px #00f, 0 0 40px #00f;
 }
-.bg-neon-green {
+.bismillah-bg-neon-green {
 background-color: #0f0; box-shadow: 0 0 10px #0f0, 0 0 40px #0f0;
 }
-.bg-neon-red {
+.bismillah-bg-neon-red {
 background-color: #f00; box-shadow: 0 0 10px #f00, 0 0 40px #f00;
 }
-.bg-neon-pink {
+.bismillah-bg-neon-pink {
 background-color: #ff00ff; box-shadow: 0 0 10px #ff00ff, 0 0 40px #ff00ff;
 }
-.bg-neon-yellow {
+.bismillah-bg-neon-yellow {
 background-color: #ff0; box-shadow: 0 0 10px #ff0, 0 0 40px #ff0;
 }
 /* ========== BismillahCSS Gradient Backgrounds ========== */
-.bg-gradient-primary {
+.bismillah-bg-gradient-primary {
 background: linear-gradient(45deg, #007bff, #0056b3);
 }
-.bg-gradient-success {
+.bismillah-bg-gradient-success {
 background: linear-gradient(45deg, #28a745, #218838);
 }
-.bg-gradient-danger {
+.bismillah-bg-gradient-danger {
 background: linear-gradient(45deg, #dc3545, #c82333);
 }
-.bg-gradient-warning {
+.bismillah-bg-gradient-warning {
 background: linear-gradient(45deg, #ffc107, #e0a800);
 }
-.bg-gradient-info {
+.bismillah-bg-gradient-info {
 background: linear-gradient(45deg, #17a2b8, #117a8b);
 }
-.bg-gradient-dark {
+.bismillah-bg-gradient-dark {
 background: linear-gradient(45deg, #343a40, #1d2124);
 }
 /* Fancy Gradients */
-.bg-gradient-rainbow {
+.bismillah-bg-gradient-rainbow {
 background: linear-gradient(90deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffee, #0048ff, #7a00ff);
     background-size: 400% 400%;
     animation: gradient-shift 6s infinite linear;
@@ -556,7 +556,7 @@ background-position: 0% 50%;
 
 /* Dark Mode Compatibility */
 @media (prefers-color-scheme: dark) {
-.bg-neon-blue, .bg-neon-green, .bg-neon-red, .bg-neon-pink, .bg-neon-yellow {
+.bismillah-bg-neon-blue, .bg-neon-green, .bg-neon-red, .bg-neon-pink, .bg-neon-yellow {
         filter: brightness(1.2);
 }
 }
@@ -2878,10 +2878,10 @@ right: -10px;
 /* ===================== */
 
 /* 🌟 Hover Underline Effect */
-.b-underline-hover {
+.bismillah-b-underline-hover {
 position: relative;
 }
-.b-underline-hover::after {
+.bismillah-b-underline-hover::after {
 content: "";
     position: absolute;
     left: 0;
@@ -2891,11 +2891,11 @@ content: "";
     background: currentColor;
     transition: width 0.3s ease;
 }
-.b-underline-hover:hover::after {
+.bismillah-b-underline-hover:hover::after {
 width: 100%;
 }
 /* ❌ Remove Hover Underline Effect */
-.b-no-underline-hover::after {
+.bismillah-b-no-underline-hover::after {
 display: none !important;
 }
 /* ========================= */
@@ -5796,15 +5796,15 @@ transition: all 0.3s ease-in-out;
     box-shadow: 0 0 10px #ff00ff, 0 0 40px #ff00ff;
   }
   
-  .bg-gradient-primary {
+  .bismillah-bg-gradient-primary {
     background: linear-gradient(45deg, #007bff, #0056b3);
   }
   
-  .bg-gradient-success {
+  .bismillah-bg-gradient-success {
     background: linear-gradient(45deg, #28a745, #218838);
   }
   
-  .bg-gradient-danger {
+  .bismillah-bg-gradient-danger {
     background: linear-gradient(45deg, #dc3545, #c82333);
   }
   
